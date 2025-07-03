@@ -1,0 +1,1 @@
+Find all issues in the open file.
