@@ -9,6 +9,7 @@ class DBPreviewValuesSchema(BaseModel):
     ])
     A list of the preview (default) values to filter by that shall be presented on the report. e.g 'NonDNS' or 'DNS'; 'Abs:2025-06-02T06:58:51.4177807+00:00,2025-07-02T06:58:51.4177807+00:00', 'Create;Modify;Add;Remove;Move;Delete;Restore'; 'account;aCSPolicy;aCSResourceLimits;aCSSubnet;addressBookContainer;addressTemplate;applicationEntity;applicationProcess;applicationSettings;'; 'accountExpires;accountNameHistory;aCSAggregateTokenRatePerUser;aCSAllocableRSVPBandwidth;aCSCacheTimeout;aCSDirection;aCSDSBMDeadTime;aCSDSBMPriority;aCSDSBMRefresh;aCSEnableACSService;aCSEnableRSVPAccounting'; ':OU=engineering:True'; 'True'; etc
     """
+    
     # NonDNS only filters
     - ObjectClasses
     - Partitions
