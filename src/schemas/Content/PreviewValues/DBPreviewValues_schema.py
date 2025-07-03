@@ -18,10 +18,12 @@ class DBPreviewValuesSchema(BaseModel):
     - sAMAccountName
 
     # DNS only filter
+    
     - Zones
     - RecordTypes
     
     # Both DNS and NonDNS filters
+    
     - Type <- determines if the report is DNS or NonDNS
     - DateRange
     - Operations
