@@ -4,7 +4,10 @@ from pydantic import BaseModel, Field
 from schemas.Content.Filters.LDAPFilter_schema import LDAPFilterSchema
 from schemas.Content.Filters.DBFilter_schema import DBFilterSchema
 from schemas.Content.PreviewValues.LDAPPreviewValues_schema import LDAPPreviewValuesSchema
+from schemas.Content.PreviewValues.DBPreviewValues_schema import DBPreviewValuesSchema
 
+# TODO: Define ResultColumnsSchema when needed
+# from schemas.Content.ResultColumns.ResultColumns_schema import ResultColumnsSchema
 
 ContentSchema_FilterString_description  = "If report source is LDAP then this is the LDAP query as-is. Else- None"
 ContentSchema_Filter_description        = "The filter used in the report, either LDAP or DB"
@@ -20,4 +23,5 @@ class ContentSchema(BaseModel):
         DBPreviewValuesSchema
     ] = Field(description=ContentSchema_PreviewValues_description)
     FilterString : Optional[str]                                         = Field(default=None, description=ContentSchema_FilterString_description)
-    ResultColumns: Optional[ResultColumnsSchema]                         = Field(default=None, description=ContentSchema_ResultColumns_description)
+    # TODO: Uncomment when ResultColumnsSchema is defined
+    # ResultColumns: Optional[ResultColumnsSchema]                         = Field(default=None, description=ContentSchema_ResultColumns_description)
