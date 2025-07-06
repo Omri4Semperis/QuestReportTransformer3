@@ -1,5 +1,5 @@
 from decision_making import AmbiguousReportTypeError, infer_report_type_from_user_input
-from schemas.meta.quest_report_analysis_schema import ReportTypeHints
+from quest_report_analysis_schema import ReportTypeHints
 
 import json
 from typing import Dict, List, Any

@@ -1,11 +1,19 @@
-from src.schemas.Content.PreviewValues.LDAPPreviewValues_schema import LDAPPreviewValuesSchema
+from src.schemas.Content.PreviewValues.LDAPPreviewValues_schema import (
+    LDAPPreviewValuesSchema,
+)
 
 import os
 import json
 from typing import Dict, List, Any
 
 from dotenv import load_dotenv
-from openai import AzureOpenAI, RateLimitError, AuthenticationError, APIError, NotFoundError
+from openai import (
+    AzureOpenAI,
+    RateLimitError,
+    AuthenticationError,
+    APIError,
+    NotFoundError,
+)
 
 print("Getting everything ready...")
 
@@ -15,7 +23,7 @@ load_dotenv()
 api_key = os.getenv("AZURE_API_KEY")
 api_version = os.getenv("AZURE_API_VERSION")
 azure_endpoint = os.getenv("AZURE_API_BASE")
-deployment_name = "gpt-4o" # As specified in the original script
+deployment_name = "gpt-4o"  # As specified in the original script
 
 # Initialize the Azure OpenAI client
 client = AzureOpenAI(
@@ -27,12 +35,14 @@ client = AzureOpenAI(
 
 print("Azure OpenAI client initialized successfully.")
 
-print("""You may ask for an LDAP Preview Values schema response.
+print(
+    """You may ask for an LDAP Preview Values schema response.
 Just specify which BaseDNs you're interested in,
 What is the Search Scope (Base, One Level, or Sub Tree),
 whether global catalog should be enabled or not,
 And which value to apply to each field in the LDAP query.
-""")
+"""
+)
 
 user_input = input("Please enter your request (Enter for default): ")
 if not user_input.strip():
@@ -48,28 +58,24 @@ messages: List[Dict[str, Any]] = [
     {"role": "user", "content": user_input},
 ]
 
-tools = [
-    {
-        "type": "function",
-        "function": {
-            "name": "get_LDAPPreviewValuesSchema",
-            "description": "Get the LDAP Preview Values schema based on user input.",
-            "parameters": LDAPPreviewValuesSchema.model_json_schema()
-        }
-    }
-]
-
 # Get the structured reply using the tool
 completion = client.chat.completions.create(
     model=deployment_name,
     messages=messages,
-    tools=tools,
+    tools=[
+        {
+            "type": "function",
+            "function": {
+                "name": "get_LDAPPreviewValuesSchema",
+                "description": "Get the LDAP Preview Values schema based on user input.",
+                "parameters": LDAPPreviewValuesSchema.model_json_schema(),
+            },
+        }
+    ],
     tool_choice={
         "type": "function",
-        "function": {
-            "name": "get_LDAPPreviewValuesSchema"
-        }
-    }
+        "function": {"name": "get_LDAPPreviewValuesSchema"},
+    },
 )
 
 tool_call = completion.choices[0].message.tool_calls[0]
