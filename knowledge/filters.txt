@@ -1,0 +1,24 @@
+# Filters available for both DNS and NonDNS reports
+
+1. Type: Determines if the report is DNS or NonDNS. Mandatory for both DNS and NonDNS. Allowed states: Only state is 'Is'. The input Can only be 'Preset'. Allowed values: DNS or NonDNS.
+2. DateRange: The date range to consider. Not mandatory. Allowed states: Only state is 'Is'. The input Can be 'Preset' or 'UserInput'. Allowed values: Can be relative or absolute.
+3. Operations: The types of AD operations. Not mandatory. Allowed states: Can only be set to one of these: [Include, Exclude]. The input Can be 'Preset' or 'UserInput'. Allowed values: Multiple choice from: Create, Modify, Add, Remove, Move, Delete, Restore
+4. OldValue: The old value of the object's attirubute. Not mandatory. Allowed states: Can only be set to one of these: [Contains, NotContain, Equals, NotEquals IsNotNullAndNotEmpty, IsNullOrEmpty]. The input Can be 'Preset' or 'UserInput'. Allowed values: Free text.
+5. NewValue: The new value of the object's attirubute. Not mandatory. Allowed states: Can only be set to one of these: [Contains, NotContain, Equals, NotEquals IsNotNullAndNotEmpty, IsNullOrEmpty]. The input Can be 'Preset' or 'UserInput'. Allowed values: Free text.
+6. ChangedBy: The value of the object that caused the change. Not mandatory. Allowed states: Can only be set to one of these: [Contains, NotContain, Equals, NotEquals IsNotNullAndNotEmpty, IsNullOrEmpty]. The input Can be 'Preset' or 'UserInput'. Allowed values: Free text.
+7. SourceServers: Domain controllers or DNS servers that are the source of the data Not mandatory. Allowed states: Can only be set to one of these: [Include, Exclude]. The input Can be 'Preset' or 'UserInput'. Allowed values: Closed list: The available Source Servers.
+8. ObjectListIds: internal identifiers or unique IDs. Not mandatory. Allowed states: Can only be set to one of these: [Equals, not equals, starts with, ends with]. The input Can be 'Preset' or 'UserInput'. Allowed values: Free text.
+
+# Filters available only for DNS reports
+
+1. Zones: Active Directory DNS zones. Mandatory for DNS reports. Allowed states: This filter's only state is 'Include'. The input Can be 'Preset' or 'UserInput'. Allowed values: Closed list: The available Zones.
+2. RecordTypes: DNS record types, defined in the DNS standards. Not mandatory. Allowed states: Can only be set to one of these: [Include, Exclude]. The input Can be 'Preset' or 'UserInput'. Allowed values: The ones still widely used today: A, NS, CNAME, SOA. May also include the historical ones.
+
+# Filters available only for NonDNS reports
+
+1. Partitions: Active Directory DNS partitions. Mandatory for NonDNS reports. Allowed states: Can only be set to one of these: [Include, Exclude]. The input Can be 'Preset' or 'UserInput'. Allowed values: Closed list: The available Partitions.
+2. ObjectClasses: The AD object classes. Not mandatory. Allowed states: Can only be set to one of these: [Include, Exclude]. The input Can be 'Preset' or 'UserInput'. Allowed values: Multiple choice from all Active Directory object classes (e.g. aCSresourceLimits, applicationSettings, account, aCSPolicy...)
+3. Attributes: The AD attributes. Not mandatory. Allowed states: Can only be set to one of these: [Include, Exclude]. The input Can be 'Preset' or 'UserInput'. Allowed values: Multiple choice from all Active Directory attribute names (e.g. accountNameHistory, accountExpires, aCSAggregateTokenRatePerUser…)
+4. ObjectDN: The object's Distinguished Name. Not mandatory. Allowed states: Can only be set to one of these: [Equals, not equals, starts with]. The input Can be 'Preset' or 'UserInput'. Allowed values: Domain id.
+5. GroupResultsByOperation: Should or shouldn't the results be grouped by the Operation? Not mandatory. Allowed states: Only state is 'Is'. The input Can be 'Preset' or 'UserInput'. Allowed values: true or false.
+6. sAMAccountName: The user logon name, used for backwards compatibility with older versions of Windows. Not mandatory. Allowed states: Can only be set to one of these: [Equals, not equals, starts with, ends with]. The input Can be 'Preset' or 'UserInput'. Allowed values: Free text.

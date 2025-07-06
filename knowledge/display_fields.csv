@@ -1,0 +1,124 @@
+﻿field,description,category_num,category_name,DNS,NonDNS
+AttributeName,Name of the changed attribute.,1,Object & Identity,FALSE,TRUE
+LastKnownParent,DN of the last known parent container.,1,Object & Identity,FALSE,TRUE
+LVRRef,Low version reference (version tracking).,1,Object & Identity,FALSE,TRUE
+SID,Security Identifier.,1,Object & Identity,FALSE,TRUE
+From_IsStringValueXmlString,Whether the previous value was an XML string.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_CreationTime,When this attribute value was created.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_DeletionTime,When this attribute value was deleted.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_HasData,Whether this field had data.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_LastOriginatingChangeTime,When this value last changed.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_LastOriginatingInvocationId,Invocation ID of the DC making the change.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_LocalChangeUsn,Local USN when the change happened.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_ObjectDn,DN of the object before change.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_ObjectGuid,GUID of the object before change.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_OriginatingChangeUsn,USN from the originating DC.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_OriginatingServer,Server that originated the change.,5,Previous Value Metadata,FALSE,TRUE
+From_Meta_Version,Version of the attribute value.,5,Previous Value Metadata,FALSE,TRUE
+From_ResolveFlags,Flags describing resolution state.,5,Previous Value Metadata,FALSE,TRUE
+From_Syntax,Data type of previous value.,5,Previous Value Metadata,FALSE,TRUE
+From_BinaryBase64Value,"Previous binary value, Base64 encoded.",6,Previous Value Content,FALSE,TRUE
+From_StringValue,Previous value as string.,6,Previous Value Content,FALSE,TRUE
+To_IsStringValueXmlString,Whether new value is XML string.,8,New Value Metadata,FALSE,TRUE
+To_Meta_CreationTime,When this value was created.,8,New Value Metadata,FALSE,TRUE
+To_Meta_DeletionTime,When this value was deleted.,8,New Value Metadata,FALSE,TRUE
+To_Meta_HasData,Whether this field has data.,8,New Value Metadata,FALSE,TRUE
+To_Meta_LastOriginatingChangeTime,When this value last changed.,8,New Value Metadata,FALSE,TRUE
+To_Meta_LastOriginatingInvocationId,Invocation ID of the DC making the change.,8,New Value Metadata,FALSE,TRUE
+To_Meta_LocalChangeUsn,Local USN when the change happened.,8,New Value Metadata,FALSE,TRUE
+To_Meta_ObjectDn,DN after the change.,8,New Value Metadata,FALSE,TRUE
+To_Meta_ObjectGuid,GUID after the change.,8,New Value Metadata,FALSE,TRUE
+To_Meta_OriginatingChangeUsn,USN from the originating DC.,8,New Value Metadata,FALSE,TRUE
+To_Meta_OriginatingServer,Server that originated the change.,8,New Value Metadata,FALSE,TRUE
+To_Meta_Version,Version of the attribute.,8,New Value Metadata,FALSE,TRUE
+To_ResolveFlags,Flags describing resolution state.,8,New Value Metadata,FALSE,TRUE
+To_Syntax,Data type of new value.,8,New Value Metadata,FALSE,TRUE
+To_BinaryBase64Value,"New binary value, Base64 encoded.",9,New Value Content,FALSE,TRUE
+To_StringValue,New value as string.,9,New Value Content,FALSE,TRUE
+To_Name,New DNS record name.,10,New DNS Record Details,TRUE,FALSE
+To_RecordType,DNS record type after change.,10,New DNS Record Details,TRUE,FALSE
+To_Serial,New DNS serial number.,10,New DNS Record Details,TRUE,FALSE
+To_TextualForm,New DNS value in text.,10,New DNS Record Details,TRUE,FALSE
+To_TimeStamp,Timestamp of new record.,10,New DNS Record Details,TRUE,FALSE
+To_TtlSeconds,New TTL.,10,New DNS Record Details,TRUE,FALSE
+To_TypeA_IPAddress,New A record IP.,10,New DNS Record Details,TRUE,FALSE
+To_TypeHInfoIsdnTxtX25Loc_StringData,Other string data for record types.,10,New DNS Record Details,TRUE,FALSE
+To_TypeMInfoRp_ErrorMailbox,MINFO error mailbox.,10,New DNS Record Details,TRUE,FALSE
+To_TypeMInfoRp_Mailbox,MINFO mailbox.,10,New DNS Record Details,TRUE,FALSE
+To_TypeMxAFSDBRt_NameExchange,MX/AFSDB exchange name.,10,New DNS Record Details,TRUE,FALSE
+To_TypeMxAFSDBRt_Preference,MX preference.,10,New DNS Record Details,TRUE,FALSE
+To_TypeName_Name,Record type name.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSoa_Expire,SOA expire value.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSoa_MinTtl,SOA minimum TTL.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSoa_PrimaryServer,SOA primary server.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSoa_Refresh,SOA refresh interval.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSoa_Retry,SOA retry interval.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSoa_ZoneAdministrator,SOA admin email.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSrv_Host,SRV host.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSrv_Port,SRV port.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSrv_Priority,SRV priority.,10,New DNS Record Details,TRUE,FALSE
+To_TypeSrv_Weight,SRV weight.,10,New DNS Record Details,TRUE,FALSE
+To_TypeWks_Bitmask,WKS services bitmask.,10,New DNS Record Details,TRUE,FALSE
+To_TypeWks_IPAddress,WKS IP address.,10,New DNS Record Details,TRUE,FALSE
+To_TypeWks_Protocol,WKS protocol.,10,New DNS Record Details,TRUE,FALSE
+To_ZoneName,New DNS zone name.,10,New DNS Record Details,TRUE,FALSE
+From_BinaryCheckSum,Checksum of previous binary data.,5,Previous Value Metadata,TRUE,FALSE
+From_CheckSum,General checksum of previous value.,5,Previous Value Metadata,TRUE,FALSE
+From_Flags,Flags on the previous record.,5,Previous Value Metadata,TRUE,FALSE
+From_HasData,Whether previous record had data.,5,Previous Value Metadata,TRUE,FALSE
+From_RawBytesBase64,Previous raw bytes Base64 encoded.,6,Previous Value Content,TRUE,FALSE
+From_Name,Previous DNS record name.,7,Previous DNS Record Details,TRUE,FALSE
+From_Record_Type,DNS record type before change.,7,Previous DNS Record Details,TRUE,FALSE
+From_Serial,Previous DNS serial number.,7,Previous DNS Record Details,TRUE,FALSE
+From_TextualForm,Previous DNS value in text.,7,Previous DNS Record Details,TRUE,FALSE
+From_TimeStamp,Timestamp of previous record.,7,Previous DNS Record Details,TRUE,FALSE
+From_TtlSeconds,Time to live in seconds.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeA_IPAddress,Previous A record IP.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeHInfoIsdnTxtX25Loc_StringData,Other string data for record types.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeMInfoRp_ErrorMailbox,MINFO record error mailbox.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeMInfoRp_Mailbox,MINFO record mailbox.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeMxAFSDBRt_NameExchange,MX/AFSDB exchange name.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeMxAFSDBRt_Preference,MX preference.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeName_Name,Record type name.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSoa_Expire,SOA expire value.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSoa_MinTtl,SOA minimum TTL.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSoa_PrimaryServer,SOA primary server.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSoa_Refresh,SOA refresh interval.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSoa_Retry,SOA retry interval.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSoa_ZoneAdministrator,SOA admin email.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSrv_Host,SRV host.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSrv_Port,SRV port.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSrv_Priority,SRV priority.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeSrv_Weight,SRV weight.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeWks_Bitmask,WKS services bitmask.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeWks_IPAddress,WKS IP address.,7,Previous DNS Record Details,TRUE,FALSE
+From_TypeWks_Protocol,WKS protocol.,7,Previous DNS Record Details,TRUE,FALSE
+From_ZoneName,Previous DNS zone name.,7,Previous DNS Record Details,TRUE,FALSE
+To_BinaryCheckSum,Checksum of new binary data.,8,New Value Metadata,TRUE,FALSE
+To_CheckSum,General checksum of new value.,8,New Value Metadata,TRUE,FALSE
+To_Flags,Flags on new record.,8,New Value Metadata,TRUE,FALSE
+To_HasData,Whether new record has data.,8,New Value Metadata,TRUE,FALSE
+To_RawBytesBase64,New raw bytes Base64 encoded.,9,New Value Content,TRUE,FALSE
+ClassName,"Object class (e.g., user, group, computer).",1,Object & Identity,TRUE,TRUE
+DisplayName,User-friendly display name.,1,Object & Identity,TRUE,TRUE
+Distinguished Name,Full LDAP path identifying the object.,1,Object & Identity,TRUE,TRUE
+Object Guid,Unique GUID of the object.,1,Object & Identity,TRUE,TRUE
+SamAccountName,Pre-Windows 2000 logon name.,1,Object & Identity,TRUE,TRUE
+UPN,User Principal Name (user@domain).,1,Object & Identity,TRUE,TRUE
+Version,Version of the record.,1,Object & Identity,TRUE,TRUE
+CollectionTime,When the data was collected.,2,Report & Collection Metadata,TRUE,TRUE
+ForestGenerationId,ID representing the forest replication generation.,2,Report & Collection Metadata,TRUE,TRUE
+Row Number,Row number in the report.,2,Report & Collection Metadata,TRUE,TRUE
+UserMatchCount,How many users matched this record.,2,Report & Collection Metadata,TRUE,TRUE
+ValidUntil,When this data expires.,2,Report & Collection Metadata,TRUE,TRUE
+DirSyncOperationType,"Type of directory sync operation (add, modify, delete).",3,Change Operation Context,TRUE,TRUE
+ModificationType,"Type of change (add, modify, delete).",3,Change Operation Context,TRUE,TRUE
+OriginatingServer,DC that made the change.,3,Change Operation Context,TRUE,TRUE
+OriginatingTime,Time the change originated.,3,Change Operation Context,TRUE,TRUE
+OriginatingUsers,User(s) who triggered the change.,3,Change Operation Context,TRUE,TRUE
+OriginatingUserWorkstations,Workstations where change originated.,3,Change Operation Context,TRUE,TRUE
+IsActionable,Whether this row requires action.,4,Row Flags & Indicators,TRUE,TRUE
+IsFirst,Whether this is the first change in a sequence.,4,Row Flags & Indicators,TRUE,TRUE
+IsLast,Whether this is the last change in a sequence.,4,Row Flags & Indicators,TRUE,TRUE
+IsPassword,Whether the change was to a password.,4,Row Flags & Indicators,TRUE,TRUE
+IsVirtual,Whether this is a virtual object.,4,Row Flags & Indicators,TRUE,TRUE

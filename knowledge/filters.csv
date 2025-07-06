@@ -1,0 +1,17 @@
+﻿filter,description,DNS,NonDNS,mandatory,allowed_states,input,values
+Type,Determines if the report is DNS or NonDNS.,TRUE,TRUE,TRUE,Only state is 'Is'.,Can only be 'Preset'.,DNS or NonDNS.
+DateRange,The date range to consider.,TRUE,TRUE,FALSE,Only state is 'Is'.,Can be 'Preset' or 'UserInput'.,Can be relative or absolute.
+Operations,The types of AD operations.,TRUE,TRUE,FALSE,"Can only be set to one of these: [Include, Exclude].",Can be 'Preset' or 'UserInput'.,"Multiple choice from: Create, Modify, Add, Remove, Move, Delete, Restore."
+ObjectClasses,The AD object classes.,FALSE,TRUE,FALSE,"Can only be set to one of these: [Include, Exclude].",Can be 'Preset' or 'UserInput'.,"Multiple choice from all Active Directory object classes (e.g. aCSresourceLimits, applicationSettings, account, aCSPolicy...)"
+Partitions,Active Directory DNS partitions.,FALSE,TRUE,TRUE,"Can only be set to one of these: [Include, Exclude].",Can be 'Preset' or 'UserInput'.,Closed list: The available Partitions.
+Attributes,The AD attributes.,FALSE,TRUE,FALSE,"Can only be set to one of these: [Include, Exclude].",Can be 'Preset' or 'UserInput'.,"Multiple choice from all Active Directory attribute names (e.g. accountNameHistory, accountExpires, aCSAggregateTokenRatePerUser…)"
+ObjectDN,The object's Distinguished Name.,FALSE,TRUE,FALSE,"Can only be set to one of these: [Equals, not equals, starts with].",Can be 'Preset' or 'UserInput'.,Domain id.
+OldValue,The old value of the object's attirubute.,TRUE,TRUE,FALSE,"Can only be set to one of these: [Contains, NotContain, Equals, NotEquals IsNotNullAndNotEmpty, IsNullOrEmpty].",Can be 'Preset' or 'UserInput'.,Free text.
+NewValue,The new value of the object's attirubute.,TRUE,TRUE,FALSE,"Can only be set to one of these: [Contains, NotContain, Equals, NotEquals IsNotNullAndNotEmpty, IsNullOrEmpty].",Can be 'Preset' or 'UserInput'.,Free text.
+ChangedBy,The value of the object that caused the change.,TRUE,TRUE,FALSE,"Can only be set to one of these: [Contains, NotContain, Equals, NotEquals IsNotNullAndNotEmpty, IsNullOrEmpty].",Can be 'Preset' or 'UserInput'.,Free text.
+GroupResultsByOperation,Should or shouldn't the results be grouped by the Operation?,FALSE,TRUE,FALSE,Only state is 'Is'.,Can be 'Preset' or 'UserInput'.,true or false.
+SourceServers,Domain controllers or DNS servers that are the source of the data,TRUE,TRUE,FALSE,"Can only be set to one of these: [Include, Exclude].",Can be 'Preset' or 'UserInput'.,Closed list: The available Source Servers.
+sAMAccountName,"The user logon name, used for backwards compatibility with older versions of Windows.",FALSE,TRUE,FALSE,"Can only be set to one of these: [Equals, not equals, starts with, ends with].",Can be 'Preset' or 'UserInput'.,Free text.
+ObjectListIds,internal identifiers or unique IDs.,TRUE,TRUE,FALSE,"Can only be set to one of these: [Equals, not equals, starts with, ends with].",Can be 'Preset' or 'UserInput'.,Free text.
+Zones,Active Directory DNS zones.,TRUE,FALSE,TRUE,This filter's only state is 'Include'.,Can be 'Preset' or 'UserInput'.,Closed list: The available Zones.
+RecordTypes,"DNS record types, defined in the DNS standards.",TRUE,FALSE,FALSE,"Can only be set to one of these: [Include, Exclude].",Can be 'Preset' or 'UserInput'.,"The ones still widely used today: A, NS, CNAME, SOA. May also include the historical ones."

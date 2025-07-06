@@ -1,0 +1,158 @@
+# Display fields available for both DNS and NonDNS reports
+
+## Category 1: Object & Identity
+1. ClassName: Object class (e.g., user, group, computer).
+2. DisplayName: User-friendly display name.
+3. Distinguished Name: Full LDAP path identifying the object.
+4. Object Guid: Unique GUID of the object.
+5. SamAccountName: Pre-Windows 2000 logon name.
+6. UPN: User Principal Name (user@domain).
+7. Version: Version of the record.
+
+## Category 2: Report & Collection Metadata
+8. CollectionTime: When the data was collected.
+9. ForestGenerationId: ID representing the forest replication generation.
+10. Row Number: Row number in the report.
+11. UserMatchCount: How many users matched this record.
+12. ValidUntil: When this data expires.
+
+## Category 3: Change Operation Context
+13. DirSyncOperationType: Type of directory sync operation (add, modify, delete).
+14. ModificationType: Type of change (add, modify, delete).
+15. OriginatingServer: DC that made the change.
+16. OriginatingTime: Time the change originated.
+17. OriginatingUsers: User(s) who triggered the change.
+18. OriginatingUserWorkstations: Workstations where change originated.
+
+## Category 4: Row Flags & Indicators
+19. IsActionable: Whether this row requires action.
+20. IsFirst: Whether this is the first change in a sequence.
+21. IsLast: Whether this is the last change in a sequence.
+22. IsPassword: Whether the change was to a password.
+23. IsVirtual: Whether this is a virtual object.
+
+# Display fields available only for DNS reports
+
+## Category 1: Object & Identity
+1. AttributeName: Name of the changed attribute.
+2. LastKnownParent: DN of the last known parent container.
+3. LVRRef: Low version reference (version tracking).
+4. SID: Security Identifier.
+
+## Category 5: Previous Value Metadata
+5. From_IsStringValueXmlString: Whether the previous value was an XML string.
+6. From_Meta_CreationTime: When this attribute value was created.
+7. From_Meta_DeletionTime: When this attribute value was deleted.
+8. From_Meta_HasData: Whether this field had data.
+9. From_Meta_LastOriginatingChangeTime: When this value last changed.
+10. From_Meta_LastOriginatingInvocationId: Invocation ID of the DC making the change.
+11. From_Meta_LocalChangeUsn: Local USN when the change happened.
+12. From_Meta_ObjectDn: DN of the object before change.
+13. From_Meta_ObjectGuid: GUID of the object before change.
+14. From_Meta_OriginatingChangeUsn: USN from the originating DC.
+15. From_Meta_OriginatingServer: Server that originated the change.
+16. From_Meta_Version: Version of the attribute value.
+17. From_ResolveFlags: Flags describing resolution state.
+18. From_Syntax: Data type of previous value.
+
+## Category 6: Previous Value Content
+19. From_BinaryBase64Value: Previous binary value, Base64 encoded.
+20. From_StringValue: Previous value as string.
+
+## Category 8: New Value Metadata
+21. To_IsStringValueXmlString: Whether new value is XML string.
+22. To_Meta_CreationTime: When this value was created.
+23. To_Meta_DeletionTime: When this value was deleted.
+24. To_Meta_HasData: Whether this field has data.
+25. To_Meta_LastOriginatingChangeTime: When this value last changed.
+26. To_Meta_LastOriginatingInvocationId: Invocation ID of the DC making the change.
+27. To_Meta_LocalChangeUsn: Local USN when the change happened.
+28. To_Meta_ObjectDn: DN after the change.
+29. To_Meta_ObjectGuid: GUID after the change.
+30. To_Meta_OriginatingChangeUsn: USN from the originating DC.
+31. To_Meta_OriginatingServer: Server that originated the change.
+32. To_Meta_Version: Version of the attribute.
+33. To_ResolveFlags: Flags describing resolution state.
+34. To_Syntax: Data type of new value.
+
+## Category 9: New Value Content
+35. To_BinaryBase64Value: New binary value, Base64 encoded.
+36. To_StringValue: New value as string.
+
+# Display fields available only for NonDNS reports
+
+## Category 5: Previous Value Metadata
+1. From_BinaryCheckSum: Checksum of previous binary data.
+2. From_CheckSum: General checksum of previous value.
+3. From_Flags: Flags on the previous record.
+4. From_HasData: Whether previous record had data.
+
+## Category 6: Previous Value Content
+5. From_RawBytesBase64: Previous raw bytes Base64 encoded.
+
+## Category 7: Previous DNS Record Details
+6. From_Name: Previous DNS record name.
+7. From_Record_Type: DNS record type before change.
+8. From_Serial: Previous DNS serial number.
+9. From_TextualForm: Previous DNS value in text.
+10. From_TimeStamp: Timestamp of previous record.
+11. From_TtlSeconds: Time to live in seconds.
+12. From_TypeA_IPAddress: Previous A record IP.
+13. From_TypeHInfoIsdnTxtX25Loc_StringData: Other string data for record types.
+14. From_TypeMInfoRp_ErrorMailbox: MINFO record error mailbox.
+15. From_TypeMInfoRp_Mailbox: MINFO record mailbox.
+16. From_TypeMxAFSDBRt_NameExchange: MX/AFSDB exchange name.
+17. From_TypeMxAFSDBRt_Preference: MX preference.
+18. From_TypeName_Name: Record type name.
+19. From_TypeSoa_Expire: SOA expire value.
+20. From_TypeSoa_MinTtl: SOA minimum TTL.
+21. From_TypeSoa_PrimaryServer: SOA primary server.
+22. From_TypeSoa_Refresh: SOA refresh interval.
+23. From_TypeSoa_Retry: SOA retry interval.
+24. From_TypeSoa_ZoneAdministrator: SOA admin email.
+25. From_TypeSrv_Host: SRV host.
+26. From_TypeSrv_Port: SRV port.
+27. From_TypeSrv_Priority: SRV priority.
+28. From_TypeSrv_Weight: SRV weight.
+29. From_TypeWks_Bitmask: WKS services bitmask.
+30. From_TypeWks_IPAddress: WKS IP address.
+31. From_TypeWks_Protocol: WKS protocol.
+32. From_ZoneName: Previous DNS zone name.
+
+## Category 8: New Value Metadata
+33. To_BinaryCheckSum: Checksum of new binary data.
+34. To_CheckSum: General checksum of new value.
+35. To_Flags: Flags on new record.
+36. To_HasData: Whether new record has data.
+
+## Category 9: New Value Content
+37. To_RawBytesBase64: New raw bytes Base64 encoded.
+
+## Category 10: New DNS Record Details
+38. To_Name: New DNS record name.
+39. To_RecordType: DNS record type after change.
+40. To_Serial: New DNS serial number.
+41. To_TextualForm: New DNS value in text.
+42. To_TimeStamp: Timestamp of new record.
+43. To_TtlSeconds: New TTL.
+44. To_TypeA_IPAddress: New A record IP.
+45. To_TypeHInfoIsdnTxtX25Loc_StringData: Other string data for record types.
+46. To_TypeMInfoRp_ErrorMailbox: MINFO error mailbox.
+47. To_TypeMInfoRp_Mailbox: MINFO mailbox.
+48. To_TypeMxAFSDBRt_NameExchange: MX/AFSDB exchange name.
+49. To_TypeMxAFSDBRt_Preference: MX preference.
+50. To_TypeName_Name: Record type name.
+51. To_TypeSoa_Expire: SOA expire value.
+52. To_TypeSoa_MinTtl: SOA minimum TTL.
+53. To_TypeSoa_PrimaryServer: SOA primary server.
+54. To_TypeSoa_Refresh: SOA refresh interval.
+55. To_TypeSoa_Retry: SOA retry interval.
+56. To_TypeSoa_ZoneAdministrator: SOA admin email.
+57. To_TypeSrv_Host: SRV host.
+58. To_TypeSrv_Port: SRV port.
+59. To_TypeSrv_Priority: SRV priority.
+60. To_TypeSrv_Weight: SRV weight.
+61. To_TypeWks_Bitmask: WKS services bitmask.
+62. To_TypeWks_IPAddress: WKS IP address.
+63. To_TypeWks_Protocol: WKS protocol.
+64. To_ZoneName: New DNS zone name.

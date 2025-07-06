@@ -41,6 +41,8 @@ BaseDNs are C=example,DC=com;DC=hello and 'OU=Blah'.
 Search in a Sub Tree, with Global Catalog.
 objectClass should be sitesContainer, and objectCategory should be 'blah'."""
 
+print(f"\nUser input: {user_input}\n")
+
 messages: List[Dict[str, Any]] = [
     {"role": "system", "content": "You are a helpful assistant. Reply briefly."},
     {"role": "user", "content": user_input},
