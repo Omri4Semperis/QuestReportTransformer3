@@ -290,6 +290,24 @@ Here's your working process:
 def complete_likelihoods(
     client, deployment_name, system_message, prompt, answer_format
 ):
+    mocked_response = {
+        "LDAP": {
+            "conclusion": "maybe",
+            "reasoning": "There are mostly requests about current situation",
+        },
+        "DNS": {
+            "conclusion": "no",
+            "reasoning": "There are no DNS-related queries",
+        },
+        "NonDNS": {
+            "conclusion": "yes",
+            "reasoning": "There are several non-DNS related requests",
+        },
+    }
+    print(
+        "===============\nWARNING: Using mocked response for testing purposes.\n==============="
+    )
+    return mocked_response
     messages: List[Dict[str, Any]] = [
         {"role": "system", "content": system_message},
         {"role": "user", "content": prompt},
@@ -325,9 +343,9 @@ def complete_likelihoods(
 
 def ask_user_for_type_confirmation(assumed_type: str, likelihood: str, reasoning: str):
     likelihood_phrasing = {
-        "yes": "is very likely",
-        "no": "is unlikely to be",
-        "maybe": "might possibly be",
+        "yes": "IS LIKELY",
+        "no": "IS PROBABLY NOT",
+        "maybe": "MAY BE",
     }.get(likelihood, "unknown")
     statement = f"\n\nI think this report {likelihood_phrasing} of type '{assumed_type}', because {reasoning}."
     print(statement)
@@ -366,8 +384,10 @@ def confirm_with_user(parsed_completion: Dict[str, Any]) -> Dict[str, Any]:
     for key, value in parsed_completion.items():
         likelihood = value["conclusion"]
         reasoning = value["reasoning"]
-        result[key] = ask_user_for_type_confirmation(key, likelihood, reasoning)
-    return parsed_completion
+        user_wants = ask_user_for_type_confirmation(key, likelihood, reasoning)
+
+        result[key] = user_wants
+    return result
 
 
 def get_likely_report_types(

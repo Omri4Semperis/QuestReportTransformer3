@@ -6,6 +6,7 @@ from files_management.files_handler import (
     save_schema_as_jsons,
 )
 from utils.likely_report_types import get_likely_report_types
+from utils.report_template_generation import generate_reports_from_likely_report_types
 
 
 def main():
@@ -29,7 +30,7 @@ def main():
     # }
 
     generated_report = generate_reports_from_likely_report_types(
-        likely_report_types=likely_report_types,
+        report_type_to_likelihood=likely_report_types,
         quest_report_str=quest_report_str,
     )
 
