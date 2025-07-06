@@ -1,15 +1,16 @@
+"""
+This schema will contian all the questions we're interested in asking ourselves about a given Quest report format:
+- (str) A general description of the report
+- (str) A description of the filters used in the report
+- (str) A description of the display fields used in the report
+- (Dict[int, RATReportSchema]) Three attempts to infer the report type based on the above
+- (str) A comment field for the user to explain their reasoning
+"""
+
 from pydantic import BaseModel, Field
 
 import pandas as pd
 import os
-
-
-class AmbiguousReportTypeError(Exception):
-    """Custom exception for ambiguous report type inference."""
-
-    def __init__(self, message: str):
-        super().__init__(message)
-
 
 # Read from knowledge directory at root
 filters_df = pd.read_csv("knowledge/filters.csv")

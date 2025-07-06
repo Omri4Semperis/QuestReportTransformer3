@@ -1,5 +1,5 @@
 from decision_making import AmbiguousReportTypeError, infer_report_type_from_user_input
-from src.schemas.meta.report_type_hints import ReportTypeHints
+from schemas.meta.quest_report_analysis_schema import ReportTypeHints
 
 import json
 from typing import Dict, List, Any
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     ]:
         print(f"\n\n=====\n\nRequest: {query}\n")
         try:
-            infered_type = manage_inference(client, query, tools)
+            inference_success, infered_type = manage_inference(client, query, tools)
             print(f"Inferred Report Type: {infered_type}\n")
         except AmbiguousReportTypeError as e:
             print(f"This query wasn't clear enough: {e}.\nSkipping this query.\n")
