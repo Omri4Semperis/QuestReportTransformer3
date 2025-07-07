@@ -6,8 +6,8 @@ from pydantic import BaseModel, Field
 
 # TODO post process to a single value in a list
 
-class MutualPreviewValue_Zones(BaseModel):
+class DNSPreviewValue_Zones(BaseModel):
     value: str = Field(description="The Zones to consider. Same as the Data in the Zones filter, if was used.")
 
-class MutualPreviewValue_RecordTypes(BaseModel):
+class DNSPreviewValue_RecordTypes(BaseModel):
     value: str = Field(description="The DNS record types to consider. Same as the Data in the RecordTypes filter, if was used.")

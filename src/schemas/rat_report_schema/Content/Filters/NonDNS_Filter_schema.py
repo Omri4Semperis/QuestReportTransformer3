@@ -18,7 +18,7 @@ from src.schemas.rat_report_schema.Content.Filters.filter_fields.NonDNS_filter_f
     NonDNSFilterField_sAMAccountName
 )
 
-class DNSFilterSchema(BaseModel):
+class NonDNSFilterSchema(BaseModel):
     # TODO post processing convert to $type
     DollarType: str                                = "Semperis.ReportTemplates.DataSource.Data.DBFilterFields, Semperis.ReportTemplates.DataSource.Data"
     # TODO Post process this field into a list, and add the mandatory fields to it.

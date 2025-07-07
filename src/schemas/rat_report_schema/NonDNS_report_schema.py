@@ -2,7 +2,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from schemas.rat_report_schema.MetaData.Meta_schema import MetaSchema
-from src.schemas.rat_report_schema.Content.DNS_Content_schema import NonDNSContentSchema
+from src.schemas.rat_report_schema.Content.NonDNS_Content_schema import NonDNSContentSchema
 
 # TODO post processing- assert a 1:1 match between the filters fields used, also appear in PreviewValues
 class NonDNSRATReportSchema(BaseModel):

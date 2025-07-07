@@ -10,20 +10,20 @@ from pydantic import BaseModel, Field
 
 # TODO post process to a single value in a list
 
-class MutualPreviewValue_Partitions(BaseModel):
+class NonDNSPreviewValue_Partitions(BaseModel):
     value: str = Field(description="Active Directory DNS partitions. Same as the Data in the Partitions filter, if was used.")
     
-class MutualPreviewValue_ObjectClasses(BaseModel):
+class NonDNSPreviewValue_ObjectClasses(BaseModel):
     value: str = Field(description="The AD object classes to consider. Same as the Data in the ObjectClasses filter, if was used.")
 
-class MutualPreviewValue_Attributes(BaseModel):
+class NonDNSPreviewValue_Attributes(BaseModel):
     value: str = Field(description="The AD attributes to consider. Same as the Data in the Attributes filter, if was used.")
 
-class MutualPreviewValue_ObjectDN(BaseModel):
+class NonDNSPreviewValue_ObjectDN(BaseModel):
     value: str = Field(description="The object's Distinguished Name. Same as the Data in the ObjectDN filter, if was used.")
     
-class MutualPreviewValue_GroupResultsByOperation(BaseModel):
+class NonDNSPreviewValue_GroupResultsByOperation(BaseModel):
     value: bool = Field(description="Should the results be grouped by the Operation? Same as the Data in the GroupResultsByOperation filter, if was used.")
     
-class MutualPreviewValue_sAMAccountName(BaseModel):
+class NonDNSPreviewValue_sAMAccountName(BaseModel):
     value: str = Field(description="The user logon name, used for backwards compatibility with older versions of Windows. Same as the Data in the sAMAccountName filter, if was used.")

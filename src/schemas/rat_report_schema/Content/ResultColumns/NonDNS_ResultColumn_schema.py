@@ -84,7 +84,7 @@ IsLast (Whether this is the last change in a sequence),
 IsPassword (Whether the change was to a password),
 IsVirtual (Whether this is a virtual object)"""
 
-class DNSResultColumnSchema(BaseModel):
+class NonDNSResultColumnSchema(BaseModel):
     Name: Literal[
         "AttributeName",
         "LastKnownParent",
