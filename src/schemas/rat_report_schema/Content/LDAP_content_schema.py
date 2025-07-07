@@ -1,14 +1,10 @@
-from typing import Literal, Optional, Union
 from pydantic import BaseModel, Field
 
-from src.schemas.rat_report_schema.Content.Filters.LDAPFilter_schema import LDAPFilterSchema
-from src.schemas.rat_report_schema.Content.PreviewValues.LDAPPreviewValues_schema import LDAPPreviewValuesSchema
+from src.schemas.rat_report_schema.Content.Filters.LDAP_Filter_schema import LDAPFilterSchema
+from src.schemas.rat_report_schema.Content.PreviewValues.LDAP_PreviewValues_schema import LDAPPreviewValuesSchema
 
-
-class ContentSchema(BaseModel):
-    """Schema for the actual content fields of RAT reports."""
-
-    Filter:        LDAPFilterSchema        = Field(description="The filter used in the report")
-    PreviewValues: LDAPPreviewValuesSchema = Field(description="The Preview Values used in the report, either LDAP or DB")
-    FilterString:  str                     = Field(default=None, description="If report source is LDAP then this is the LDAP query as-is. Else- None",)
+class LDAPContentSchema(BaseModel):
+    FilterString : str                     = Field(default=None, description="The LDAP query as-is")
     ResultColumns: str                     = None
+    Filter       : LDAPFilterSchema        = Field(description="The filter used in the report, either LDAP or DB")
+    PreviewValues: LDAPPreviewValuesSchema = Field(description="The Preview Values used in the report, either LDAP or DB")

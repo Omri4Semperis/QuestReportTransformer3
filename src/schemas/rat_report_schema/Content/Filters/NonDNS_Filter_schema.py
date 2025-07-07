@@ -20,7 +20,7 @@ from src.schemas.rat_report_schema.Content.Filters.filter_fields.NonDNS_filter_f
 
 class DNSFilterSchema(BaseModel):
     # TODO post processing convert to $type
-    DollarType: str = "Semperis.ReportTemplates.DataSource.Data.DBFilterFields, Semperis.ReportTemplates.DataSource.Data"
+    DollarType: str                                = "Semperis.ReportTemplates.DataSource.Data.DBFilterFields, Semperis.ReportTemplates.DataSource.Data"
     # TODO Post process this field into a list, and add the mandatory fields to it.
     FilterFields: Set[Union[
         MutualFilterField_DateRange,
@@ -35,7 +35,7 @@ class DNSFilterSchema(BaseModel):
         NonDNSFilterField_ObjectDN,
         NonDNSFilterField_GroupResultsByOperation,
         NonDNSFilterField_sAMAccountName
-    ]] = Field(description="A list of DB FilterField objects for the NonDNS report.")
+    ]]                                             = Field(description="A list of DB FilterField objects for the NonDNS report.")
     # TODO Type & Partitions are mandatory fields for NonDNS reports. Post process this field to include it in the list of all other fields.
-    Type_field: Dict[str, str] = {"FieldName": "Type", "State": "Is", "Data": "NonDNS", "DataInputMethod": "Preset"}
+    Type_field: Dict[str, str]                     = {"FieldName": "Type", "State": "Is", "Data": "NonDNS", "DataInputMethod": "Preset"}
     Partitions_field: NonDNSFilterField_Partitions = Field(description="The AD Partitions to filter by")
