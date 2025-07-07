@@ -3,7 +3,10 @@ from fileinput import filename
 import os
 import tkinter as tk
 from tkinter import filedialog
-from typing import Optional
+from typing import List, Optional, Set
+import pandas as pd
+
+from utils.azure_client_utils import ask
 
 
 def get_artifacts_dir(exists_ok: bool = True) -> str:
@@ -32,6 +35,59 @@ def get_artifacts_dir(exists_ok: bool = True) -> str:
         if not exists_ok:
             raise FileExistsError(f"Directory {dir_path} already exists.")
     return dir_path
+
+
+def replace_event_ids_with_names(xml_content: str) -> str:
+    #open event_ods_names_mapping.csv file
+    res = xml_content
+    df = pd.read_csv("knowledge/events_ids_names_mapping.csv")
+    mapping = pd.Series(
+        df["EventClassNames"].values,
+        index=df["EventClassIDs"]).to_dict()
+
+    events_found: Set[str] = set()
+
+    # Replace event IDs with names in the XML content
+    for event_id, event_name in mapping.items():
+        res = res.replace(f'"{event_id}"', f'"{event_name}"')
+        events_found.add(event_name)
+
+    return res, events_found
+
+
+def extract_data_about_report(content_with_event_names_instead_of_ids: str, events_found: Set[str]) -> str:
+    """
+    Extracts data about the report from the XML content.
+    Args:
+        content_with_event_names_instead_of_ids (str): The XML content with event names instead of IDs.
+        events_found (Set[str]): A set of event names found in the content.
+    """
+    prompt = f"""Here's an XML report teplate content:
+    <xml report template>
+    {content_with_event_names_instead_of_ids}
+    </xml report template>
+    
+    I think that it includes the following events:
+    {events_found}
+    
+    Please tell me, in an elaborate way, what is the report about:
+    - which environemt/scope does it search in?
+    - Which events are included in the report?
+    - Is there a daterange?
+    - Other filtering parameters?
+    - What information is displayed about the result? Which object fields?
+    - Any other relevant information that you can extract from the XML content.
+    
+    Your summary will be used as a replacement for the report- so it should be inclusive, exhaustive and ellaborate.
+    Start your answer with "# Report Overview and Extracted Data".
+    """
+    
+    extracted_data_as_str = ask(
+        system_prompt="You are a helpful assistant. Extract the date from the XML content.",
+        prompt=prompt)
+    
+    return extracted_data_as_str
+    
 
 
 def read_xml_as_string(copy_to: Optional[str]) -> str:
@@ -71,7 +127,11 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     with open(read_path, "r", encoding="utf-16") as file:
         content = file.read()
 
-    return content
+    content_with_event_names_instead_of_ids, events_found = replace_event_ids_with_names(content)
+    
+    extracted_data = extract_data_about_report(content_with_event_names_instead_of_ids, events_found)
+    
+    return content_with_event_names_instead_of_ids, extracted_data
 
 
 def save_schema_as_jsons(generated_report: dict, user_choice: dict) -> None:

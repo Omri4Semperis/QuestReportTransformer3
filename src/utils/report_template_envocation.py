@@ -1,16 +1,12 @@
 import json
 import re
-from typing import Dict, Literal, List
+from typing import Any, Dict, Literal, List
 
 from pydantic import BaseModel, Field
 
+from reports_generators.LDAP import get_ldap_content
 from utils.azure_client_utils import get_client_and_deployment_name
 from utils.utils import describe_LDAP, describe_report_properties
-
-
-class StructuredReportDescriptionAnswringFormat(BaseModel):
-    filters:        List[str] = Field(description="List of filters applied to the report.")
-    display_fields: List[str] = Field(description="List of display fields used in the report.")
 
 
 class LDAPQueryAnsweringFormat(BaseModel):
@@ -36,52 +32,9 @@ Response format:{response_format}"""
     return res
 
 
-
-def generate_structured_xml_report_description(
-    client, deployment_name: str,
-    xml_report_str: str
-) -> str:
-    # Get the structured reply using the tool
-    completion = client.chat.completions.create(
-        model=deployment_name,
-        messages=[
-            {"role": "system", "content": "You're a helpful assistant that breaks down reports to their components."},
-            {"role": "user", "content": generate_structured_xml_description_request_prompt(xml_report_str)},
-        ],
-        tools=[
-            {
-                "type": "function",
-                "function": {
-                    "name": "get_answering_schema",
-                    "description": "Get the schema for the desired response based on user input.",
-                    "parameters": StructuredReportDescriptionAnswringFormat.model_json_schema(),
-                },
-            }
-        ],
-        tool_choice={
-            "type": "function",
-            "function": {"name": "get_answering_schema"},
-        },
-    )
-
-    tool_call = completion.choices[0].message.tool_calls[0]
-    json_arguments = tool_call.function.arguments
-
-    # Parse and pretty-print the JSON
-    parsed_json = json.loads(json_arguments)
-    structured_xml_description = '\n'.join([
-        "Here is a structured description of the XML report:",
-        "Filters applied: ",
-        ', '.join(parsed_json["filters"]),
-        "Display fields used: ",
-        ', '.join(parsed_json["display_fields"])
-    ])
-    return structured_xml_description
-
-
 def generate_ldap_request_prompt(
     xml_report_str: str,
-    report_structured_description: str  # This is a structured description of the original XML report, including filters and display fields
+    report_description: str  # This is a structured description of the original XML report, including filters and display fields
 ) -> str:
     response_format = """{"confidence": "yes" / "maybe" / "no",
 "reasoning": "explain why you think this is an LDAP report or not",
@@ -93,8 +46,8 @@ def generate_ldap_request_prompt(
 {xml_report_str}
 </report>
 
-For your convenience, here is a structured description of the report:
-{report_structured_description}
+For your convenience, here is also a description of the report:
+{report_description}
 
 How confident are you that a similar report could, in principle, be generated from an LDAP query?
 
@@ -121,7 +74,7 @@ return your answer in this format:
 def generate_ldap_query(
     client, deployment_name: str,
     xml_report_str: str, # This is the XML report string
-    report_structured_description: str # This is a structured description of the original XML report, including filters and display fields
+    report_description: str # This is a structured description of the original XML report, including filters and display fields
     ) -> str:
     """
     Generates an LDAP query based on the quest report string and report type.
@@ -132,7 +85,7 @@ def generate_ldap_query(
         model=deployment_name,
         messages=[
             {"role": "system", "content": "You're a helpful assistant that generates LDAP queries."},
-            {"role": "user", "content": generate_ldap_request_prompt(xml_report_str, report_structured_description)},
+            {"role": "user", "content": generate_ldap_request_prompt(xml_report_str, report_description)},
         ],
         tools=[
             {
@@ -169,15 +122,14 @@ def generate_ldap_query(
 def generate_ldap_report(
     client, deployment_name: str,
     quest_report_str: str,
-    report_type: Literal["LDAP", "DNS", "NonDNS"],
-    report_structured_description: str, # This is a structured description of the original XML report, including filters and display fields
-    desired_report_description: str,
+    report_description: str, # This is the free text extracted from the report
+    desired_report_description: str, # This is a description of the desired report, including filters and display fields
     temperature: float,
 ) -> str:
-    ldap_query = generate_ldap_query(client, deployment_name, quest_report_str, report_structured_description)
+    ldap_query = generate_ldap_query(client, deployment_name, quest_report_str, report_description)
     
-    report_content = get_ldap_content(ldap_query, )
-    meta           = get_ldap_meta(ldap_query, report_content)
+    report_content = get_ldap_content(quest_report_str, report_description, ldap_query, desired_report_description, temperature)
+    meta           = get_ldap_meta(quest_report_str, report_description, ldap_query, desired_report_description, temperature, report_content)
     result = {
         "content": report_content,
         "meta": meta,
@@ -190,7 +142,6 @@ def generate_ldap_report(
 def generate_dns_report(
     client, deployment_name: str,
     quest_report_str: str,
-    report_type: Literal["LDAP", "DNS", "NonDNS"],
     report_structured_description: str, # This is a structured description of the original XML report, including filters and display fields
     desired_report_description: str,
     temperature: float,
@@ -202,7 +153,6 @@ def generate_dns_report(
 def generate_nondns_report(
     client, deployment_name: str,
     quest_report_str: str,
-    report_type: Literal["LDAP", "DNS", "NonDNS"],
     report_structured_description: str, # This is a structured description of the original XML report, including filters and display fields
     desired_report_description: str,
     temperature: float,
@@ -224,42 +174,47 @@ def get_reports(
     report_type: Literal["LDAP", "DNS", "NonDNS"],
     likelihood: Literal["yes", "maybe", "no"],
     xml_report_str: str,  # This is the XML report string
+    extracted_data: str,  # This is a free text extracted from the report
 ) -> list:
     
     temperatures = {
-        "yes": [0, 0.2],
-        "maybe": [0.0],
+        "yes": [0, 0.2, 0.4],
+        "maybe": [0.1, 0.3],
         "no": [],
     }[likelihood]
 
-    func = {
-        "LDAP": generate_ldap_report,
-        "DNS": generate_dns_report,
-        "NonDNS": generate_nondns_report,
-    }[report_type]
-
-    # post_process = {
-    #     "LDAP": post_process_ldap_report,
-    #     "DNS": post_process_dns_report,
-    #     "NonDNS": post_process_nondns_report,
-    # }[report_type]
-
     desired_report_description = describe_desired_report_properties(report_type)
-    original_report_description = generate_structured_xml_report_description(client, deployment_name, xml_report_str)
 
     results = []
 
     for temperature in temperatures:
-        report = func(
-            client, deployment_name,
-            xml_report_str, # This is the XML report string
-            report_type,
-            original_report_description, # This is a structured description of the original XML report, including filters and display fields
-            desired_report_description,
-            temperature,
-        )
-        # post_processed = post_process(report, report_type)
-        # results.append(post_processed)
+        if report_type == "LDAP":
+            report = generate_ldap_report(
+                client, deployment_name,
+                xml_report_str, # This is the XML report string
+                extracted_data, # This is a free text extracted from the report
+                desired_report_description,
+                temperature)
+            # post_processed = post_process_LDAP(report, report_type)
+        elif report_type == "DNS":
+            report = generate_dns_report(
+                client, deployment_name,
+                xml_report_str, # This is the XML report string
+                extracted_data, # This is a free text extracted from the report
+                desired_report_description,
+                temperature)
+            # post_processed = post_process_DNS(report, report_type)
+        else:
+            # meaning report_type == "NonDNS":
+            report = generate_nondns_report(
+                client, deployment_name,
+                xml_report_str, # This is the XML report string
+                extracted_data, # This is a free text extracted from the report
+                desired_report_description,
+                temperature)
+            # post_processed = post_process_NonDNS(report, report_type)
+        
+        results.append(post_processed)
 
     return results
 
@@ -278,15 +233,24 @@ Return your answer in this format:
 def generate_reports_from_likely_report_types(
     report_type_to_likelihood: dict,
     quest_report_str: str,
+    extracted_data: str
 ):
+    """Generates reports based on the likely report types and the quest report string.
+    Args:
+        report_type_to_likelihood (dict): A dictionary mapping report types to their likelihoods.
+        quest_report_str (str): The string representation of the quest report.
+        extracted_data (str): Additional data extracted from the report as free text.
+    """
     client, deployment_name = get_client_and_deployment_name()
-    generated_report = {}
+    generated_report: Dict[str, Dict[int, Any]] = {}
     for report_type in report_type_to_likelihood:
         generated_report[report_type] = get_reports(
-            client, deployment_name,
-            report_type,
-            report_type_to_likelihood[report_type],
-            quest_report_str,
+            client=client,
+            deployment_name=deployment_name,
+            report_type=report_type,
+            likelihood=report_type_to_likelihood[report_type],
+            xml_report_str=quest_report_str,
+            extracted_data=extracted_data
             
         )
     return generated_report

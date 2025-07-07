@@ -1,0 +1,1923 @@
+﻿EventClassIDs,EventClassNames
+438cfcaa-1d4f-4637-99bd-c34f5d97f3a2,Member removed from group
+368de3d3-8c38-47d3-b588-28c9ac962da0,Member added to group
+f813e374-18b1-4e31-88aa-0b2fcbffaec8,User account locked
+82dd54d9-bc56-4b88-8933-59a895f9a1d7,User account unlocked
+55bcfd07-3d4b-4adf-93a1-c9b0b932d327,User account enabled
+cc29a22b-9666-4424-aeef-0f08c9f67115,User account disabled
+fb9a53ef-972a-4736-a656-2b78b1bf9f9f,User object added
+5227d3a7-9f8e-451c-9089-82be49dfb5aa,User account re-enabled
+cc2a76ee-ef32-4433-9c04-2338d16cb02d,DNS PTR record removed
+9f0cf375-21a5-498b-8143-38068023d4e1,Local user account locked
+4e14cce6-c206-41ad-b454-03870f91530b,DNS A record removed
+7f221206-dad1-4036-9d89-c5bfd7239734,User accountExpires changed
+a114fab4-215e-4170-a113-494f9e90a078,User member-of added
+cdeb945b-5276-4b62-a63e-15d37fa92a31,Group samAccountName changed
+f8d0321c-0c10-4772-a187-9c831dd93cc8,User object removed
+71c06050-bb0b-4da0-aa55-2bbee8246cc9,User failed to authenticate through Kerberos
+32debbce-5cd8-4dd3-9552-ffa366835e24,DNS SRV record removed
+21f69f99-cb1e-4020-a044-2d8aef6f62f9,User failed to perform a network logon from a remote computer
+4ea8880c-38c8-41ed-acf8-fb269b3e123a,Nested member removed from group
+8338fe31-f660-4326-9682-cff606ad7961,User member-of removed
+a9257bc8-c001-42b7-8a1c-367048d5859e,Nested member added to group
+a8efeee9-3df3-44a0-ae0e-e7285550fc93,DNS CNAME record removed
+ecca6222-c68f-4ca0-b9f9-79cca9b37afe,DNS MX record removed
+09fcdcd5-d460-43a2-9b2e-f0c0363db2f0,Group object removed
+729a29b3-4225-471a-be09-854521d8e289,User logonHours changed
+9c7bf3c5-975f-44ac-92c7-7606cdff82a4,Local user account unlocked
+416a3a30-ff72-46b9-9281-c0526546c75f,DNS AAAA record removed
+0d992b93-391d-4ca1-bf91-6cb01d3d7b09,DNS service removed
+94e720a2-ab94-4fcb-b627-0ddde3dbe996,DACL changed on user object
+638ab676-72d7-4e8e-b2b2-5ca86b961ced,User failed to log on interactively
+01d1ce93-1e1c-4354-979c-69cb3027061d,User failed to log on interactively from a remote computer
+4f754162-3084-4cb8-baeb-30c563d03b77,Name server removed
+253b9d9a-eada-46c0-ac8e-88bb985adb8a,Zone delegation removed
+22b07a46-2f7a-4ea9-a54b-c01d10c01e20,Contents of DNS server list changed
+239203f4-e09e-45c8-b6ef-29022b6756b6,DACL changed on AdminSDHolder object
+acbe0e4f-2d3b-481c-a2db-89992b64ffe4,User Password Never Expires option changed
+255c4ff1-31d6-47b8-9b76-68d3d6bef32e,User StrongAuthenticationMethod property changed
+a0a865ae-391f-4fbe-868e-2c6d010c4d61,Logon Script changed on user object
+0c1ce934-8445-409f-8838-fc3845e4218a,User samAccountName changed
+60794551-05fb-405f-b4bf-377f8c187c72,Group object added
+7a65b31d-2616-4a45-9569-a08c01ad5633,Use of dynamic DNS changed
+bbb5e55d-8716-4ed8-ae90-d0aa1f171364,User object moved
+d27f4cdb-4fd5-405c-be9d-e28039f5ad1a,Linked Group Policy on OU changed
+60681a29-f92b-4b5c-b0d1-8198f4310499,User Account Is Trusted For Delegation option changed
+be0e6c42-f8a8-4d9e-ad09-5af9e567d041,Delegation Authentication Protocol changed for user object
+9cb2135e-d8d9-483d-9918-18d7bf97d710,Group policy linked
+3b76a5fc-5bf4-4e9e-9944-88642c97069c,Group policy unlinked
+fa9b7ec1-e285-4900-85a9-8ba72676c975,User password changed
+3d35fdbf-efa3-40f1-aa34-7f7d86478fee,Connection-specific DNS Suffix changed
+212759c2-e9dc-4b58-92b6-302a050ee80c,Contents of DNS suffix list changed
+3e032945-0a5f-4e3d-8d51-f422b7439d9f,Use Connection Suffix in DNS Registration option changed
+96f5444d-624f-4d5b-9d91-e6d0cbd1c864,Connection DNS Registration option changed
+ef8a09ed-33a7-4f3b-b6d7-7366caa47f4b,Connect client drives at logon changed for user object
+b91023e9-f34b-4998-a557-8f5ab1f7e3f6,Connect client printers at logon changed for user object
+a8a69203-269e-4418-9435-ce09cda22aa7,Terminal Services logon permission changed
+8506523c-4624-4c54-8925-af1e8dc3055c,User Must Change Password At Next Logon option changed
+4c22d0c6-4934-4315-84ab-918be076138a,User Smart Card Is Required For Interactive Logon option changed
+2b262f03-67bf-4b69-bde6-33b64b0a059c,Member added to critical enterprise group
+3570f62b-3d80-43f4-8c70-ff84a52b81a2,Group type changed
+a29992df-365e-47cc-8d10-32adf0d78898,Active Directory share added
+a9e4237c-b253-41ef-b16b-91e7e9c9418d,Active Directory share removed
+c3835aeb-afd9-48d7-81f4-b3636fb482be,Group object moved
+ea706ff4-711d-4bfe-9fe1-563d552cf9d3,Domain user renamed
+5f8b3e9c-e142-4c28-9c23-d75146867d13,Site added
+fc81226f-a2eb-4cd0-af38-a0ef72377c01,Site link added
+c8dff58e-1103-4e22-ba9a-b6c643e64e24,User logged on interactively
+b3d0dfcb-997a-4366-8bec-b450c645fe3f,User userWorkstations added
+a1dcbae4-a2cd-4cc9-915a-e33605a2d912,User userWorkstations removed
+e8c34938-0623-430c-9615-57bd5141b399,Group policy Disabled setting on domain changed
+2c7f7f2c-be64-4694-b1f6-40927ddeac58,User userPrincipalName changed
+c4fa06b4-de4d-40ae-9312-268fba3c9eb9,User logged on interactively from a remote computer
+8eca92a3-2ec6-4b4c-85d2-e082bca614d3,Service Added to Delegation List for user object
+a5d517e7-c21e-4c46-80f8-78a2ee3b4e43,Service Removed from Delegation List for user object
+c45e60c5-f86b-45f6-952a-b7a16c6dc47d,Home Folder changed on user object
+ca46aa9a-9d05-458c-8e5d-e2030d3b4ba8,Home Folder Mapped Drive changed on user object
+4106163e-a198-49e7-861c-e42eba2e765c,Level of Control changed for user object
+e5161217-794f-49ff-99ac-b7ffc8ea4315,Primary Group ID changed for user object
+a518464c-ae36-4ea6-a262-5d9538c79b6b,Audit Account Logon Events policy changed
+1658726a-6554-477f-9136-fb88b0484185,Audit Account Management policy changed
+6a745080-d52b-41e4-b6c0-3a297602cfbb,Audit Directory Service Access policy changed
+cc4d21cf-465c-480e-a9a5-446c64e2050c,Audit Logon Events policy changed
+5dae42b6-3462-49ec-8d92-06e61ff4d370,Audit Object Access policy changed
+cb6d414b-28a6-44f2-9544-deb5f04c62ed,Audit Audit Policy Change modified
+9f8cc4b3-57f3-4e8e-be06-e24cbb6da8af,Audit Privilege Use policy changed
+e712f420-cc58-4e42-a81c-ad31020da8f1,Audit Process Tracking policy changed
+d577335e-68bf-46a0-9c72-ea22a634b0ad,Audit System Events policy changed
+d17c4e63-2fe7-4a2a-8fd4-2aecd99f87e9,User Do Not Require Kerberos Preauthentication option changed
+49dc3d06-1702-4383-8b92-f225e4a773ea,User Account type changed
+e540b313-cfd3-4d5d-b3de-6b52915a4336,User Account Is Sensitive And Cannot be Delegated option changed
+62cea96f-ec4a-4291-9055-adbffc560e4f,Enable Remote Control changed for user object
+046bb41b-2abd-4234-9622-e1b25ba919c2,Store Passwords Using Reversible Encryption policy changed
+0adb180c-02ea-4882-bd3f-6b4a2cde3044,SYSVOL location changed
+1d5c9949-3368-4fc2-8106-7570c2d15c1b,DHCP disabled
+2a2b940a-28db-4449-a250-8539d1d29b53,Static IP address changed
+38f36286-fc63-4761-8f3a-c21a869c5776,Password Must Meet Complexity Requirements policy changed
+43c2671a-229f-437a-bae6-bec85589efc3,Default gateway changed
+80bd6fa7-8d1c-4966-8101-1ff73a5f4aef,DHCP enabled
+8146f1bf-9d61-4d06-98cc-675dc69dfb5e,Group policy block inheritance setting changed on OU
+893fd87a-325a-474c-80a8-71824cd3e856,Enforce Password History policy changed
+8b608317-ddaf-480e-9b56-6226c7316c7a,Linked Group Policy on domain changed
+8d6cae0c-5b85-4b16-a97d-db4749ea1ebe,Trust removed
+9e1616ad-8d65-4d0b-8c54-1796391f00ce,Group renamed
+b871574b-1582-4346-819a-9eeb500b9867,DACL changed on group object
+bb1a474c-2468-4df0-ae35-56f02455dfed,DACL changed on domain object
+c14e7b5b-30ed-46cf-b454-e22ca561d651,Computer moved
+d0325365-3af4-4dcb-a9ee-56b439b1bfd7,Trust added
+ebb04e6d-c800-42c7-9a91-c60bdb8a8b20,Maximum Password Age policy changed
+5fdf8b12-8578-4561-b843-ae1174bde2c8,Subnet mask changed
+15f141a9-fc90-40be-b60d-454094ab5929,Schema modifications allowed flag changed
+e5e494b4-7c42-46c5-9b59-e8e718bb6512,IP deny list entry added
+9adc9c79-2bbe-43d0-8a47-5ad00c7cf997,IP deny list entry removed
+7314598a-4cbb-4024-ae06-6a59d8390a92,Group policy Disabled setting on OU changed
+0369913d-2a70-4deb-83c0-6143da432c7a,Group policy block inheritance setting changed on domain
+7ad6d641-65b0-431e-877e-3ec3e64aae26,User performed a successful network logon from a remote computer
+daf0c9ac-8ba9-41c7-a3f1-71e3263ea6c9,User StrongAuthenticationPhoneApp detail property changed
+1d4566ec-7c8b-4e01-937c-bb9895a89dd0,User StrongAuthenticationRequirement property changed
+c01ee31b-21a2-4d82-9e61-87ec441564f4,User StrongAuthenticationUserDetails property changed
+5b3b537f-74ef-44ad-a6d9-07713a666203,Enforce User Logon Restrictions policy changed
+d602c2f1-7a91-4ae7-9d65-0c5cead8051a,Group policy link added to OU
+05111390-6ebf-42d4-90b3-97f20ec91715,Group policy link settings modified
+b05f1dba-4d2d-4f21-8417-436ce4eec6a3,User failed to authenticate through NTLM
+d8604ee1-eea0-4c91-99ab-0beffdf9a7d5,DACL changed on group policy object
+ea68aec3-f723-4e8a-bbae-7a93833f1b77,Local user logged on
+6a1a5b69-7cdd-432e-a41b-6fa01ac7f072,Site removed
+0326a313-8231-4bb2-b398-f4c8415234d2,Site link removed
+0cc2c2a9-885a-4164-b627-624c974995d8,Site link bridge added
+eada12d0-a406-45b5-b684-aeca56874d6d,Site link bridge removed
+b4441fc3-8d47-4818-93d2-800d5f083a0c,Site renamed
+03e98232-7b14-443a-9f6a-029e472226ec,User password changed by non-owner
+da9deef1-fe3c-4054-955b-de7f153545d0,User StsRefreshTokensValidFrom property changed
+11a83302-2ec0-4e26-b5ba-6e98ad0fae7e,Allowed DNS suffix list changed for domain
+d61c344b-6b76-4ae4-a2c1-e41fc8201afb,Update DNS on all adapters setting changed
+b2ed645d-1a4d-4e9e-bd1e-d39c7733fbfb,Active Session Limit changed for user object
+fa8b4b08-a752-46d0-bfdb-11783336d7bb,Allow Reconnection changed for user object
+1ce38795-c142-4622-83ee-bf5ffba58d2c,City changed on user object
+82a99c04-ec85-4808-9164-ad1aa53b3dd4,Company changed for user object
+9b62ad8c-861d-4e25-b608-459b99f3b7eb,Country/Region changed on user object
+65e4a2ee-75d2-420c-9fd7-7bef68b5d5cc,Default to main client printer changed for user object
+b723be88-b0d1-4d3a-b467-fefb04939850,Department changed for user object
+9254a73a-8899-45b2-9c9c-da4733d62d0f,Description changed on user object
+624ed373-2f78-4116-80e0-d3ca07785c2d,Direct Report Added to user object
+38667a80-976c-44fe-8df0-f8868f6a186d,Direct Report Removed from user object
+01d11a6f-e4a5-45be-8424-fc643c5a0555,Display name changed on user object
+3efc4982-32e4-4b59-b907-40b638ca07e0,Dynamic user object added
+15149dbc-fd00-47ca-9096-163dfb8ea640,Dynamic user object changed
+205a513f-ef5f-4ffd-84e3-51af3f3137f5,Dynamic user object removed
+02821032-65cb-4cc7-a914-cb842a1586b5,End a Disconnected Session changed for user object
+dd898d69-18a9-49b1-9562-5db9808f4750,Fax Number changed on user object
+65dedb60-b651-43f5-8aee-bd6625b5f5ac,First name changed on user object
+ab4a60a5-3117-4447-937a-250a7a054916,Home Telephone Number changed on user object
+516fbb65-74f8-45df-95d6-0c7d92b79b4b,Idle Session Limit changed for user object
+24f3c951-8e7f-47dd-bc38-9be83a202276,Initials changed on user object
+8d94a1e6-d8c3-4e14-b8b1-c678e18db4fb,IP Phone Number changed on user object
+2b224b2e-bcd8-4ea9-8ebe-2cfc52c5c07f,Last name changed on user object
+b5a42b18-5536-4512-820c-3194f166df10,Manager changed for user object
+a20e7320-10f4-4825-b281-196ff187e853,Mobile Number changed on user object
+70a3c1c5-1341-4387-9785-8692e576dae6,Office changed on user object
+79566bdc-f01b-44da-9526-261c477dc012,Other Fax Number added to user object
+caaa6642-4a3f-4229-9bd7-eea0828a3a52,Other Fax Number removed from user object
+8fc992b0-efcf-4524-9938-54f1e6c9afcd,Other Home Telephone Number added to user object
+2e6c9e40-0263-4bc1-9efb-88aafef2f147,Other Home Telephone Number removed from user object
+1f292d21-8025-48a4-b799-5f912a4e5928,Other IP Phone Number added to user object
+4c781a90-6b7c-4ccf-8ba9-d59a4d40cd88,Other IP Phone Number removed from user object
+5ce0a9a4-9f5a-45a5-a5e6-cd82bbd60fd0,Other Mobile Number added to user object
+25668856-294b-46af-aabf-c2be44a1e545,Other Mobile Number removed from user object
+a8aa8b77-c9da-4d24-9a58-c4ff8dd58e29,Other Pager Number added to user object
+8febc0db-5ff8-4cee-84cf-3deaf23c7f6b,Other Pager Number removed from user object
+d13293e7-e12b-4c2b-86ae-1580f86896f0,Other Telephone Number added to user object
+31e0cf3b-0014-4565-a7fa-c126c9d800d9,Other Telephone Number removed from user object
+f152b375-b8dc-4e82-86ae-39394ab24feb,Other Web Page added to user object
+d17bab2e-85df-4fe7-a1b6-55250c94aa43,Other Web Page removed from user object
+a119ea9e-7956-4303-b95e-bc1d29ec0097,Owner changed on user object
+69307aa1-f6e6-4dd2-a465-3f14aa424a7b,P.O. Box changed on user object
+8d43ce1e-1942-4b7e-a062-d1b274c27760,Pager Number changed on user object
+c85371fe-d58c-42b3-8bcf-2f04e9e58937,Partition Set changed for user object
+e551e1bd-b1df-4985-b0e9-9b1ac61e31cb,Profile Path changed on user object
+e4650cc2-0485-436e-bde0-113d32eeb244,Published Certificate Added to user object
+b7a4a154-410d-473c-9d43-e9b5a489891d,Published Certificate Removed from user object
+19343787-2695-4c37-9635-89a46faf15c2,Require User's Permission changed for user object
+de1ae6e8-1db4-4d94-a241-ff6ca052371c,Starting Directory changed for user object
+5e00699f-b85f-495d-a660-5d050f9c2a06,Starting Program changed for user object
+2a198148-10b5-4e3c-8511-4141adf738f0,State/Province changed on user object
+aac7710b-43eb-4882-9031-af18785114d6,Street Address changed on user object
+5978e1b1-c6a9-49a8-9312-62ce9766e216,Telephone notes changed on user object
+c1846f01-ca4e-48d5-b809-6eff8845de17,Telephone Number changed on user object
+3b782c15-e02a-4129-b230-3943505d9d05,Terminal Services home folder drive changed
+a1ad89c2-5689-4238-a49e-584e40df9aa1,Terminal Services home folder path changed
+f32da91a-0af7-42bd-87c0-96e10d027bb1,Terminal Services home folder type changed
+e646027c-03eb-4e93-aa03-e8b7123c94e4,Terminal Services user profile path changed
+c26085b1-09da-4ae5-87b7-188e7eedf5b2,Title changed for user object
+f9ef0f85-21ab-42f0-8a17-afc726b1e5a6,User Dial-in Callback Options changed
+d4dbe574-0dfd-4860-92dc-179ed70b7149,User Dial-in Remote Access Permission changed
+f70cb8dd-11e7-4274-aa0b-17003a6f9712,User Dial-in Static IP Address changed
+d212c50d-6ada-466b-b228-b0a9fcbaa4e3,User Dial-in Static Route added
+e2e46049-1281-4202-9cc7-5791de6ab80b,User Dial-in Static Route removed
+c786882d-f088-4505-8607-9de3c3d538b4,User Dial-in Verify Caller-ID changed
+36355f7e-043a-4a3f-b3a7-c4332ee7e3a0,User Store Password Using Reversible Encryption option changed
+4a05e9b4-939b-4a4a-9abf-fa9b93cb9b4e,User Use DES Encryption Types For This Account option changed
+926eb0fd-b2a3-4268-b051-1063ee0428d0,User's ability to update their password has changed
+16b034d9-1092-49d8-b9d4-ef63cb21f142,User's home folder requirement has changed
+c2365371-09c0-44e8-901f-cda2270b496c,User's requirement for a password has changed
+c53c4726-ed70-4b26-aa63-18c3f0a4cfe3,Web Page changed on user object
+a6514b25-7620-4811-ba48-9babcfb0d3b7,When Session Limit is Reached changed for user object
+0ed4db73-9562-4d5a-a130-0886098d127c,Zip/Postal Code changed on user object
+023e21f4-563d-4c0c-9d1d-36a7f77c8a03,Computer added
+03946612-14e3-4a11-a957-67f7f8e97366,Raw IP Allowed Protocols list changed
+7473c7bc-978e-4651-a632-fa1d8a4d91b3,IPSEC settings changed
+1f4d41fa-932f-4461-b156-5e6fc89b5060,Member removed from critical enterprise group
+ae0f542a-8a5c-45ba-a10b-5bb7e43731c0,Domain controller added to domain
+853fab16-50e4-4e51-a7a9-9d0e462fcccc,Domain controller removed from domain
+656a7645-81f7-433e-8e87-2409532676cd,Group policy Disabled setting on site changed
+1aa85abd-37dd-4ade-982a-6703dc0daf8b,Failed Azure Active Directory sign-in
+3e85ca54-14bf-4cb4-ab05-65f66fcee9aa,Nested member added to critical enterprise group
+cd26437b-0360-4ea3-b32e-c30b40056d0e,Group member-of added
+4fd0b1bc-ea03-441e-a1e6-44ccda41a968,Group member-of removed
+08b30583-a933-45c7-b3ba-c2f0b508bcbf,Azure Active Directory - User event
+b78fe669-5788-428f-8e8a-1c73a681fe75,Maximum Lifetime For Service Ticket policy changed
+36fe14d9-f177-4930-bc6d-1d9cc5f63cc3,Maximum Lifetime for User Ticket policy changed
+606c9eff-9a32-47cc-b04c-2fe037b5747b,Maximum Lifetime For User Ticket Renewal policy changed
+578eec50-98af-4a52-99c5-1300c8f05214,Maximum Tolerance for Computer Clock Synchronization policy changed
+0767d110-6791-49e1-9979-94308de9b5d5,Enable scavenging of stale resource record setting changed
+cd425123-4db6-4cd6-b376-868d94b55dd5,Minimum Password Age policy changed
+175c3f52-8dca-4ac3-9141-6f36fd1eb9ef,Minimum Password Length policy changed
+4b7f6750-e122-4c0f-aaba-852b63432d5c,Group policy link removed from OU
+44c7a9f9-9a82-4de2-9775-6a3666532639,Group policy object added
+ec81a2b4-3731-469a-a77f-30a4bed908ca,Group policy No Override setting changed on domain
+92a9f6d7-a547-459e-92c8-2f424280516d,Use primary and connection specific suffixes flag changed
+a1e91280-ad12-4332-9651-d7d15dec1f96,Append parent suffixes option changed
+096c702d-4dd2-46f4-8317-419bca8c9f3c,Computer account disabled
+1a484f81-54c6-43e6-98f2-064f318a02e1,Hotfix rolled back
+2c5fcba3-faef-40f1-95ed-1b6068183391,Hotfix applied
+39c8ae61-d525-4f82-9889-d1689873f7b6,Computer account enabled
+65bad849-db9a-4d22-abbd-c858cdadbc57,DNS A record added
+a4679685-6e5b-4a80-9edf-c860b72515c7,Domain controller moved to another OU
+d3e09731-19d4-43b7-a04d-b532b5a61825,Domain Controller service pack rolled back
+9bf2577d-a2f6-445e-9751-9c6bf517b7fb,Schema FSMO role owner moved
+d9a77e2e-4cb5-4ca3-bd3f-77f6ce1a60d1,Account disabled for local user
+057e96c7-0f5d-44b9-99df-fffaef89b592,RID FSMO role owner Moved
+bb4b3584-fbb3-4f88-84fb-6beed25d826d,PDC FSMO role owner Moved
+47d40e88-dab2-41d5-b498-e90a1d192359,Infrastructure FSMO Role Owner Moved
+0d15cc86-30b2-4201-af71-e1d2a553a443,Account enabled for local user
+bfc99748-22c8-496d-a81d-feadb5dd5cce,Group policy block inheritance setting changed on site
+b75d5261-322e-40d2-8d10-a59b2bba1bc7,User added
+a597924c-468c-458e-8e88-2224d623a7ee,Group policy WMI Filter changed
+bed4a544-6259-47d3-a24f-8a2d0a521ee7,User UserPrincipalName property changed
+2a127823-2cf8-45a1-8612-f37a3e49f92a,User ProxyAddresses property changed
+4354047e-12e8-4a58-9383-fbebc8664b9e,User OtherMail property changed
+7a9ed451-a971-4540-880f-7190d8c4df62,Nested member removed from critical enterprise group
+03863da0-e89b-43d3-bbc7-92b3543a3d01,Account expiration changed for local user
+db4a7735-bba7-4ed0-a33a-278f68915cdd,Password Never Expires changed for local user
+5e7f64a2-7b01-4def-91c8-be3960526f9b,Local user badPwdCount changed
+e0bf0770-fa45-4191-b2d6-5aebcfd23b44,License properties set
+b05a2b60-8551-4434-adeb-f262ded45b1f,User AssignedLicense property changed
+9039916c-95e7-4c28-841e-b503273f1bab,User license changed
+5b246df8-acea-4a92-b425-74e65901a6e1,User LicenseAssignmentDetail property changed
+b1248514-1495-4291-b764-8d010bef4fa9,Domain controller renamed
+fe2816b1-52a0-4f5c-ad6b-1b022bb5c3d6,Default Aging State setting changed
+0fed379c-4b6d-46e2-b0e6-8c093b330d21,User performed a successful NTLM V1 logon
+c45aa3e2-c4d2-411f-b40c-7a8bd8663a89,User performed a successful NTLM V2 logon
+bd6e53c6-7fd7-476d-bdfc-9d230691c337,Owner changed on group policy object
+4a3e778c-df56-4805-bbbe-8c8a8a37e28d,Query policy setting changed
+8be46424-5561-42f0-9b2b-2bd6b611ee27,Query policy link for domain controller changed
+5c6e80c7-4917-4bfb-aeff-22165849ec12,Linked query policy for domain controller changed
+defea9c4-debe-4b23-aeb3-2b093f5f6956,User AccountEnabled property changed
+28be1696-6656-4869-9c4a-8b4659ac75fd,User password changed
+fceb3bdd-46d2-443e-9194-8904a110efac,User password reset
+99d4bf68-40a5-4f7d-8a85-12b0780e722d,Password changed for local user
+a30cb6cd-0e13-4946-8dca-a9b09cbdf09e,Group policy no override setting changed on OU
+15a2989a-9124-410f-99a0-6087624ab373,Audit: Audit The Access Of Global System Objects policy changed
+4bd20675-d266-4090-be43-9e3cf7aa6027,Audit: Shut Down System Immediately If Unable To Log Security Audits policy changed
+e7aa23cd-de66-4838-86cb-2278702acc37,Audit: Audit The Use Of Backup And Restore Privilege policy changed
+27b9ad01-2322-44a3-9696-2a97102980b3,Critical link failures allowed parameter changed
+5a181d77-5d0b-4e22-8c40-ef1bb55a24bb,Intersite failures allowed parameter changed
+32ac3315-79c7-4edd-8c7c-31550ec81cbc,KCC site generator failover interval changed
+9ed38fdf-71cf-4100-8c41-4eaa5f994c38,Max failure time for intersite link parameter changed
+045a41b5-d18d-40f9-a25d-69d485c95bc8,Max failure time for non-critical link parameter changed
+ee253c40-9ee6-441d-8ef7-32cc453bdd79,MaxFailureTimeForCriticalLink
+a57c4ee9-6583-487a-ade0-d0d020eec20a,Non-critical link failures allowed flag changed
+50f2492d-e1d0-41b9-acc2-69681cd0e9e1,Processor speed changed
+94f12f9f-4525-47d8-b8e3-95e313671b3e,NIC added
+2612fde6-7a05-4d3c-885b-671b55fb9a30,NIC removed
+d5134f41-ea55-4f91-b9d1-9c534aaa0c58,Connect Client Drives At Logon changed for local user
+2c05ab45-c145-48da-ba6a-b7ec6102be35,Connect Client Printers At Logon changed for local user
+eff0dc7d-40c2-48e0-9a51-8ccb0f314628,Logon program filename changed for local user
+ac47360a-b520-4fee-8c3f-ca2467496c1d,Logon program folder changed for local user
+211f3595-43ce-453a-8f63-7ae47886fc69,Logon script changed for local user
+0c91b4be-77f2-4865-a6b6-3267c09be86c,Must Change Password At Next Logon changed for local user
+2080f91a-3de2-40d4-a454-9cc90054b052,Start The Following Program At Logon changed for local user
+10c5b372-3d5b-43c0-9ea7-cd0995da2d72,AD Query Performed
+40155efb-ebf5-4072-8779-a1fb49408581,Computer removed
+4e61b910-142f-4353-bb2b-3b412f150f95,Cross-forest trust removed
+d73451d9-7b56-4e84-97d6-a9f7a8146206,Cross-forest trust added
+3a5bf104-189c-4baf-8587-2b6ab61a66df,User authenticated through Kerberos
+72db2399-8ad4-4eb4-bdc3-067aa7c0f6d2,Role member added
+28cb0d72-db40-4b77-99dc-4d4d5b069f29,Role member removed
+f8c90936-4c90-4a2e-9b2a-759d348ff4b1,Active risk event status changed to closed
+491627db-b831-41a8-b170-88ee044ddfe5,Active risk event detected
+22fb9140-90d9-4f2e-8cc8-6590bed774f6,Deny Access To This Computer From The Network policy changed
+33a7125e-59b2-4940-97a3-44f75cf6c0d0,Deny Log On As A Batch Job policy changed
+6af9e149-15ce-4f16-8eef-b938cbdd3a45,Deny Log On As A Service policy changed
+b3f16e68-dc38-46a8-97d3-2d61b10aa741,Deny Log On Locally policy changed
+d6b72e7f-4618-458f-9723-4b69e14c245a,Deny Log On Through Terminal Services / Remote Desktop Services policy changed
+b18b4f52-f8b0-4385-abe7-fcd741b5180f,Group policy link added to site
+f4b6fe54-74ba-49d2-8517-fe2343b0237d,Group policy link removed from site
+8a05b7df-063b-4012-82a3-d52c58003420,Group policy no override setting changed on site
+efa912e3-3e3d-4d0f-aa16-6a606e5f2a17,Aging No-refresh interval changed
+a4781af6-d76d-492d-b905-2ad009e84c25,Aging Refresh interval changed
+1d1c7200-6165-4efa-b414-8894013a3090,Zone scavenging flag changed
+50297191-8a61-4a97-91e9-186eb8dd1e3b,DNS AAAA record added
+be194bde-7aaa-442f-aae6-2c6a6c5910c2,DNS PTR record added
+cd8d8a30-9777-4838-b92f-605051539bc1,NETLOGON DnsAvoidRegisterRecords parameter changed
+9cbc3031-4971-4200-947b-f855100e8457,Group policy object removed
+7fe294e3-6ded-4444-8cf2-305bc9bab269,Group policy object renamed
+588696b7-df62-4d93-84f7-c4c7f0491eed,Object Access: Detailed File Share changed
+5105238b-e8c4-4a06-b0e0-364966e29415,Object Access: Audit File Share changed
+0a38713b-3cfd-40e5-8a85-011d1f665f65,Network Access: Shares That Can Be Accessed Anonymously policy changed
+990d24c6-8eec-4c5a-8940-786a0b8dcd21,Network Access: Restrict Anonymous Access To Named Pipes and Shares policy changed
+69ea2b85-f1e3-4fe7-9a53-19d7b39a4ed1,Network Access: Do Not Allow Anonymous Enumeration Of SAM Accounts And Shares policy changed
+237c9ceb-383c-4cf9-9cdc-08d32de9afb5,Create Permanent Shared Objects policy changed
+54dce49f-3606-458e-80b1-76adce89bc1f,Account Lockout Duration policy changed
+9c40e441-1e44-455a-b8e8-d722c80f2e20,Account Lockout Threshold policy changed
+e89070af-c98b-4c64-8031-a3a9c4ded8f8,Reset Account Lockout Counter After Change policy changed
+e5e21a17-6a47-46b6-992e-c22f113b2701,A user session was ended by user logging off
+6d7d32dc-b936-4f70-9ef5-da5191cff77d,Shut Down The Computer When The Security Audit Log Is Full policy changed
+516d8225-5ebb-4d5e-b77b-476412f934e7,Default quota for partition changed
+96324552-1076-453e-830e-f184d76d6443,Domain functional level changed
+381851df-93a4-412e-af0c-07bb069daf7c,Domain group policy order changed
+525132f5-601a-49f4-ae00-6c0257347b2d,Guest account disabled
+ed1be570-26b9-48fa-bbc4-d0d52c73bea9,Guest account enabled
+1ecc67d5-31ac-4ae0-80ad-d6bf0edf7d7e,Object quota added
+979435b9-0eff-4a09-84ce-b882fd9f3271,Object quota removed
+8e0e8ee0-a7f1-4935-93de-6c2a495d87f8,Quota security principal changed
+fd06d559-9e5c-4237-a3eb-54e6f3434737,Quota value changed
+cd113ebf-84ba-48be-9ae1-f71dad215e60,Read-Only Domain controller added to domain
+3f91bed8-f9a8-45d5-9eaf-0d5ce73c4775,Read-Only Domain controller removed from domain
+291ee417-b797-4858-98ac-b53220692abb,Read-Only Domain controller renamed
+c714eae2-62c7-4cfd-8664-30ab948f8f1d,Tombstone quota factor for partition changed
+52dbb9bd-109b-4647-ae08-3d4b8e044b2b,User UserType property changed
+170137b3-2cfa-4fab-a69c-f3d358f12e74,User UserStateChangedOn property changed
+01a8ccbb-8452-48d8-b1ba-99f0bc147caa,User UserState property changed
+466ba0a7-b891-460f-ab6b-8ad0fec2834b,User updated
+fbcb0171-053a-4c71-801a-d9a576436840,User TelephoneNumber property changed
+56048721-2f3c-4df3-ad0b-655d49704c4b,User restored
+24114601-e354-445f-aaf4-2cda20537bd6,User PreferredDataLocation property changed
+2917ec2e-d314-4123-bcd0-c53be60583e7,User OtherMobile property changed
+7f3c8752-0bb4-405b-83b2-d599282f7c7c,User MSExchRemoteRecipientType property changed
+80010e3c-5e06-4fae-bf65-9a3241225b43,User Mobile property changed
+3d4be0e4-a177-434f-b5b7-79be62ecfffd,User deleted
+f21dabe4-7be1-4461-8d48-fc340bf02280,User AssignedPlan property changed
+0d8d6958-b744-473a-bff5-2f2bf252d20a,User AlternativeSecurityId property changed
+02b82b2d-6c38-4635-bfec-9e128dfe6a56,Update user credentials
+acfc30bf-d801-4749-af43-dcf7f213c37d,Force change user password property set
+efd4fd33-2e4d-474e-8b25-60c43ca9f962,Zone deleted
+56bbfc08-daf0-419d-868d-3f7eb2ea3f4c,Zone added
+106bac18-3326-4382-8f2e-5d8edbfb2c4d,Zone load mode changed
+6342620f-a710-4945-bb67-5e5c56cb070b,WriteAuthorityNS setting changed
+7874fd18-189d-4e55-93d6-e8315ffb0c47,Update Options setting changed
+e39cd143-a42b-4c0e-a9c1-acdd75317be2,Transfer Connect Timeout setting changed
+d355e701-f870-4679-b33a-4bc0ebde9c78,Service log level changed
+3528a300-dbd5-4c89-a73d-2c1234eb47c1,Send Port setting changed
+907a437d-c8e0-458e-a6b1-ee579ab4b3e2,Secure cache against pollution flag changed
+8e3feac6-98dd-4ca3-be3d-ae4329a97362,Scavenging period changed
+a86dee7a-d61d-46c2-83a8-4c6ff80e600f,RPC Protocol setting changed
+a7188625-c774-4cdb-949d-c43fa3552521,Round-robin flag changed
+7a7f30bb-e04a-4194-957d-5eb0de4e7a52,Refresh interval changed
+a0cac76c-4b9b-4188-a4ee-d4fffb7d6695,Recursion Timeout setting changed
+08571434-bacd-4d55-857b-339279af6f82,Recursion Retry setting changed
+0910e00c-1d66-4686-9a4e-ba5850a4f2b4,Recursion flag changed
+6e237207-cec7-4b63-aad9-7fbb0a932f6c,Publish Autonet setting changed
+5c41b2cc-041a-42bb-8436-4d687afca9ef,Publish Addresses list changed
+51fd7325-fb27-479a-94b5-1135f55b376d,No-refresh interval changed
+70609cf3-cd56-4a55-9f9a-cdde01eb2f80,Name checking option changed
+02380737-0262-4153-803a-f0d4b38cb1bb,Max Cache TTL setting changed
+981e7ec0-7396-40e5-aece-75f0f5ccb193,Loose Wildcarding setting changed
+b89c96e4-03f6-4243-abc8-cb0bbc3c39f9,LogFileMaxSize setting changed
+c460e3be-8fc3-4406-94d4-7a62f67b70bc,Log File Path changed
+3057451a-1217-42df-ae85-c19e2a7ee0fa,Listen-on interfaces changed
+462989e4-ead8-49dc-99e3-153e299b92b5,IsSlave setting changed
+b8caa91d-4ab1-4855-b047-965ac73fb7b1,Forwarders list changed
+261321e6-b255-48e6-afbb-026b8b2477da,Forwarder timeout changed
+ffa3e7c8-b223-4847-be15-887e5c6dad8a,Forward Delegations setting changed
+f1af9af3-c608-4e96-ba4c-67223904cf8e,Fail on load flag changed
+8c5717f0-674d-49b6-b5a5-e82c3b91e74a,Event Log Level changed
+c71a4003-ee51-4b49-b606-8a0d75b45c77,Enable netmask ordering flag changed
+f9b81297-53f9-459e-9a72-99a9da0ffcda,DNS service added
+7003b0c7-3b00-4b14-b70e-5b5610dfce57,DisableNSRecordsAutoCreation
+7a826d66-4d55-4501-a744-70af10e77577,Disable Auto Reverse Zones setting changed
+bbfc55bb-728f-46df-bfb2-fae7ee70e456,Database Directory setting changed
+f91f67d9-a8b2-4d48-8f15-9a99f283ce4d,BIND secondaries flag changed
+1384f10c-d7b7-450d-911d-0f29dd56ad17,AutoConfigFileZones setting changed
+15164946-290e-4b92-b263-fe9d19bd3727,Address Answer Limit changed
+38671f58-b6f2-4fb8-8ddb-10ea5a2b5f7a,Application partition replica added
+4114736d-e55e-40bf-95d5-cef46e09cfff,Application partition replica removed
+27460d48-41b4-41bd-ba19-63ceb4ad1a9f,Connection object added
+556e6027-939f-4f63-b9e2-6163f676c779,Connection object removed
+f1d0cfbf-222f-410a-9b05-26d3b2a64384,Contents of WINS server list changed
+97c90ed6-b6fd-4c8f-aecd-c310ac6ce01e,DIT location changed
+d4441f9a-ab42-4f83-bf98-0d74760b311e,Domain controller added as preferred bridgehead server
+6a45ad6b-3907-4a17-b222-8f8d69253c80,Domain controller removed as preferred bridgehead server
+473a9149-c928-44a9-9381-a6e1c2511928,Domain Controller service pack applied
+99510a8c-06b6-4084-b5bc-9f91091832ef,DS database logging and recover option changed
+766350a4-b536-4d30-94bb-cbfdb477f7e2,DS hierarchy table evaluation interval changed
+63263d47-b585-4213-ab87-08a9afcdfa88,DS log file location changed
+e9b92b86-2586-4607-87d8-2639fca4f04e,KCC delay after startup changed
+457eea51-d09b-4027-ac1c-d17491fa74bf,KCC site generator renewal interval changed
+2f0d7230-cc47-491f-8b80-570908fa6381,KCC update interval changed
+5e0465c8-ae74-44f3-bbde-ac9a69b7b0e6,Kerberos diagnostic log level changed
+97800f44-07dd-439e-9867-71fe20a3f336,Maximum number of DS threads changed
+76a7624e-23fb-4f58-b4f1-6c784061ad89,NetBIOS setting changed
+682789c2-d5e3-462c-b91c-d38a9709bcc3,NIC disabled
+6070e0c5-bc88-42b8-a6be-c1e8711c554c,NIC enabled
+d5a7b12c-6286-4a5b-8fc4-d23bbf45474d,Preferred bridgehead setting changed
+1f1a3637-0328-4ef5-8ec8-cf233c4cda2d,Replicator notify pause after modify delay changed
+da55aad6-137a-4239-b2fe-566470f8f58a,TCP Allowed Port list changed
+cfd515a5-05d9-4d9f-a252-e31672d78aef,TCP/IP Filtering changed
+295724d0-9497-4a8c-b2e6-13cb12e81e97,UDP Allowed Port list changed
+5ef9f879-a7f6-4cd8-9ebe-5a7911991a91,Use LMHOSTS option changed
+5fe6752f-201b-48e6-9114-f18c7e1909fc,Terminal Services profile path changed for local user
+d81a305e-9dc2-49d0-930b-82206ffb755e,Terminal Services Home folder path changed for local user
+a286026d-7984-4a5b-8438-fffc0614568a,Terminal Services Home folder mapped drive changed for local user
+01648abd-ae7b-4ad4-8dd4-5aecb614e994,Session limit action changed for local user
+ab22aecb-97c1-43bc-97ef-39cbcc357ede,Remote Control Require User's Permission changed for local user
+13192abd-f9e3-4dd1-a7b0-ce0b1a0a1950,Remote control Level of control changed for local user
+f6b51006-6fe9-4514-87af-e82c6c30f409,Remote access permission changed for local user
+1f1894d8-688b-4fb9-82ce-474beb3de96c,Profile path changed for local user
+f751568d-81a1-4ef6-a7d0-da9afc79cf6f,Password Required changed for local user
+646752ae-9b8a-4e25-899c-c08e55a83335,Local user renamed
+db948cac-a0ca-4632-8502-7c48a84369d9,Local user removed
+30063735-9c11-4c2f-afad-7d9706371d75,Local user added
+e15ef688-1563-4d26-b9a7-768a138f989b,Idle session limit changed for local user
+766eee0a-fbf6-4419-bb68-8a46c42c24f4,Home folder path changed for local user
+97b6c887-4065-4665-ac46-9d01651ab02d,Home folder mapped drive changed for local user
+565398b8-46df-4b05-bde0-f71225855d34,Enable Remote Control changed for local user
+db0a1e2b-0b88-434a-b91f-b6a1ff660a49,Disconnected session timeout changed for local user
+ca8c8ada-f491-4d4b-bec2-5fd8c7ffa5c9,Dial-in Verify Caller-ID changed for local user
+0a588bf2-3dcb-48a7-9a75-3b253b6ad40e,Dial-in Static routes changed for local user
+88f033fa-207d-4b83-b78f-dde158432618,Dial-in Static IP address changed for local user
+8643128f-9c38-499f-b901-ad76f1a7a207,Dial-in Callback Options changed for local user
+9b1abe43-1e75-45ff-86e5-9773d12efc13,Dial-in Callback number changed for local user
+4f76e48a-cef5-424a-afdd-80d9adb7d5ca,Deny this user Terminal Services permission changed for local user
+cbfd5e18-dcc7-41ce-bddc-0fce6d00bf90,Default To Main Client Printer changed for local user
+802ecedb-76d1-49ee-9560-44e4faaf2192,Can't Change Password changed for local user
+f7f85792-3752-4d3b-97c3-1ef6656f3441,Allow reconnection option changed for local user
+06d3e96b-5057-4d69-94f3-05fb47a099d8,Local share added
+30a62a38-45a4-43e9-a264-30847651f2cb,Local share permissions changed
+4344fff0-fc1d-4920-9b34-647033bf6129,GC added
+46df597e-1559-48c8-a580-29400a9dc430,GC removed
+6ed62a12-bafd-452a-8474-96d5a76b60bc,Subordinate OU added
+85d9697b-3d59-4278-813a-e28d12a1071e,Computer renamed
+a5e619ab-9656-4869-bcfc-de357863897b,Local share removed
+bf3ce05e-0341-4d94-af5a-1a08531d416d,Successful Azure Active Directory sign-in
+1547b1fe-bf6f-4d5f-bc69-14fbd63299d6,Role assigned to member
+570a2f3d-1bed-450d-bd8e-280087c2d0d2,Role assigned to eligible member
+1a8dfa9d-4198-4596-b7b1-a7ab5c245a17,Role removed from eligible member
+75b50f5e-947e-4e2f-94cd-f9f481b05f27,Role removed from member
+cf8e4f09-1100-4944-9443-e857909db76b,Eligible member added to role
+497e7b0a-c735-4a45-be85-369b57e06e45,Eligible member removed from role
+41f0a2ae-6e04-44a2-8e57-b7049de6a95c,Azure Active Directory audit event
+a3bb6906-6c65-425b-960f-6e3c2d4af833,DACL changed on computer object
+32f9e326-dd8b-4854-9701-44b7d7f6777e,Domain added
+e91412b7-0679-4301-aedb-fad51af264f5,Default site query policy object changed
+9ea12a1c-ab14-4f45-a712-692897b6e30a,Linked query policy object for site changed
+7e6a6d56-a235-4e91-855a-b6d6abca744d,An incorrectly finished user session was found
+c1a6c1c2-18fc-41de-aec0-1cd556a4c302,A user session was started due to user switch
+fc1ab956-bfb9-451c-b139-dccc8976d917,A user session was started by user unlocking the computer
+8cc6cf85-debf-4033-ada1-d5c7ba3a786e,A user session was started by user making a terminal services connection
+2a5f76b5-6e62-4e75-9740-7659c357b8cd,A user session was started by user exiting screensaver mode
+abd846ac-6320-4a4b-b1ad-9b74be8ebb3e,A user session was started before the start of the user session monitoring service
+bb14f04f-a7d6-4485-aee5-758e4d3a81a9,A user session was started
+80915947-89a4-425e-9c17-7b67f2639ba3,A user session was ended due to user switch
+339959e6-c64c-4f28-adb3-7fdc93c92d64,A user session was ended due to computer shutdown
+baad70d5-f9f5-4995-919f-95a2a6fa961c,A user session was ended by user stopping a terminal services connection
+221354f6-a351-495a-a1f8-421866f76d0d,A user session was ended by user locking the computer
+5573d655-b26e-487f-91e4-278b00e1bdee,A user session was ended by the screensaver turning on
+9ead5ce6-354d-4f9b-b604-ff685dfe39c5,A user session took place
+25ae56fc-5170-420c-bca7-e2713792797e,DNS A record modified
+e5210e57-b5f3-40f1-8bd6-d3a166ec9288,DNS AAAA record modified
+d09a7072-98a4-4721-a89c-f4fe12f71cfd,DNS CNAME record added
+115a641a-12fa-40c3-bf4d-57fe666b7fad,DNS MX record added
+6a6e535c-e528-4f13-9c3f-dbb9681a0161,DNS SRV record added
+b238dc01-6b1d-4b8e-afb1-b9cc53f95d69,Expires after period changed
+712ebea1-28f3-4600-b234-323a7a698675,Name server added
+096754aa-3e45-4144-83c0-91964c57924f,Primary server changed
+f8b5ffe4-14e1-4907-b8af-638765fa5c16,Retry interval changed
+144fb5a7-b08d-4aee-9c5d-353415811db1,WINS forwarding flag disabled
+b7b3bfa4-deb1-4a76-9107-9abad3aaf716,WINS forwarding flag enabled
+a9ea89c7-b334-40ea-b519-b373fb875a3d,WINS forwarding host list changed
+acefe1c8-19e9-45c0-b083-296a610fca1c,Zone allow dynamic updates flag changed
+dbed1e5a-d06b-46aa-93cf-34b846506100,Zone default TTL changed
+fd1bb743-db9a-424c-a215-eb0b21f6743d,Zone delegation added
+a4663fd4-b0e8-4e7e-bee1-a8445dfcf4a9,Zone refresh interval changed
+a4fbda23-a74b-4749-9641-c902dd6bfb98,Zone replication scope changed
+9da13d9e-a0f4-4b24-a194-74e6aaadb805,Zone storage changed
+aeb719a0-5eb0-4a55-9f42-768df5a0915a,Zone transfer flag changed
+43b87628-1119-477b-93ab-3d69b63ecd83,Zone transfer host list changed
+2bfe82dc-09d0-40a4-98c3-a3d99bf33c77,Zone type changed
+90e5d9ea-96dd-4f64-9d1a-a97428bfedd7,External DNS Lookup Option Changed on Send Connector
+2db02b3d-6e6b-4e50-87f7-dfdbc859851c,Server Hub Transport - External DNS Adapter
+2a4264db-78b8-4336-b547-3b85a13a3746,Server Hub Transport - External DNS Adapter GUID
+2caf5add-0957-4e96-8468-bf8b215f7c97,Server Hub Transport - External DNS Protocol
+900c244e-c426-4aab-80d0-0d8f7a52fd53,Server Hub Transport - External DNS Servers
+99bfa68a-5e4b-4d02-889e-0cf793fe05eb,Server Hub Transport - Internal DNS Adapter
+8331d9c0-b561-4a61-bb2b-98f79e7d2909,Server Hub Transport - Internal DNS Adapter GUID
+908b8898-2b3b-49c3-a2c6-56d9086652d2,Server Hub Transport - Internal DNS Protocol
+fc477143-2780-4ba3-a054-fdd350690144,Server Hub Transport - Internal DNS Servers
+abd3b5f3-3b6e-4c39-be47-e47263788c82,Use DNS MX Records To Route Mail Option Changed
+adb93d62-d9bd-4aac-94b0-e9182084806f,Active session limit changed for local user
+49196f96-a7dc-434a-b301-5729367331ff,Starter GPO removed
+fa53eda4-0cdb-4b15-aa70-d2e85c8926e2,Starter GPO created
+9769b7ac-7cad-495f-b16d-d774861157ae,Linked Group Policy on site changed
+6a23e079-0154-42da-a969-5f69129a1de4,Group policy disable user configuration flag changed
+f0f0494f-404e-4b0c-80c1-b86df4f8f68b,Group policy disable computer configuration flag changed
+f9169f9b-9b86-4933-8c01-598fdf008059,Failed Starter Group Policy Container Access (Change Auditor Protection)
+a45aeb76-08b5-4c77-a791-3cb62fbeaeb3,Failed Group Policy Container Access (Change Auditor Protection)
+b9c822fa-a81f-4b7a-bd03-26961746d382,Wireless Network Policy removed
+6028f3d8-2c3a-4006-813c-186b0ce3ae81,Wireless Network Policy changed
+96595b99-2cc3-4d9c-947d-0b07c8984cfe,Wireless Network Policy added
+11399435-74c7-462a-8967-257048d1ee5f,User Videos Folder Redirection Target Path changed
+14eba70b-5025-4b9e-9fbc-0d1a02b46eb2,User Videos Folder Redirection Options changed
+ef8b68e0-1a4d-4efb-b055-5e9b0a656fe9,User Start Menu Folder Redirection Target Path changed
+e502f9da-a974-4cc7-af24-b9904d0bd8e2,User Start Menu Folder Redirection Options changed
+46f1fe5a-2170-4698-b6f5-704473d03bb3,User Software Restriction Unrestricted Zone Rule removed
+80742782-57d2-4755-8d9e-eee00eb11ab1,User Software Restriction Unrestricted Zone Rule changed
+591ee218-4d5f-4e50-a945-106d51ee2e3b,User Software Restriction Unrestricted Zone Rule added
+961e8778-3349-4910-9ddb-8f75f484a44a,User Software Restriction Unrestricted Path Rule removed
+d82b6100-6a80-426e-af23-95df7cdee183,User Software Restriction Unrestricted Path Rule changed
+7286fd6f-8444-422e-bf67-07442b5158b0,User Software Restriction Unrestricted Path Rule added
+d4f5d019-cc11-4aab-9393-96640b09b6ec,User Software Restriction Unrestricted Hash Rule removed
+98110476-72a8-401a-8dc8-9a34b4f0b3e3,User Software Restriction Unrestricted Hash Rule changed
+fc0445f0-c2ef-4fef-8050-5a095ec267e1,User Software Restriction Unrestricted Hash Rule added
+5c53ff5b-0438-4ef2-9715-9d3750800a4f,User Software Restriction Unrestricted Certificate Rule removed
+94ecd3e3-4e5a-429c-93d2-9862ce3c36d9,User Software Restriction Unrestricted Certificate Rule changed
+55febe64-c9b3-4a56-95cf-43ebae30d652,User Software Restriction Unrestricted Certificate Rule added
+cbb7778c-0d08-456d-9e0b-fe5e2a3d14f2,User Software Restriction Trusted Publishers changed
+5d20977e-26b9-455f-bbe8-c2a6f9dad948,User Software Restriction Policies Default Security Level changed
+33e8a3d6-b2b7-4e19-9bc8-cd690cb3fb30,User Software Restriction Enforcement Users changed
+017d3c7d-fafc-48c8-bfca-ccc1dc49bd92,User Software Restriction Enforcement Files changed
+3e83548b-e4d0-44d4-81d2-83684a1450d6,User Software Restriction Disallowed Zone Rule removed
+4ccf950f-1336-4a97-b359-6a62652dcd14,User Software Restriction Disallowed Zone Rule changed
+0332bfe8-65e1-4969-9600-b4e38616341a,User Software Restriction Disallowed Zone Rule added
+8613d67e-a9e5-40f8-afa5-2e28f1dcf76a,User Software Restriction Disallowed Path Rule removed
+cd8d8132-0435-4bd0-a334-61682520601f,User Software Restriction Disallowed Path Rule changed
+ef212e41-efd7-4ed8-9e13-045ab6bf4a1f,User Software Restriction Disallowed Path Rule added
+b4f15517-41f2-4413-bf66-8b5c02dbdf12,User Software Restriction Disallowed Hash Rule removed
+402c975f-631c-426f-beff-719ed083339e,User Software Restriction Disallowed Hash Rule changed
+e2870edd-fdfb-4589-b977-3e5f0a847edd,User Software Restriction Disallowed Hash Rule added
+830d9eff-af5e-47ec-a73e-c272b9d198d3,User Software Restriction Disallowed Certificate Rule removed
+ec3a4f58-b3b6-4743-9991-6d4206d0f72d,User Software Restriction Disallowed Certificate Rule changed
+5787f5be-dbd8-4130-b42c-422e192a2aa9,User Software Restriction Disallowed Certificate Rule added
+39dd96af-2777-45d9-8b20-0f022f128257,User Software Restriction Designated File Types changed
+80b962c0-4119-4edf-9157-03220cee1170,User Software Restriction Basic User Zone Rule removed
+012efb17-749c-4144-99a5-c804b55e6379,User Software Restriction Basic User Zone Rule changed
+3f9fd757-cc2f-48c6-bd16-2f459e793018,User Software Restriction Basic User Zone Rule added
+ba5eca02-8451-4dc1-bbef-7d0966911748,User Software Restriction Basic User Path Rule removed
+d6fe3b61-b8a3-4add-ade0-0d1104e3c55a,User Software Restriction Basic User Path Rule changed
+f2de0ad3-2d95-45f9-b429-a660e442337b,User Software Restriction Basic User Path Rule added
+35162ed4-41b5-4757-8ca8-79b4773d90aa,User Software Restriction Basic User Hash Rule removed
+b9e656f9-67ad-471b-a1ad-14912a4dd167,User Software Restriction Basic User Hash Rule changed
+d22017ab-03ac-4bd4-983f-8f78ee885121,User Software Restriction Basic User Hash Rule added
+a5b18bf7-4ecc-476b-bd77-3c1e3e59dde0,User Software Installation Policy removed
+5688dd69-b4fa-44b8-af3d-199187eef265,User Software Installation Policy changed
+5ec7d679-466a-4bf9-92e3-c9a7cd71a3f5,User Software Installation Policy added
+dc091c7a-edb3-4204-bb1b-ec43d00f1833,User Searches Folder Redirection Target Path changed
+dc091c7a-edb3-4204-bb1b-ec43d00f1834,User Searches Folder Redirection Options changed
+8e0ee2ac-9774-4b47-8964-0bec33074c42,User Saved Games Folder Redirection Target Path changed
+8812a506-34b8-45e6-b356-65d6e25a57f3,User Saved Games Folder Redirection Options changed
+16d3ad56-1bcf-496e-b4ab-cc2c59538a83,User Public Key Policies Enterprise Trust List removed
+570b12e1-67c6-4483-86c9-bb77467efc21,User Public Key Policies Enterprise Trust List changed
+102739b1-f810-4c51-8fa0-1eb0c713552a,User Public Key Policies Enterprise Trust List added
+84281c36-bc0a-4a09-8fd5-30f337656d0c,User Public Key Policies Autoenrollment Settings changed
+6fac1dd6-aebf-444d-b154-25689e069c16,User Pictures Folder Redirection Target Path changed
+0e950f95-7218-4a6b-9519-183df2b9ec0d,User Pictures Folder Redirection Options changed
+625b173f-f504-4c1c-9ab6-eb75311e8de6,User My Documents Folder Redirection Target Path changed
+696f8b41-879f-42a9-8bf0-3b05eddbe13b,User My Documents Folder Redirection Options changed
+7be4f769-3e26-4517-8daf-1fc2b101b631,User My Documents Folder My Pictures Preferences changed
+38472bdf-698f-4de1-b9c9-01a6d329270a,User Music Folder Redirection Target Path changed
+f2596ab0-b372-4109-8be8-65aec592226f,User Music Folder Redirection Options changed
+4a71a5c6-a88b-4c61-a32c-c92a80c3805d,User Links Folder Redirection Target Path changed
+abde8246-d3e2-4048-bb5d-53ad8299a34f,User Links Folder Redirection Options changed
+95f872b7-39e4-43f5-8c3b-179e378ae52a,User Internet Explorer Maintenance User Agent String changed
+f55260f5-960a-4e79-bfef-101235b9e3e2,User Internet Explorer Maintenance URLs Favorites and Links Top Of List Option changed
+8fa20d1c-a05b-4228-9765-843402453b1d,User Internet Explorer Maintenance URLs Favorites and Links Delete Existing Favorites Option changed
+1ef52b6a-0bdb-49e5-a723-0af044eb3c2f,User Internet Explorer Maintenance URLs Favorites and Links Delete Existing Channels Option changed
+35f8cd4a-c3f4-4b07-9071-2159f0c3a161,User Internet Explorer Maintenance URLs Browser Links List changed
+14fdd11f-0790-4929-be87-a69fb26a5dc6,User Internet Explorer Maintenance URLs Browser Favorites List changed
+3c9e3d61-55ae-4359-8840-4d15a703a1e6,User Internet Explorer Maintenance Toolbar Buttons changed
+59cf2cc4-9c8e-4ad1-8b5d-db5ede7b508a,User Internet Explorer Maintenance Toolbar Background Bitmap changed
+2832aca2-4fef-42a5-8f65-34ad53e180e2,User Internet Explorer Maintenance Small Static Logo changed
+3e59e7ce-9234-4b3a-9c22-0dda27266ca0,User Internet Explorer Maintenance Small Animated Logo changed
+3a51a427-84c4-4e46-b6d1-92a1dbd5adbe,User Internet Explorer Maintenance Security Zones and Privacy Customization Option changed
+d0f71a6f-bc03-404b-b0f1-220a398f54c1,User Internet Explorer Maintenance Proxy Settings Socks Proxy changed
+10ec84bf-158f-4267-8c09-52f09d516377,User Internet Explorer Maintenance Proxy Settings Proxy Exceptions changed
+289e4c3b-e877-4a3c-b76c-ee501d0c8594,User Internet Explorer Maintenance Proxy Settings HTTP Proxy changed
+f68e258d-2f57-4c90-b526-76c0a371697a,User Internet Explorer Maintenance Proxy Settings Configuration Secure Proxy changed
+dbf6dcc3-66eb-4919-bc54-13f56cabea11,User Internet Explorer Maintenance Proxy Settings Configuration Gopher Proxy changed
+418be352-3c94-4bbe-93f0-7ed5abe5058a,User Internet Explorer Maintenance Proxy Settings Configuration FTP Proxy changed
+c47419b8-c8c2-4d61-9cbe-9118637378a0,User Internet Explorer Maintenance Program Settings Option changed
+31b23dce-e164-460c-8e0f-d9fcbcd5bfea,User Internet Explorer Maintenance Large Static Logo changed
+d211390b-4206-4e42-b39d-897a74a06de9,User Internet Explorer Maintenance Large Animated Logo changed
+f53dfa0d-df38-4bb8-9d85-db8e86f3e1ae,User Internet Explorer Maintenance Important URLs Search Bar URL changed
+ef45d4ad-2dc2-4dea-b19d-fc9106ddc691,User Internet Explorer Maintenance Important URLs Online Support URL changed
+19426102-c97c-4910-a441-ffcd6bb45e66,User Internet Explorer Maintenance Important URLs Home Page URL changed
+dcb06151-45be-40ee-aea4-a84d8daec55a,User Internet Explorer Maintenance Enable Trusted Publisher Lockdown Option changed
+aeecb7ad-3c29-4d14-bd46-b9fc69388d4e,User Internet Explorer Maintenance Content Ratings Option changed
+33d13b2d-de26-4ac1-a04c-5c06ff16e695,User Internet Explorer Maintenance Connection Settings Import Option changed
+3177ce84-a8c4-40f2-944e-5c41856a0f2b,User Internet Explorer Maintenance Connection Delete Existing Option changed
+ab33a2e2-e90f-4f97-ad18-96746956e303,User Internet Explorer Maintenance Browser Title changed
+c2640234-56cc-4f73-a93f-79662cb0aa5e,User Internet Explorer Maintenance Automatic Browser Configuration Auto-proxy URL changed
+047ceb1a-aa13-4523-9241-844c60de329b,User Internet Explorer Maintenance Automatic Browser Configuration Auto-detect Option changed
+759a382d-5bb3-488f-a027-5e2f3e0c2b79,User Internet Explorer Maintenance Automatic Browser Configuration Auto-config URL changed
+976c7303-ab42-4369-a9d7-959bec3848ba,User Internet Explorer Maintenance Automatic Browser Configuration Auto-config Time changed
+089acd3b-0029-4e9d-bc3c-43469cb0768d,User Internet Explorer Maintenance Automatic Browser Configuration Auto-config Option changed
+df32a319-1fa0-4e6c-811b-51a91ba1a8cc,User Group Policy Script setting changed
+a2765b32-621d-4e50-b654-73026acca0de,User Group Policy Preference setting changed
+1809c4d3-d6a4-4987-af30-a310db89ff48,User Favorites Folder Redirection Target Path changed
+ab7fda66-5f2f-4beb-b8ba-2a949f435d2d,User Favorites Folder Redirection Options changed
+8e5cf8a1-bcb5-41d6-9d6f-c6fa36691139,User Downloads Folder Redirection Target Path changed
+b7b6bcc6-7758-4db0-832e-622e996080bd,User Downloads Folder Redirection Options changed
+e046f875-02e9-442c-9934-c47ec3a37619,User Desktop Folder Redirection Target Path changed
+1c93e9c6-ece1-43eb-afa1-982f23cf1173,User Desktop Folder Redirection Options changed
+b9cdb0c3-7986-4ce6-b5e8-211725f9f48e,User Credential Roaming removed
+1681e58c-33bc-4432-8b1f-c2efad73445e,User Credential Roaming options changed
+60c94990-8136-4ba5-9f06-2f2d4dfbc656,User Credential Roaming changed
+1d387d6f-2512-4a78-ab25-cb1312e2d6a9,User Credential Roaming added
+afe664a8-f99a-4318-b7dd-ccd5108907dd,User Contacts Folder Redirection Target Path changed
+5230f9d4-9925-44e7-a255-2104622a6a13,User Contacts Folder Redirection Options changed
+813d3e3c-5b40-4cfb-9caa-ec00034d2c1d,User Application Data Folder Redirection Target Path changed
+73c1e19c-903a-4886-b16f-1b95a2a51bef,User Application Data Folder Redirection Options changed
+26433744-3a3f-4e67-bbdf-4f32617fceb0,User Administrative Template setting changed
+2ef3b84a-6811-4f08-bc4a-1d3f04af44e9,User Account Control: Virtualize file and registry write failures to per-user locations
+637ae17c-6c10-4452-905b-d4f761f2a659,User Account Control: Switch to the secure desktop when prompting for elevation
+9f79a915-9487-4b19-b481-1523ceb72db7,User Account Control: Run all administrators in Admin Approval Mode
+02d1320e-fe37-46bf-a42d-352ec624e9bb,User Account Control: Only elevate UIAccess applications that are installed in secure locations
+fa07fb8a-bcbd-4116-bdb5-a6b4be8484bb,User Account Control: Only elevate executables that are signed and validated
+b873f677-9865-4d5e-abc8-165a775aec21,User Account Control: Detect application installations and prompt for elevation
+54f260e0-5151-4ed8-ac83-6e86a1dc3e92,User Account Control: Behavior of the elevation prompt for standard users
+53f8bb68-ea4f-4ca6-a5dd-45fce5326f98,User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode
+0bd5fdcd-fd52-434b-949f-c0e728323537,User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop
+ef6d97aa-1168-4470-9b9e-a1819f261c40,User Account Control: Admin Approval Mode for the Built-in Administrator account
+3ca47a0a-9044-4250-855c-99db56988281,Unsigned Non-Driver Installation Behavior policy changed
+6f85c0a4-81c7-4974-98c4-f780a54a7dd8,Trusted People removed
+aaa6c658-b5b6-4fbf-b549-c5c67e3c29ec,Trusted People changed
+0ce83694-f3eb-43c3-813c-1c5dc625928d,Trusted People added
+fb509268-16e1-438c-81d8-6060a4d69df2,Take Ownership Of Files Or Other Objects policy changed
+c3b8fcc3-6d1e-44c4-9ee5-9e55a4442511,System: Audit System Integrity changed
+ab3155a2-76ce-43ab-94c0-3a7413b2ca0c,System: Audit Security System Extension changed
+bdf1a760-c016-40d8-b532-cbf687bfc02a,System: Audit Security State Change modified
+2da38d57-7221-42be-a078-021180a47a20,System: Audit Other System Events changed
+5bb77c10-d1ab-4f28-bd59-87c3df65c74f,System: Audit IPsec Driver changed
+70620696-92fc-4189-a560-2c9ca9528470,System Settings: Use Certificate Rules On Windows Executables For Software Restriction Policies changed
+8455d56c-7a26-4450-bf9a-e5e5aa6d0be3,System Settings: Optional Subsystems policy changed
+1ac3662a-9cdb-4019-8bdd-fafb7d76fb02,System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links) policy changed
+bb036ec9-d57e-4753-95c5-b6e3e22135aa,System Objects: Require Case Insensitivity For Non-Windows Subsystems Policy changed
+05fe8bfa-0c5a-4e7e-ba8a-a7b7cb40d7cb,System Objects: Default Owner For Objects Created By Members Of The Administrators Group policy changed
+061e4fb2-d86e-4792-ba73-f0cba20d211c,"System Cryptography: Use FIPS Compliant Algorithms For Encryption, Hashing, and Signing policy changed"
+9293a2a4-11ba-4fe6-be50-a9685d69ad74,System Cryptography: Force Strong Key Protection For User Keys Stored On The Computer policy changed
+75138582-ee99-4c91-a8de-e06f1f96a5f2,Synchronize Directory Service Data policy changed
+9f5e8f18-7b7a-4141-a186-15517e2f177a,Starter GPO User setting changed
+48afa97a-5378-4ea1-a1a5-3c5b343e22e7,Starter GPO Computer setting changed
+f32e0b1c-3652-4e7d-81fe-c4aba34a5eb3,Shutdown: Clear Virtual Memory Pagefile policy changed
+ef43c48f-f6b7-45c3-a7a9-115ea232fbb5,Shutdown: Allow System To Be Shut Down Without Having To Log On policy changed
+f9f731ee-bf58-4394-8c86-0c84aba0b418,Shut Down The System policy changed
+9c895f5d-628e-4d10-9030-75fa19bef1e2,Service undefined in System Services policy
+3c44da28-3832-4e22-ae98-c3aa9a695c27,Service startup changed in System Services policy
+6b61234d-a782-4b22-922c-7498058c8050,Service defined in System Services policy
+3a376605-bd55-47ac-b499-01d69931917e,Secure System Partition (For RISC Platforms Only) policy changed
+8b628afd-9dcc-4643-8dda-cb8bf04f0415,Retention Method For System Log policy changed
+1b4ed69a-f797-4eb2-948d-7111e03ed6df,Retention Method For Security Log policy changed
+ec4192f5-a261-40a9-84f4-1bb00f5ba3f4,Retention Method For Application Log policy changed
+cb2d3254-f838-4d4a-bc4a-4bbafbdeed05,Retain System Log policy changed
+e511aecb-97e2-4726-b74a-faee276b86f7,Retain Security Log policy changed
+d4c79403-a244-4394-b29d-6c8ca77b342c,Retain Application Log policy changed
+29701a7c-c520-479a-b4b8-6f0af77d07db,Restore Files And Directories policy changed
+e859a37e-88ac-4b88-8309-be932407608a,Replace A Process Level Token policy changed
+49ed4fda-3722-479f-ac6b-e67bb8af11dc,Remove Computer From Docking Station policy changed
+e6e2239d-6641-4e25-af6e-433e082d4f19,Registry key removed from Registry policy
+535f4ecf-9da3-4ce2-bf96-ac53b25d53f2,Registry key changed in Registry policy
+19fbcb60-fb60-47f0-bfe4-dac940d87b3a,Registry key added to Registry policy
+e8ce55f2-6ee1-4971-a350-aad0974fd1a3,Recovery Console: Allow Floppy Copy And Access policy changed
+24f58dbd-d194-406b-8046-fb3ed47208b9,Recovery Console: Allow Automatic Administrative Logon policy changed
+978f782a-7a3a-41cb-8d9a-6585e4c44e56,QoS Policy: Version changed
+b4a259de-e152-45ba-ba89-227cfbc82730,QoS Policy: URL Recursive changed
+289b4709-26cc-43c0-8db9-69aa1e6d1157,QoS Policy: URL changed
+a316cfe1-3ece-49ad-9432-0b09013e5be5,QoS Policy: Throttle Rate changed
+0fd8160f-c0f9-4747-bb5d-06aa69c1dcc9,QoS Policy: Remote Port changed
+c080393c-fb52-475b-92d6-9e5330713525,QoS Policy: Remote IP Prefix Length changed
+4a39f0a5-b92b-4153-ac15-fdee7adb3f10,QoS Policy: Remote IP changed
+83f44050-6d87-4052-b99d-ff866c05c04c,QoS Policy: Protocol changed
+a414f1ec-57ea-4b8b-b35d-be62dd6f5d7e,QoS Policy: Local Port changed
+3e7d2de5-a7ca-4c3e-916e-b44c5e0c7f5f,QoS Policy: Local IP Prefix Length changed
+6a5d381f-5396-43e6-9360-559d452d350d,QoS Policy: Local IP changed
+e6145297-ae9e-4cf3-9dfb-2309b62f174e,QoS Policy: DSCP Value changed
+59240840-bdd2-45bf-8ef3-e5e1e78c2be6,QoS Policy: Application Name changed
+6b6ac1df-6ef0-4549-81b0-1de022169361,Profile System Performance policy changed
+17d4851e-c94c-43e2-83ae-fabfb51c6baa,Profile Single Process policy changed
+2bd34c92-9634-4f09-a8e2-89d2de2a8a60,Privilege Use: Audit Sensitive Privilege Use changed
+2bd34c92-9634-4f09-a8e2-89d2de2a8a61,Privilege Use: Audit Other Privilege Use Events changed
+2bd34c92-9634-4f09-a8e2-89d2de2a8a62,Privilege Use: Audit Non Sensitive Privilege Use changed
+3fc845ae-fb5e-446a-b358-da795a9de855,Prevent Local Guests Group From Accessing System Log policy changed
+e85b0ba9-669b-4c59-b326-b223dec118ae,Prevent Local Guests Group From Accessing Security Log policy changed
+19516689-220c-4904-aaf1-7c58bde06ac2,Prevent Local Guests Group From Accessing Application Log policy changed
+550a32fe-04a3-4b29-8bfa-ea8a83d93c48,Policy Change: Audit Policy Change modified
+e3f99464-6f28-4739-b2dc-a5b0108fe4ef,Policy Change: Audit Other Policy Change Events modified
+749945d5-f7b4-4926-a63a-8e6162afeff3,Policy Change: Audit MPSSVC Rule-Level Policy Change modified
+0729169c-5d55-49af-825e-617a34c9faba,Policy Change: Audit Filtering Platform Policy Change modified
+8fc99a9b-8d0e-436e-b171-895e54d0fed9,Policy Change: Audit Authorization Policy Change modified
+90a0f283-6ee8-4fd3-8a06-a0adfa06e9ba,Policy Change: Audit Authentication Policy Change modified
+9e2099e2-59dd-4b25-823c-6c0c926b55a7,Permissions changed on a System Services policy
+94cd8529-3925-4bb5-87de-1ede208c1a54,Perform Volume Maintenance Tasks policy changed
+709ffae3-46cf-4d39-ab8f-3faf1c28717b,Object Access: Audit SAM changed
+85d09b2e-6205-4e90-ad56-1b1100ef8700,Object Access: Audit Registry changed
+15aa692f-0a5f-4aa6-bacb-e0fe1e6daa21,Object Access: Audit Other Object Access Events changed
+4fb9c6fa-875f-464f-9370-6dcf976c5f77,Object Access: Audit Kernel Object changed
+012ea34b-f543-42b1-b4f8-a15577d996c2,Object Access: Audit Handle Manipulation changed
+d0bbd874-ed84-472e-bd3b-b3b7f21f2650,Object Access: Audit Filtering Platform Packet Drop changed
+968e8975-2578-465e-828d-33fe84a79756,Object Access: Audit Filtering Platform Connection changed
+a0dca1ad-4379-48dc-8c2d-7bdf6cb18092,Object Access: Audit File System changed
+1d0d4417-7ad8-4e29-824a-09cdf63be43b,Object Access: Audit Certification Services changed
+1d9f5b98-63f1-4b53-822c-f1f6a6f39ec0,Object Access: Audit Application Generated changed
+0b54d69a-9b5a-4d71-9304-7f63bae15b4c,NLM: Network name removed
+3b1c684c-b5e2-48c9-b4e9-6c6c4f9396d7,NLM: Network name permissions removed
+9c0e798c-1d3d-4d20-943f-0b5c25fc4f26,NLM: Network name permissions changed
+9ae6f5d5-9117-4f7b-b326-25c223a84a08,NLM: Network name permissions added
+9c4ead50-1413-4b4c-a0a3-0933841284a9,NLM: Network name changed
+24504d72-f5df-4d2b-bc47-bbb4dbe04676,NLM: Network name added
+75313788-dd1a-4416-bf09-95a6d69c8865,NLM: Network icon removed
+32d89af1-f95f-47ea-8148-99ec674cd45c,NLM: Network icon permissions removed
+d6ffbbad-3a75-4123-b971-deaec24c340a,NLM: Network icon permissions changed
+ff009a3f-9e3c-4646-8630-d72d18d2cad3,NLM: Network icon permissions added
+abc8f567-dd9c-492c-836f-e2ede1f49944,NLM: Network icon changed
+59d0c4a8-7461-40c3-8ad2-48bfae5e0876,NLM: Network icon added
+ce159983-12e9-4d2a-ad8c-ca51055ea031,NLM: Location type removed
+e1a71cef-65a5-4cf4-9a30-3eaa0a0ab9f4,NLM: Location type permissions removed
+f9386434-7fe7-4214-a553-d8132d32442c,NLM: Location type permissions changed
+119c6598-9498-4805-b47f-f829da51414f,NLM: Location type permissions added
+4e2811b0-2f7e-4ceb-a4bc-dd3263293cd0,NLM: Location type changed
+462e50d6-a1fb-4aa0-a978-1b5b8281acf0,NLM: Location type added
+5c562b46-a28c-4c25-8870-896801a5fc41,Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
+55bc242f-faa7-4ad2-ac6d-44675052594f,Network security: Restrict NTLM: NTLM authentication in this domain
+c7c56e70-008b-4057-ba42-5bbc2a3d6b1e,Network security: Restrict NTLM: Incoming NTLM traffic
+32369c9f-9a19-41b3-89f5-d63fd1a6377b,Network security: Restrict NTLM: Audit NTLM authentication in this domain
+388f2404-9341-4287-9353-1957f44fd44b,Network security: Restrict NTLM: Audit Incoming NTLM Traffic
+8b5ef2c3-9b67-4f15-9e42-8bda0b9dd0c7,Network security: Restrict NTLM: Add server exceptions in this domain
+2e17090c-9a8a-4b39-bf62-1721f3d93c06,Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
+4e6b3321-b651-4e75-a3ef-122467159ca1,Network Security: Minimum Session Security For NTLM SSP Based (Including Secure RPC) Servers policy changed
+04620d78-9b19-4565-9b94-e473c3994f41,Network Security: Minimum Session Security For NTLM SSP Based (Including Secure RPC) Clients policy changed
+65fcaf39-7d1b-4036-ae8f-2e4c203c0dfc,Network Security: LDAP Client Signing Requirements policy changed
+a07b27a3-4056-4148-8d86-36784f3c0e4e,Network Security: LAN Manager Authentication Level policy changed
+cf0be2d7-0aae-4e3f-9b39-8aed4192acc2,Network Security: Force Logoff When Logon Hours Expire policy changed
+3ec2bb22-2ce0-4735-b1b3-5aec22993fd0,Network Security: Do Not Store LAN Manager Hash Value On Next Password Change policy changed
+585a5713-b4ac-4a8e-90a9-e649d962daf3,Network security: Configure encryption types allowed for Kerberos
+f8e608d8-c2a7-4a38-b24b-54387f21f766,Network security: Allow PKU2U authentication requests to this computer to use online identities
+b9af3681-7f69-4207-b5dc-18c92a78ffdc,Network security: Allow LocalSystem NULL session fallback
+5d19a461-af61-42f0-908f-2d9f6b6b4b99,Network security: Allow Local System to use computer identity for NTLM
+3d68363b-6f62-4883-9211-54906bcb240c,Network Access: Sharing And Security Model For Local Accounts changed
+0977b508-299c-4ba6-9688-9c953dce3ad2,Network Access: Remotely Accessible Registry Paths policy changed
+29f0f27f-5916-451a-ad04-bf8a24979a90,Network Access: Remotely Accessible Registry Paths And Sub-Paths changed
+9ec6b31f-7430-46ae-a205-c9016aea7c7a,Network Access: Named Pipes That Can Be Accessed Anonymously changed
+90e0db12-ed7a-4d55-9d12-f12398f40904,Network Access: Let Everyone Permissions Apply To Anonymous Users policy changed
+280f3af2-d856-4c6d-8ba5-7f0f16439cce,Network Access: Do Not Allow Storage Of Credentials Or .NET Passports For Network Authentication policy changed
+22d3d87d-a3a9-45c1-a6e2-58beed7a0f8d,Network Access: Do Not Allow Anonymous Enumeration Of SAM Accounts policy changed
+4241b37c-bf28-438b-88c8-b70dda5565bb,Network Access: Allow Anonymous SID/Name Translation policy changed
+5531d230-e648-4fc2-8d5f-33e5054f6cd3,NAP: Wireless EAPOL enforcement client for Windows XP changed
+0b2aecb8-334f-4b74-80bd-05ad7cdf8032,NAP: Remote access enforcement client for Windows XP and Windows Vista changed
+d4809816-e8c0-4b52-b987-c6e3cf7e3006,NAP: RD Gateway Quarantine Enforcement Client changed
+850c873c-136e-4d67-bb97-a6ae9d5db2c0,NAP: IPsec Relying Party changed
+026ef95f-5539-4667-9eda-710f157744bd,NAP: EAP Quarantine Enforcement Client changed
+579ab151-7dfb-4cbd-b4e5-5929d7fb738d,NAP: DHCP Quarantine Enforcement Client changed
+9f482d03-f525-4d94-8ef8-0ff0848f68c3,NAP User Interface Title changed
+18a73780-52fa-428d-b6a5-1ae30690e3dc,NAP User Interface Image File Name changed
+cd138a0d-763b-49c8-b342-7866e99aa934,NAP User Interface Image File changed
+8f9176a0-fa38-426c-85ce-689af33e478a,NAP User Interface Description changed
+cafd3aba-36da-48ce-a81b-e35cfdd60c96,NAP Client Health Registration Settings: Trusted server URL removed
+3010f207-d0e1-460d-b8ac-8c7c31ef1a32,NAP Client Health Registration Settings: Trusted server URL changed
+5cce9ba0-5cc1-43f5-a40c-2ea6e3c3f36c,NAP Client Health Registration Settings: Trusted server URL added
+1c443c43-905e-4d9a-89c0-24f13fa8d232,NAP Client Health Registration Settings: Trusted server group removed
+7315e338-ce5f-43b7-bf8a-d1315feb0a18,NAP Client Health Registration Settings: Trusted server group added
+0a68d1e2-fb06-44f1-b57c-e7b791b70420,NAP Client Health Registration Settings: Require server verification changed
+1ce0017c-1e48-4dfe-b9d0-1e8092b98109,NAP Client Health Registration Settings: Hash Algorithm changed
+55c73f3b-3973-474f-b16e-9aec4a75ba1b,NAP Client Health Registration Settings: CSP Key Length changed
+431ed2d1-cf94-4ffe-a6c5-8c52adc0806e,NAP Client Health Registration Settings: CSP changed
+a18b7829-7ff6-4779-8d07-33d327f72e15,Modify Firmware Environment policy changed
+59379928-d061-41e7-be64-c4495908a343,Modify an object label
+2a53baa9-a04e-4102-858f-d157ebe54413,Microsoft network server: Server SPN target name validation level
+3c84d346-ad0c-49d9-b1d4-d38d462c94e8,Microsoft Network Server: Disconnect Clients When Logon Hours Expire policy changed
+8d672b9e-5e54-44d6-aff5-b7477bc46c8b,Microsoft Network Server: Digitally Sign Communications (If Client Agrees) policy changed
+e3f7b479-db24-4d77-969c-9edd15b2eb3b,Microsoft Network Server: Digitally Sign Communication (Always) policy changed
+d26ac620-8411-4272-9d28-a33afccf6bdc,Microsoft Network Server: Amount Of Idle Time Required Before Suspending Session policy changed
+24d3325d-265a-41f9-a192-fbd6fa58e6ba,Microsoft Network Client: Send Unencrypted Password To Connect To Third-Party SMB Servers policy changed
+d44aa5b6-a008-4891-8468-f658dd55e217,Microsoft Network Client: Digitally Sign Communications (If Server Agrees) policy changed
+f1932e02-84a0-43d5-a0b3-4faf6a985a96,Microsoft Network Client: Digitally Sign Communications (Always) policy changed
+5d6b71c1-5412-4d14-ae38-dc6a4b2988be,Membership removed from group in the Restricted Group policy
+37655948-1738-4f20-be85-d3740a764301,Membership added to group in the Restricted Group policy
+30a2831e-3557-4c0b-a0bb-ad179172c5ec,Member removed from group in the Restricted Group policy
+1eee33a3-5da9-42e8-854a-2da07a264293,Member added to group in the Restricted Group policy
+44000d50-6f52-4fae-8ec7-3a914b7ce1f2,Maximum System Log Size policy changed
+b41c5203-aada-4efa-a75d-d38c4225a38d,Maximum Security Log Size policy changed
+7881bee8-f3de-4579-8968-94ff629952dc,Maximum Application Log Size policy changed
+ffddccfd-1b28-4abc-b8db-a2e5addddad4,Manage Auditing And Security Log policy changed
+49298438-ed7d-4bc3-a712-f82b6ddd8685,Logon/Logoff: Audit Special Logon changed
+87fc8444-d692-49f1-941a-a987c8d065b4,Logon/Logoff: Audit Other Logon/Logoff Events changed
+a0791fb5-0a3b-4438-a33f-c9695cc89cc2,Logon/Logoff: Audit Network Policy Server changed
+73e39a46-7c96-493e-8612-5b8cd72d0658,Logon/Logoff: Audit Logon changed
+0e8f6be3-3739-4a05-bd1a-1236c2127776,Logon/Logoff: Audit Logoff changed
+479862a0-2c92-4101-adbb-3fe85b721ff4,Logon/Logoff: Audit IPsec Quick Mode changed
+ce89cb26-ab8f-440b-bf54-5c6d1b01431c,Logon/Logoff: Audit IPsec Main Mode changed
+7b254f3b-01df-4397-8695-c3750804c40e,Logon/Logoff: Audit IPsec Extended Mode changed
+fc9d3665-cae6-4cbe-a559-d4e99cbf3a38,Logon/Logoff: Audit Account Lockout changed
+71d7617f-198f-487e-98bc-4ac77ad3a1e3,Log On As A Service policy changed
+5721584e-3628-44eb-ad39-22bd3d305530,Log On As A Batch Job policy changed
+d8dcc093-ae58-4008-85f5-4c89d3621bdc,Lock Pages In Memory policy changed
+ba953c59-ab93-48a8-afb3-ded8e3b2057a,Load And Unload Device Drivers policy changed
+629d0c2e-0592-46a6-9e2f-0382fdc9f2cc,IP Security Policy un-assigned
+f355e901-7e08-494a-bbd5-e2ef10536971,IP Security Policy assigned
+04df6beb-02b4-4684-a97c-a0662e888a8f,Intermediate Certificate Authorities removed
+5cb45f9f-7b7e-472f-b446-821c8f0309a4,Intermediate Certificate Authorities changed
+7437443f-9eb7-4de5-8382-4d36ecb3134d,Intermediate Certificate Authorities added
+856c354e-a5e7-44c0-b47b-85224b9a184d,Interactive Logon: Smart Card Removal Behavior policy changed
+65a13673-2c13-47a6-93cc-ae40196605f6,Interactive Logon: Require Smart Card policy changed
+c07b0a3b-6567-470c-8a7c-fda8af876c13,Interactive Logon: Require Domain Controller Authentication To Unlock Workstation policy changed
+d8932cf2-1c31-449e-bff7-06f4894d11a9,Interactive Logon: Prompt User To Change Password Before Expiration policy changed
+7e3f0a6d-bde4-45b4-8f0f-c2b2fcfec4cf,Interactive Logon: Number Of Previous Logons To Cache (In Case Domain Controller Is Not Available) policy changed
+aef92cc6-e097-4a98-beb4-1c6d495bbe25,Interactive Logon: Message Title For Users Attempting To Log On changed
+f6b78612-a88d-4539-8e02-5ceb10325b12,Interactive Logon: Message Text For Users Attempting To Log On policy changed
+1d0e6f49-f0d1-4556-83f9-c108cd2070c5,Interactive Logon: Do Not Require CTRL+ALT+DEL policy changed
+16abb4ad-e257-4e9a-a01f-d1f11a1806b2,Interactive Logon: Do Not Display Last User Name policy changed
+22a716a6-e375-45f5-8847-d22ac1a09cdb,"Interactive Logon: ""Display user information when the session is locked"" policy changed"
+5da19499-b9a9-465b-89bb-55d0b8292df2,Increase Scheduling Priority policy changed
+7078f1a8-f479-4a32-99b7-a979f5999789,Increase a process working set
+93053e54-33ff-4dd9-8d51-2ed73d5e56f6,Impersonate A Client After Authentication policy changed
+d7abaced-e518-4301-95e6-cf7d4fbb5309,Group removed from the Restricted Group policy
+116a5430-aeec-4f8c-a0f9-37f02c5a431b,Group added to the Restricted Group policy
+38950495-8d5a-4df9-a801-ffd147419e83,Global Object Access Auditing: Registry changed
+03ec1536-237b-4d11-a952-866fb1fa8d1b,Global Object Access Auditing: File system changed
+3ea6105e-eecb-48a9-bf36-551734f95545,Generate Security Audits policy changed
+0877bb20-6d79-4da1-b7ae-fc9c0a13fac5,Force Shutdown From A Remote System policy changed
+54fae85b-35b2-456d-845b-cef449139875,File or folder removed from File System policy
+70bc6dfe-b8b9-4c20-9f47-b57650ac5f4e,File or folder changed in File System policy
+c5ef6cbc-8c94-42a2-a002-37c6ca092dbe,File or folder added to File System policy
+9421a60f-15a2-498b-9e5d-35ff25b5df00,Enable Computer And User Accounts To Be Trusted For Delegation changed
+9f9db93d-f40e-46a5-8efa-7360b8bc1c21,DS Access: Audit Directory Service Replication changed
+f361eb01-ad51-4eac-8c2b-5476b583f82a,DS Access: Audit Directory Service Changes changed
+d65d8d6c-738f-42d6-b279-9a91bcf8d5b0,DS Access: Audit Directory Service Access changed
+2ae00dac-82ed-4ca6-9267-2a05689c6337,DS Access: Audit Detailed Directory Service Replication changed
+85fed0f4-b777-4fd8-8035-fe7d81385a9f,Domain Member: Require Strong (Windows 2000 Or Later) Session Key policy changed
+879621bf-2b8f-4b2e-aead-d0be8dc34c37,Domain Member: Maximum Machine Account Password Age policy changed
+695fc8a7-4ec1-4355-8713-5dfc052763e7,Domain Member: Disable Machine Account Password Changes policy changed
+57cdd694-1f39-4a0b-bf24-3915ee2ea4c5,Domain Member: Digitally Sign Secure Channel Data (When Possible) policy changed
+c4617b6d-eaaa-430c-a66a-514ae7869415,Domain Member: Digitally Encrypt Secure Channel Data (When Possible) policy changed
+8df7265b-272b-41de-b85e-3e907c2cfad3,Domain Member: Digitally Encrypt Or Sign Secure Channel Data (Always) policy changed
+2abaf72b-d04d-4ad8-b6b4-233940a3ea28,Domain Controller: Refuse Machine Account Password Changes policy changed
+696d147f-f8dd-41bd-91c9-d334e64edd86,Domain Controller: LDAP Server Signing Requirements policy changed
+99410fb7-163a-44a4-b12c-259f571836b8,Domain Controller: Allow Server Operators To Schedule Tasks policy changed
+b74cbd06-774b-414b-ba23-abc2d601da0e,Devices: Unsigned Driver Installation Behavior policy changed
+aeac9a6a-4976-473f-b18c-0be554eb3860,Devices: Restrict Floppy Access To Locally Logged-On User Only policy changed
+999e7353-d91c-46fc-93f8-d8598f7f8bce,Devices: Restrict CD-ROM Access To Locally Logged-On User Only policy changed
+1954d85e-4c44-4345-9e4d-4ece7d77aca9,Devices: Prevent Users From Installing Printer Drivers policy changed
+91f4658d-646d-4b18-bdea-72dae7c6a912,Devices: Allowed To Format And Eject Removable Media policy changed
+ae81d0b1-b5a1-407d-aff5-5225988b512a,Devices: Allow Undock Without Having To Logon policy changed
+4ff720d7-ce20-4515-bc13-d59e61525bcd,Detailed Tracking: Audit RPC Events changed
+3c1cb7d5-bc11-42a6-8998-171efe8774c6,Detailed Tracking: Audit Process Termination changed
+0740c8b4-5f38-4c00-b270-01446653a713,Detailed Tracking: Audit Process Creation changed
+17f58c44-c669-4744-b56a-a9de9c85c7bf,Detailed Tracking: Audit DPAPI Activity changed
+7b89852e-d864-45c7-bfb9-9b5021015413,Debug Programs policy changed
+9723b60e-1d6b-4e3d-a160-ed87016d4205,DCOM: Machine Launch Restrictions security settings changed
+92c5c489-84c3-4ce9-8ea7-00687d0f390f,DCOM: Machine Launch Restrictions policy undefined
+3d2197cb-0622-45b8-937e-bc3926e768c7,DCOM: Machine Launch Restrictions policy defined
+07f88896-7b5b-4c45-a6d1-a1b842e8a5a7,DCOM: Machine Access Restrictions security settings changed
+70d17a84-a820-4d41-8380-973b38a6e2ca,DCOM: Machine Access Restrictions policy undefined
+18c28360-77c7-4bb6-99f2-385e209a7edd,DCOM: Machine Access Restrictions policy defined
+fe5bcc9b-f379-4bc3-8c66-973dd8caa56d,Create symbolic links
+d765ab79-e949-4a75-99b1-214315e758ab,Create Global Objects policy changed
+6731af54-a34c-4175-820c-52d6628e2043,Create A Token Object policy changed
+d2ece710-f169-4036-9258-82a8bf2f7442,Create A Pagefile policy changed
+49b801e6-7106-4e57-a25f-a32afd808ff5,Computer Software Restriction Unrestricted Zone Rule removed
+9019f297-b961-4c5f-9eac-ef74eee51f62,Computer Software Restriction Unrestricted Zone Rule changed
+d905f98f-35e9-4a3e-ab73-30590cab130c,Computer Software Restriction Unrestricted Zone Rule added
+8957c0f1-2c1a-4f58-be33-7174d35d18f2,Computer Software Restriction Unrestricted Path Rule removed
+f330cd36-6d9d-444b-ace3-0a34da644df2,Computer Software Restriction Unrestricted Path Rule changed
+a3433359-10f2-408f-8af5-46fd61d4d07d,Computer Software Restriction Unrestricted Path Rule added
+b817a6c3-1184-4456-b3a7-a018a3e2bd0b,Computer Software Restriction Unrestricted Hash Rule removed
+c3e0c783-ec8a-41d5-b321-f94c2e32ba58,Computer Software Restriction Unrestricted Hash Rule changed
+30e77ed3-ea47-45c3-9501-98592e7335e5,Computer Software Restriction Unrestricted Hash Rule added
+00a6ad6e-f749-4aa5-b856-29e083c8e5d6,Computer Software Restriction Unrestricted Certificate Rule removed
+18ef6744-a38e-4ad7-bc19-5ac1925e53b2,Computer Software Restriction Unrestricted Certificate Rule changed
+92b3e9cb-42db-4c86-a3b3-34464f2b5e6e,Computer Software Restriction Unrestricted Certificate Rule added
+269006af-bcf1-4f43-bb1b-a3a61611bc1b,Computer Software Restriction Trusted Publishers changed
+412a1ca8-c189-45e1-96b0-437add8ce6e0,Computer Software Restriction Policies Default Security Level changed
+77d27c4c-f895-4f75-8c50-ad0ee6566116,Computer Software Restriction Enforcement Users changed
+55f9bec3-0035-4ed3-94cf-253919fee1d5,Computer Software Restriction Enforcement Files changed
+06867407-883c-4107-9798-49becea415fb,Computer Software Restriction Disallowed Zone Rule removed
+a8d97b8e-4777-4931-98b6-c61d85efca4f,Computer Software Restriction Disallowed Zone Rule changed
+87162f42-5ba1-470d-85b0-5500717be975,Computer Software Restriction Disallowed Zone Rule added
+1911b769-78a0-4259-90e0-45fae8b86533,Computer Software Restriction Disallowed Path Rule removed
+00daada6-d59c-4bd9-ab95-214f0f3dc831,Computer Software Restriction Disallowed Path Rule changed
+9dbfa3f5-49e3-4fd4-9af5-90b8bbf2cfc4,Computer Software Restriction Disallowed Path Rule added
+91e2b2cb-5a2b-4268-ae0d-ff73320024a3,Computer Software Restriction Disallowed Hash Rule removed
+f95cfd98-c724-46db-a7be-071ac18dc1f9,Computer Software Restriction Disallowed Hash Rule changed
+aae8add8-f665-4e80-bf41-762001b6de4e,Computer Software Restriction Disallowed Hash Rule added
+e9ac5cf2-d150-424e-a3ae-0ebe17e04335,Computer Software Restriction Disallowed Certificate Rule removed
+49fa0808-bee5-4de1-9ab8-a17af2dd35da,Computer Software Restriction Disallowed Certificate Rule changed
+fd18d33a-8d43-489b-aeb7-a7ed9d9c96c9,Computer Software Restriction Disallowed Certificate Rule added
+924b84d9-81c9-48e7-9585-ade58844670e,Computer Software Restriction Designated File Types changed
+30137d96-a102-4386-b994-0834105cc0cc,Computer Software Restriction Basic User Zone Rule removed
+21533254-2731-4d6e-8e04-ac5bad0830a4,Computer Software Restriction Basic User Zone Rule changed
+04b7c57d-9390-40b3-9667-dd2fcc30d07f,Computer Software Restriction Basic User Zone Rule added
+37c21f7f-3741-453b-b245-870a6edfceb9,Computer Software Restriction Basic User Path Rule removed
+fd3dc9ed-46ae-4e06-b885-11e00b0793a8,Computer Software Restriction Basic User Path Rule changed
+2bee663f-eb6b-47c2-923a-696310d1f881,Computer Software Restriction Basic User Path Rule added
+33a4f150-57a1-420c-bd4f-3e5e860512d9,Computer Software Restriction Basic User Hash Rule removed
+c444e248-c711-4816-8280-66bb7f05bbf8,Computer Software Restriction Basic User Hash Rule changed
+c52ed84f-f298-40c7-b407-4efb2dae79dc,Computer Software Restriction Basic User Hash Rule added
+461d42b0-20b4-4d53-85da-3ea8ff6f2883,Computer Software Installation Policy removed
+aaf7978d-4a13-4182-a09d-bdabf5053593,Computer Software Installation Policy changed
+68117629-2335-4414-8eb4-49b3813b5c58,Computer Software Installation Policy added
+939f7100-4728-4f57-8d81-b2b900795630,Computer Public Key Policies Trusted Root Certification Authority removed
+27ac7a8a-0a67-48a3-b229-75e935d0cc4a,Computer Public Key Policies Trusted Root Certification Authority changed
+cb795c1e-d72b-440f-97dd-f16caf3afc01,Computer Public Key Policies Trusted Root Certification Authority added
+6a924ed7-80fe-496d-abfd-c56163e8f3d7,Computer Public Key Policies Enterprise Trust List removed
+13d05503-7688-4407-acd0-b2437712d68b,Computer Public Key Policies Enterprise Trust List changed
+a9a34558-69a1-4aa2-80a3-216dfc482104,Computer Public Key Policies Enterprise Trust List added
+300d3672-5be5-4eba-b9af-e0956a138442,Computer Public Key Policies Encrypting File System DRA removed
+9350aa33-733c-4901-b0bd-20337235d18c,Computer Public Key Policies Encrypting File System DRA changed
+d15a8269-26f0-43ec-b82a-f218bc22b798,Computer Public Key Policies Encrypting File System DRA added
+2c825a3b-7595-483a-8453-b06fca303daa,Computer Public Key Policies Automatic Certificate Request removed
+85f31dd2-d9db-489f-8595-e4f6e2b1585a,Computer Public Key Policies Automatic Certificate Request changed
+fe38a03c-ecc4-49c1-8403-c48ca480a27c,Computer Public Key Policies Automatic Certificate Request added
+7babe21e-c98d-4e18-a298-274232a2a70b,Computer Public Key Policies Autoenrollment Settings changed
+d09f432d-ac24-45ed-a643-05e6f25f840f,Computer Group Policy Script setting changed
+49d39cdd-349e-48cc-b6c6-c7e5d271701d,Computer Group Policy Preference setting changed
+115855cc-a4a0-4227-b966-d32b859c627b,Computer Administrative Template setting changed
+ba8fb9c5-6a3a-41b4-b078-b3aa7eb65d36,Change the time zone
+18dd2c74-04c2-4078-9e81-182319396ee4,Change The System Time policy changed
+62c2e6ed-cada-4ee3-8799-6fc347aceddb,Central Access Policy removed from group policy
+ea14375d-3545-4ba2-9a55-2574dc63a629,Central Access Policy added to group policy
+dff34de6-0608-4342-a11b-58a523d899f9,Bypass Traverse Checking policy changed
+222a2c3d-0cb6-4b04-b84c-afa2c4c85b85,BitLocker Drive Encryption removed
+4ed5fc14-5c0d-48d1-994a-6a6086fb10e4,BitLocker Drive Encryption changed
+55daa032-a81f-4524-a8f3-4af54f9a940a,BitLocker Drive Encryption added
+3f4c9888-2b5b-476d-a18a-b0602c533b9d,Back Up Files And Directories policy changed
+7b434ae5-569b-43d4-b59d-ba14fd96304a,Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings
+56e28c7f-9a8f-4f9c-bb6b-66975b0eecfd,Allow Log On Through Terminal Services policy changed
+a24182f9-b920-46cd-8f3f-ac1aa5159cda,Allow Log On Locally policy changed
+fb7d73d8-d955-44d8-bf39-2fa825dc5e48,Adjust Memory Quotas For A Process policy changed
+71370d65-f331-4617-9e4e-9f431bcd837e,Add Workstations To Domain policy changed
+e7484c70-77b9-432e-a01e-473206eb38bc,Act As Part Of The Operating System policy changed
+e19e7e93-0761-4967-a625-72ef6840f037,Accounts: Rename Guest Account policy changed
+48f438b6-e6d2-4cc9-adcc-b08303a7c539,Accounts: Rename Administrator Account policy changed
+28c80e68-50e6-413f-ac9e-15ec8a97b6cf,Accounts: Limit Local Account Use Of Blank Passwords To Console Logon Only policy changed
+08ccc769-d853-47ab-9eda-87694d116770,Accounts: Guest Account Status policy changed
+8e9956df-5b01-4d03-aa59-381fdfd43a47,Accounts: Administrator Account Status policy changed
+a71cb6a3-5d6c-42f5-a5cb-261c668c22cd,Account Management: Audit User Account Management changed
+605806ef-ef71-4da1-8082-e379250e4f9e,Account Management: Audit Security Group Management changed
+19fe21f5-26e3-4d0f-998a-5708c4b39501,Account Management: Audit Other Account Management Events changed
+773d3a92-fa65-4db4-a1ba-f440704a2d55,Account Management: Audit Distribution Group Management changed
+f2d03151-1ad4-4681-8b33-819a1ab60caa,Account Management: Audit Computer Account Management changed
+df202338-c8c7-465e-9434-9063fc461b8b,Account Management: Audit Application Group Management changed
+0670f514-6096-4e21-837d-4a0bc504653f,Account Logon: Audit Other Account Logon Events changed
+8182b728-1f3f-4135-bda2-260d3844af1a,Account Logon: Audit Kerberos Service Ticket Operations changed
+d1afc93e-91fc-45e4-b262-f5e5f0f3c2c2,Account Logon: Audit Kerberos Authentication Service changed
+09f58493-8d9f-4ba2-b9b2-b784b1e9227b,Account Logon: Audit Credential Validation changed
+ae2f3b3d-9b0b-4d60-b236-fd54d96d9a2e,Access This Computer From The Network policy changed
+a9ece4d1-c0de-4d38-a8d8-3b8d8f6c0654,Access Credential Manager as a trusted caller
+1392e535-2c2c-4245-8db5-039de0c0b5a8,Computer service pack rolled back
+7810f50e-bdc3-4e31-ab44-d33480edea3d,Licensed seats exceeded
+cb7b3ebb-41f7-4d85-beb7-b23eed087edd,Computer service pack applied
+1a6e44b2-bf76-4f2c-b2e1-197a2a123fd6,Group owner added
+d8a83f65-3d9f-486e-8f17-9fbaccf9f8d6,Group owner removed
+2a6e44b2-bf76-4f2c-b2e1-197a2a123fd8,Owner added to group
+e8a83f65-3d9f-486e-8f17-9fbaccf9f8d8,Owner removed from group
+4badfb38-41f5-4910-bdc8-ed9b76b0bfdf,Group member added
+1cce785d-5d6a-4e7b-b632-60bdb309157e,Group member removed
+5badfb38-41f5-4910-bdc8-ed9b76b0bfd8,Member added to group
+3bbe785d-5d6a-4e7b-b632-60bdb3091578,Member removed from group
+040b57eb-ce05-4209-927a-fa236e6e0808,Domain FSMO role owner moved
+69c9edd3-0265-480c-ad86-a8967f3050a2,Owner changed on computer object
+0a0ba7f6-8bd8-4810-8847-3c1d9df299ef,Group deleted
+f947ed56-d3d4-4c2f-87bc-597208cac42d,Azure Active Directory sign-in event
+17af03ab-2bd8-4100-b39d-16ccb3f67f1f,Primary E-mail Address changed
+9f9ce218-21dc-4f51-88f9-a04ac24593be,Mailbox - Primary SMTP Address
+804b44a0-dcfa-44fe-90af-80ef4e5f1b34,Azure Active Directory - Application event
+8d8028c6-926c-4ef5-bcd4-41b0f03a7867,Azure Active Directory - Directory event
+994c200b-1049-43f8-a23f-f0ee27f36550,Set group license
+b274cbc4-6915-42d8-9a8b-d8894cff2d39,User authenticated through NTLM
+56153980-5d63-413d-9cc8-d67e74408635,Exchange group added
+f7e5630b-b882-4ffb-88fd-3435d7b71f3f,Query policy added
+5898e913-5cf6-4405-a2e5-27fc867ad488,Query policy removed
+df38a4b3-0771-4690-8838-13bb598cdfee,Local share folder path changed
+eebf2778-4e45-4feb-bf48-c7d92b5c312c,Failed share access (NTFS permissions)
+d641af2f-3263-4dfc-a99e-ba9c149cd4ba,Failed share access (Change Auditor Protection)
+11a7a2ca-a5bf-482d-99be-9cf32a040043,Dynamic computer object added
+eb6b924f-d5c9-4700-8563-fe55c4bb2bbd,Dynamic computer object changed
+966b57c9-1ac3-4b7e-80b6-cdeb49c51b31,Dynamic computer object removed
+a4f18409-fdd7-40f7-b181-22f8a0aeb42f,Security audit log rolled over
+886ee40a-4a08-4e1a-8df5-6208bb890a03,Owner changed on group object
+084880ed-3477-4435-8e95-f4f310a9167c,Automatic Intersite topology generation role changed
+eba51243-280f-4fa4-a126-2a6de5a3abb2,Automatic intersite topology generator for the site has been disabled
+64f08eee-aa9b-458b-bc5d-c111b3180bff,Automatic intersite topology generator for the site has been enabled
+a8c80bc1-ccba-4f18-b31d-2b927a1c5cc9,Automatic intrasite topology generation for the site has been enabled
+83cb675f-2dfd-4060-986e-dcd3c02326ea,Automatic intrasite topology generator for the site has been disabled
+f600ec85-0fc8-4afb-afeb-1734513981e7,Domain controller moved to site
+92d7b469-d9b7-4c88-8876-545567015239,Site group policy order changed
+a03673d0-2dd7-4789-b9de-9789a9be48c3,Site license server changed
+cf2b5318-55a0-4b92-aa1e-54c98d24c7d9,Site link added to site link bridge
+388d4985-7b69-4a98-a539-83d98b78c20e,Site link removed from site link bridge
+ef58beea-9f6f-41d3-afd1-ef4e4024b36b,Inter-site compression setting changed
+6d9bf0a5-99e8-4563-8ac8-e522de257fd8,Interval changed
+c2c6bc5c-9dde-4fc5-ac72-a6a7d57fb0ee,Link cost changed
+f9582d48-23de-473a-a84b-876003ea047a,Schedule changed
+4c497125-07a2-452c-9915-74bc7de8e728,Site added to site list
+816df060-b7cf-497f-9218-64bc5a2ff0a1,Site removed from site list
+1f38463e-fa98-48f7-9fb9-c6a77512eeaf,A user accessed a cloud storage site
+66d208d4-43f2-4a2a-8f6f-caf2e5f05b31,A user downloaded a file from a cloud storage site
+78bb32f4-e003-4edf-b8bf-8ab83fc6f2b6,A user uploaded a file to a cloud storage site
+42490871-1705-402c-8689-54b71f306812,A user was blocked from accessing a cloud storage site
+08b585fe-fe9d-4881-b647-b40bfc1fa6d2,A user was blocked from downloading a file from a cloud storage site
+16a3b32f-95a8-4272-97d0-75a00d75ac09,A user was blocked from uploading a file to a cloud storage site
+be6c8076-4f7f-4fff-be78-fb512f8ed4a9,A user accessed a web site
+bec81109-eb30-4a73-b583-8407cda25974,A user was blocked from accessing a web site
+06810b76-750c-452e-a1c6-8baafb2d39f7,Authentication Services Computer Object Deleted
+4afe4c21-f848-498d-9d85-b3e8b4fb570c,Subordinate OU renamed
+774123ce-e4f9-47be-8f68-7ecc11e4e5ec,Authentication Services Computer Object Added
+a883a21b-20f3-4f37-9959-7b2f51f5fe45,Subordinate OU removed
+fca32d87-0280-4a5f-9664-b7df493c12d8,Authentication Services GPO Setting Changed
+2852df62-4a0c-4149-ae81-c58057abdfca,File auditing changed
+e14223dd-0dda-44fd-a57a-b0ade3e7f59b,Folder auditing changed
+2ff191aa-e362-49e4-a27a-c10efbea92ef,File deleted
+f46f5d55-f739-468c-bc4a-bedd828a430b,Folder deleted
+3b0c2b57-b3d3-4833-9ab3-e23ae038e10b,ServicePrincipalName added to user object
+d4e14f67-8fd5-45e1-b011-8db5e41a95f9,ServicePrincipalName removed from user object
+eafe70cb-1a69-4215-b24b-5e9fcb6f2376,Subnet site assignment changed
+613695b0-eb02-4ae7-8ef5-e171adf1b73d,File moved
+d470ab60-e9de-46a4-bc96-ce7718636622,Folder moved
+77d4cd2b-02a8-4397-8ca0-af8267699337,File created
+585c5b51-f258-46be-b64a-f19eb0442b70,Folder created
+aa1ac7bc-cb82-40c8-9637-f90b0d6c3edb,File ownership changed
+b5c6ce16-b4cb-4259-9643-05023aaf046a,Folder ownership changed
+e7437606-10e8-4146-ade0-0ac73008115a,File access rights changed
+d3c457a9-421e-45d5-9fc1-575fb1962215,Folder access rights changed
+c4f56e5c-bf2d-4132-bb95-0ccd1b4fa84c,Azure Active Directory - Administrative Units event
+86157baf-320d-43f8-a546-3fc9d3c1dc4f,Closed risk event status changed to active
+0bd5ea19-45fe-4dc8-96a9-7e0b0c2b5e56,Closed risk event detected
+a0f5e8d7-8541-4ca1-a2cd-b4d00322effe,An unknown user download a file from a cloud storage site
+f24fb6fc-9fbb-48a5-8f28-d33b3677dc14,An unknown user uploaded a file to a cloud storage site
+8588ecfd-4901-4e97-ad19-1fe0d66eb2ef,An unknown user was blocked from accessing a cloud storage site
+abb9628f-ba66-4869-8c65-90513d34e248,An unknown user was blocked from downloading a file from a cloud storage site
+f34d02d4-1510-4fb0-bd2b-674c86386e58,An unknown user was blocked from uploading a file to a cloud storage site
+8d222af6-c24d-470e-bf91-13700817f402,An unknown user accessed a cloud storage site
+c3ce21b1-d27b-42f6-9047-4f086f9aec6a,Local group added
+3b996d7e-8315-492c-92e2-90c391874587,Member added to local group
+c1dbf1b5-35be-a1b3-0986-1263bc624685,Member added to security group
+6b584383-e8af-4429-8c74-575cda29bf96,SYSVOL folder access rights changed
+4a8f07e8-dc66-4042-b9c6-4eb15225b6d3,Member Added To An Exchange Administrators group
+3dc78d64-7661-4805-9424-1f4c23de53f8,Registry key DACL changed
+1044f317-65fc-4a3e-8bb2-d04dabc6e4b2,DACL changed on OU object
+74eb2adf-7918-4030-b3f5-42d2e4435425,NETLOGON AutoSiteCoverage flag changed
+acb96043-bffa-45c8-84a7-f7d93f4301e5,NETLOGON CloseSiteTimeout parameter changed
+e01cb2f1-3794-4bcd-aace-fbbb40556b43,NETLOGON diagnostic logging parameter changed
+361f1751-7362-4a6e-91f3-31c1d85ef8c9,NETLOGON GcSiteCoverage parameter changed
+6abd4b90-ead5-4a53-8f83-d455aceea425,NETLOGON LdapSrvPriority parameter changed
+5abdc2c4-6085-435b-b8c6-221edbe03c35,NETLOGON LdapSrvWeight parameter changed
+c7c92db7-b542-42cd-972a-61d472990cd3,NETLOGON SiteCoverage parameter changed
+2b5998fb-5279-4412-8233-6269fb1862af,NETLOGON SiteName parameter changed
+ab43e288-fb8d-4878-af41-b1f735bf4af0,Azure Active Directory - Role event
+4efe9fe5-9ee7-4565-9c3c-cb0acb8cda8c,Dynamic group object added
+14a0e61d-0dc6-4799-bf95-9f3c7cd611f3,Dynamic group object changed
+4af75f10-3cc7-44bf-8914-18bee0fea1ff,Dynamic group object removed
+7b36d41f-ef63-4473-926a-0022ea622224,Failed Active Directory Federation Services sign-in
+4e72ef0c-44ea-46af-bb37-da30c9007acd,Crash on Audit Fail Policy changed
+463ffe04-1c1e-4e91-8f36-833447cae62f,Security Event Log Cleared
+32b8839a-acaa-43ab-8999-7ffaec961ead,Azure Active Directory - Group event
+cb6cc6c9-36bc-4658-a3ff-247800168772,Group added
+f27ec8b1-806f-4a2f-b08d-5ca8ffa1109a,Group Description property changed
+2e615a9d-3efa-47df-97fe-3eba09229a1b,Group DisplayName property changed
+56707f89-3c25-4306-85df-67ab97f5119c,Group GroupType property changed
+dc3f936b-7af8-4937-a953-0335fa6a3549,Group IsPublic property changed
+bddee761-53ee-4944-945b-ec39e633819a,Group MailNickName property changed
+a0e94044-cd46-456a-b863-24b3e1ef26e0,Group MembershipRule property changed
+6d941a77-587e-465a-9b0b-4fe2fbf4bd49,Group MembershipRuleProcessingState property changed
+bbf1922d-18f4-45d6-8cc3-8b813f37c111,Group SecurityEnabled property changed
+7411f780-63e2-40a6-96da-e3e29de2acc5,Group updated
+dfd47532-6a2e-4797-a6f8-2920ca768710,Set group to be managed by user
+55d531eb-45d7-4525-b0a9-46f2fd88cb0e,Memory amount changed
+9cc65742-a4e5-4768-bae2-39bea147c7b0,Disk size changed
+7aa1237b-9efa-4f94-89cb-6ce8111137f8,User Login Session Event
+4b1a3dd2-ddeb-4f15-b08a-f8bc64b97d4d,User Logout Session Event
+edd3f56d-7531-48f5-90a8-60d3aa79c927,Authorization Event
+878b2408-b3a9-4920-9820-115208151c2e,Already Authenticated Session
+84e993e6-04ad-4d70-97ef-3824ed2c4e93,Audit Authenticate Server Operations
+1ea450d7-09ff-49d2-8ca5-8bea063ad03d,Defender Access Node Added
+d61a1ddc-e7a6-43f7-b8d8-88e8198df839,Defender Access Node Removed
+5f8b64c6-3d9e-4ef9-8b42-94c6c3c5fc80,Defender License Added
+d8068529-fac5-4667-998a-b50cb82104e9,Defender License Removed
+d0002321-7d1c-40e2-8221-7804d62ae8a8,Defender License Usage Changed
+05b334ad-bb78-4674-97af-ed88bae34c50,Defender Password Changed
+cc54267e-332e-48dc-bdcf-8fd633a2073a,Defender Password Cleared
+a29dd0df-052c-4b8e-a148-553a01eadc0f,Defender Password Expiry Cleared
+92eda85b-0f33-42f5-896e-e2506624d66d,Defender Password Expiry Set
+2b6cd53e-962b-46ef-a7ec-b7873ff16446,Defender Password Set
+6f6c3fdb-7e55-4d5f-babc-6349da36a046,Defender Policy Added
+bc68f765-2745-424e-a15d-73399983fd4f,Defender Policy Changed for Access Node
+25dc326c-9c79-4c8c-9a7f-b6c006a43c0f,Defender Policy Changed for Group
+bd4b1fb6-0543-4583-8597-36ce8342907d,Defender Policy Changed for Security Server
+61e5b468-a920-4585-9cdc-b96c5dcf7578,Defender Policy Changed for User
+f5e3c801-f0f9-4d6b-bc3e-d91547a86f01,Defender Policy Removed
+66eec669-3544-4898-aa8a-54ba4c51eb02,Defender RADIUS Payload Added
+cf08f35a-e9bc-48f5-9c5f-ba1852e20b4a,Defender RADIUS Payload Changed for Access Node
+aaa0545c-4969-4c9e-8855-220b630f6b37,Defender RADIUS Payload Changed for Group
+a502f002-4f96-4570-908b-c635357874f3,Defender RADIUS Payload Changed for Security Server
+46e637e8-0307-4b96-817d-005fbddaa0cc,Defender RADIUS Payload Changed for User
+03e50451-4055-4604-b3da-5a8ef9d538d0,Defender RADIUS Payload Removed
+85c39fd8-91e4-495c-bc5b-6b0505ae3b12,Defender Security Server Added
+e5afa292-ca83-40ad-846b-2cc0cb1b459a,Defender Security Server Assigned to Access Node
+64432cb2-c845-4a5e-b83d-65c1124d8dd7,Defender Security Server Removed
+faa0d0c2-653a-444d-afbc-a134c3e488dc,Defender Security Server Unassigned to Access Node
+d5ecf2f5-3c6b-4972-b90e-942c7151e82e,Defender Token Added
+f1b28760-0cce-4318-a7ef-063aa2b653eb,Defender Token Assigned
+0180cc6b-62a3-4d70-bf40-34411af132c2,Defender Token License Added
+c01c0de6-4c9d-44a4-bb53-d98cae543bb7,Defender Token License Removed
+1ff0931c-3b53-4d3c-80ee-5b68abfdcf5f,Defender Token License Usage Changed
+ae7a8044-60ca-4d18-bfb1-ad6ece513fe6,Defender Token PIN Changed
+be2d4587-f85b-4b5e-9799-be1c52ad20be,Defender Token PIN Cleared
+bb9f7064-8ae0-4316-aacd-5b96741eb536,Defender Token PIN Expiry Cleared
+6b48e87c-3519-4b18-bfcc-f0e10293aaef,Defender Token PIN Expiry Set
+45d05494-fad9-4a24-98a5-8f3262f84e89,Defender Token PIN Set
+8fd6b609-e4de-42bf-b15f-3a983c56cfcb,Defender Token Removed
+16676d81-778b-4b3c-8294-8e937ec6a994,Defender Token Temporary Response Cleared
+6ad17b6d-796e-44a3-a810-83126e6046af,Defender Token Temporary Response Expiration Changed
+07def6a6-c79e-4ed0-89c6-d1e2ca927e70,Defender Token Temporary Response Set
+e400a990-1c75-4123-834c-4348a8a41928,Defender Token Temporary Response Usage Changed
+219199d4-edff-428e-b572-3b8d9398c917,Defender Token Unassigned
+f0ca6b19-347a-48ed-8cb1-263878a7c079,Member Added to Access Node
+c18b412f-e3f3-4e08-a22a-dde5b4bfebee,Member Removed from Access Node
+d2f8aef1-abae-46a6-9e01-a0d26b372ee0,User Reset Count Changed
+4f141a4f-845c-45cc-a4d7-468898562045,User Violation Count Changed
+e53966c8-bef0-4279-bbff-7b3cd6d5a906,Accept Messages Except From list changed for group
+9f598eed-f328-4eb1-93d1-fcee6a211472,Accept Messages Only From list changed for group
+9e05ad3b-3c65-4ae5-a55a-da7b5bb3f831,Alias changed for Group
+ae6ba9aa-8ab9-4b6d-8f95-9e4333c89227,Authenticated Users delivery restriction changed for group
+5adebd37-eb97-43dc-851e-84f44eda10a3,Custom Attribute 1 Changed For Group
+1f8af87c-553b-44e7-8468-97134ae81fb0,Custom Attribute 10 Changed For Group
+a1cf30fd-dfd6-4e38-ba8b-a3cceb7dccc3,Custom Attribute 11 Changed For Group
+1179b5ff-05a0-40a2-ab2c-4a9d88c3b017,Custom Attribute 12 Changed For Group
+c662b316-8c75-443b-85cb-5b2253ddcbd1,Custom Attribute 13 Changed For Group
+c1b2d219-62fc-4962-b488-18afe9e64e94,Custom Attribute 14 Changed For Group
+616b9654-fe39-488f-a8cd-86f8bfe6ea39,Custom Attribute 15 Changed For Group
+a805dc67-186b-435b-af18-999b464c0417,Custom Attribute 2 Changed For Group
+b1a8581b-41e1-4efa-92e6-ce821aa07894,Custom Attribute 3 Changed For Group
+a3065f2e-f53d-41ff-b9ec-ccbba83ff455,Custom Attribute 4 Changed For Group
+fce1dc0c-63d5-4502-86a9-3e938397b61a,Custom Attribute 5 Changed For Group
+74dab968-95db-46fa-a8bd-41cf00e681c8,Custom Attribute 6 Changed For Group
+1a85f35b-5429-4a81-806c-de41ba6d6d1b,Custom Attribute 7 Changed For Group
+da87b6c0-87f2-47c9-8080-6feaca59cabd,Custom Attribute 8 Changed For Group
+ecd057a1-8d71-4668-8d34-f1c1bc660ad1,Custom Attribute 9 Changed For Group
+4e7427e9-b0ac-411e-96fc-e84ba4f419fe,Distribution List - Accept messages only from senders in following list changed
+ae2966cb-189e-4d30-8370-8079a3ce14f6,Distribution List - Address list membership changed
+125f1e8d-8b4f-4862-9261-68eac3f21c52,Distribution List - Alias changed
+3afcdadf-4868-47f8-b3f7-fe5291bc6381,Distribution List - Bypass moderation list changed
+259be297-8c4f-42c2-8c4b-d6da47a42957,Distribution List - created
+9316e377-1f80-44d5-bec6-9f37c1660a25,Distribution List - Custom Attribute 1 changed
+5c6a1bb7-6e34-416e-8349-e0deaa95f8d4,Distribution List - Custom Attribute 10 changed
+fcb12fa6-c636-49a2-b7fc-acb5fe6d92c6,Distribution List - Custom Attribute 11 changed
+43e30d88-dff9-44f2-9d93-3fefdcb7d376,Distribution List - Custom Attribute 12 changed
+b3b00831-94cc-46fc-8ca0-e9c226a2054b,Distribution List - Custom Attribute 13 changed
+07a919fb-3cda-48df-98e2-40c9b654311e,Distribution List - Custom Attribute 14 changed
+0262f2ab-37b8-4ed9-815c-fd88d1f8bca6,Distribution List - Custom Attribute 15 changed
+d2735b1a-ed84-4675-966a-01627f528ecc,Distribution List - Custom Attribute 2 changed
+b03a1b64-a5f6-4cdd-a907-579ac7f6c1d6,Distribution List - Custom Attribute 3 changed
+35a06ff2-9831-48c7-aa91-c9be91cb1e80,Distribution List - Custom Attribute 4 changed
+9874fa05-269b-44e4-a39b-e13545940e97,Distribution List - Custom Attribute 5 changed
+7cb2087d-bc77-4742-85bd-90029e2dd626,Distribution List - Custom Attribute 6 changed
+8b0baa61-67f2-43b8-8e0d-42ca930e52fc,Distribution List - Custom Attribute 7 changed
+403e08b1-49e9-4c03-ba06-c2f2c98ee140,Distribution List - Custom Attribute 8 changed
+832db19c-c030-4f79-82ed-0ec58a0c98fa,Distribution List - Custom Attribute 9 changed
+02951d5d-4e16-4230-a916-8590270792cc,Distribution List - deleted
+75f32002-977a-4a63-b11c-44bb907cbd62,Distribution List - disabled
+f81edf47-507d-4ba3-8fc9-85e66557d225,Distribution List - Display name changed
+60d1257a-9e33-4614-8c5b-752bfe075a3b,Distribution List - Email Address Policy Enabled changed
+cf6ad9d1-46f7-484e-9f24-fe89ee33a506,Distribution List - Email addresses changed
+dae4e266-a623-4274-a5a9-aaca4fce63e5,Distribution List - enabled
+4889c381-17b0-40eb-83e1-b9d477f26955,Distribution List - Expansion Server changed
+8556e786-f8d4-4c62-a840-24e8c6258433,Distribution List - Group moderator list changed
+2266fa10-bc56-4bc6-bbde-f6db13263419,Distribution List - Hidden from address lists changed
+b56089d5-6b3a-4bd2-9473-827c0289e68b,Distribution List - Managed by changed
+2ef7f327-16b3-41c5-9f69-aa5432a0dfd1,Distribution List - Maximum message size changed
+ed3a8c1b-cb50-44ed-982a-1c5310ce6567,Distribution List - Member depart restriction changed
+4fc57f67-be0a-48a1-a220-8b7957d0c860,Distribution List - Member join restriction changed
+7b2a1df3-8938-42ec-bd63-7c5ea00e6cc4,Distribution List - Messages sent to this group have to be approved by moderator changed
+0b0e0026-d4ae-412c-afba-819f06609f3c,Distribution List - Name (pre-Windows 2000) changed
+704129f3-1039-4c9e-8b77-25d1915d7b1e,Distribution List - Name changed
+69079690-274c-42e7-8c6f-7c121168f33a,Distribution List - Primary SMTP address changed
+425aefb7-acef-483b-8334-bda631938117,Distribution List - Reject messages from senders changed
+09f02238-f18d-4906-b871-09b972fae92d,Distribution List - Require sender authentication changed
+b43dfbac-fcc2-40ff-8139-920afd876874,Distribution List - Send delivery reports to group manager changed
+e238d184-5ef4-4814-899f-9f43edeb8b04,Distribution List - Send delivery reports to originator changed
+a7c6537a-c4f3-4ce5-b5b8-770f38c7f1d1,Distribution List - Send out of office message to originator changed
+cd1a9a42-6714-49da-8505-82e11af0602e,Distribution List - SendModerationNotifications changed
+864bc633-a9f0-4d2f-ba67-3dc5ce4179d7,Distribution List - Simple display name changed
+bb8fcd5a-4a75-470e-b8dc-32dd471e1eee,Distribution list display name changed
+b7a73394-cabd-41e3-bd7d-2750f4536ef7,Distribution list Expansion Server changed
+88b15dd9-f096-48fb-90a7-cd4f7505e8ef,Email addresses changed for group
+82b8eb27-0f8c-41f1-a922-9e00f67539bc,Hide Group from Exchange Address Lists changed
+87c5db41-11b0-4224-8b34-942d95a565c4,Mail disabled for group
+aa5bf33e-010e-45e5-b658-4aeae3b5306d,Mail enabled for group
+da7da44e-c25f-4884-af72-a4a8f135af7b,Message Size Limit Changed For Group
+6cf096bf-9dd1-4462-b2b2-ac7c2a8fe1b3,Primary E-mail Address Changed For Group
+882ae74c-438b-4f52-8cfb-1b3d8a43d762,Send Delivery Reports to Group Owner changed
+5c91dcd8-a829-4a6c-950f-a3330865f571,Send Delivery Reports to Message Originator changed
+8dc326a3-f75b-4ed4-8726-d38e6cb67514,Send Out-of-office Messages to Originator changed
+d13a920b-cd3e-459f-b756-bc2bf3fb8074,Alternate UPN suffix added to enterprise
+ef9eb855-e05c-459c-9314-d4b01beff7b5,Alternate UPN suffix removed from enterprise
+361f93d3-467d-43bb-8a20-5092ac13014d,Domain removed
+e8e4f280-3023-4cc8-9baf-fc9bead4ecb2,Extended access right added
+b7e9646d-1b12-4f25-b119-3e93181d4dc4,Extended access right removed
+c48e487e-e486-46bf-950c-c6e0668d71a6,Forest functional level changed
+242eaa3c-d21b-408b-a17b-21ded5fe14e6,Subnet added
+5d71dbbe-2103-418b-ab94-329169df9502,Subnet removed
+ac0f4b22-031e-4d60-bd7b-94771a6e683a,Attribute added to optional attributes
+a1263721-53b7-4e50-8404-719fa3175e90,Attribute removed from optional attributes
+37ed70f2-779b-4b8d-998c-71186ebaa85b,Class removed from auxiliary classes in schema
+3764e579-ead4-4993-b2e0-9f9cc7ead840,Class removed from possible superiors in schema
+9d220770-f303-4a4e-a243-ac4c151e6966,New class added to auxiliary classes in schema
+b36a5a7a-de65-4c2a-837b-934b89089485,New class added to possible superiors in schema
+1940528f-cbea-427a-8ebf-bb58122f9f9d,Schema attribute added
+6c2c6442-a8ee-4603-bf46-75d674d2f8b8,Schema attribute Confidential flag changed
+ee9bf9e9-2748-46ee-a2a7-8aa9e99d9979,Schema attribute defaultHidingValue changed
+dfeb0861-698c-40a2-b668-7577f9651d2f,Schema attribute GC flag changed
+c5843a33-af65-44dc-8213-25236744583e,Schema attribute indexing flag changed
+11ee4847-eda9-4c5c-b07a-5bd2521b0454,Schema attribute RODC Filtered flag changed
+d5fc329b-ee30-47f1-9b77-60b4508e120f,Schema class added
+c6981625-e30a-44c7-bb03-7ddfc6a9aeb1,Schema class default security descriptor changed
+b8332a30-c21f-4df0-918d-64ab8fbc6e02,Schema object disabled
+15ac8697-9122-4fdb-8e86-f8dd6c8194e4,Schema object enabled
+2e82c07e-75ee-45ca-ae37-dffca29cd5e6,Schema version changed
+19b36478-e3e9-4b49-930d-0c73ff199e6b,Active Directory protection template added
+9a39128d-2544-4bc1-8a2b-8a899d08f21e,Active Directory protection template changed
+99822926-e8e9-4252-be55-7da8b6337ab7,Active Directory protection template disabled
+82fbfd10-5d34-4593-b13e-8221ed81c51b,Active Directory protection template enabled
+7e4db9e0-80d5-4db9-bc15-ba98931870e4,Active Directory protection template removed
+e3a11296-91b6-4c1c-b3d6-6e7ef1e51a3f,AD query container added
+6729315c-1899-4f95-9382-24ffc996abd6,AD query container disabled
+bce22743-ce5f-48d0-a7fa-18537c569a74,AD query container enabled
+2f377835-58fd-40a5-a094-b451753c3cb5,AD query container removed
+3f6125b8-1c5c-4eb8-83e8-7880829b16bc,ADAM Attribute severity changed
+9775c61e-a4e2-4bd0-92e4-b318cc0460c0,ADAM monitoring point added
+fc00bad7-f521-4d66-94f9-296dd21ddbf3,ADAM monitoring point removed
+014f56f0-fcbd-46d5-b413-814ac4054c2e,ADAM monitoring scope disabled
+c9d2cc67-8eb8-4f72-892d-829a1a4bba09,ADAM monitoring scope enabled
+47eb9970-9b17-4d06-a7f9-292d20b6f910,ADAM protection template added
+af00fef9-338f-4fa0-bb61-d8cd18ba2a98,ADAM protection template changed
+1c7e981d-e919-4157-9df5-f7be9a1d43da,ADAM protection template disabled
+783086e3-a548-4650-a58a-b23a3a2bd235,ADAM protection template enabled
+e77f14c3-43d5-44a0-8365-fb308cc1bd25,ADAM protection template removed
+5e813e3f-8d7f-4f18-a578-59c1ec763459,Administration account added to Active Directory protection template
+3b6148c3-5606-4c94-93ba-917134ff486d,Administration account added to Group Policy protection template
+193e6cdb-87c6-42a2-a08c-d478ebf0c38d,Administration account removed from Active Directory protection template
+bbfbc6d9-7db9-4606-ad36-cd2201edba8e,Administration account removed from Group Policy protection template
+57b57f1e-b3cd-48a9-9638-a73c98905fc8,Agent added to EMC auditing template
+7feee118-ab7d-4ced-9b25-b99589493761,Agent added to FluidFS auditing template
+6e762665-8e16-4a7e-a117-8e5938163b91,Agent added to NetApp auditing template
+e87ccb3e-debc-4171-9c82-7160b5afd0f1,Agent added to SharePoint auditing template
+c73de01a-4dc6-422e-9e1a-b7939d6b5afe,Agent added to VMware auditing template
+35a6b872-61f6-40a1-aad2-07b79ef96a4d,Agent configuration AD Query delay changed
+6ef99683-1a03-40ed-b5f9-f81a7918675f,Agent configuration AD Query elapsed changed
+183087fa-5d41-4d6c-abeb-e7cced54fc04,Agent configuration AD Query results changed
+4a0dce3a-6db7-47da-b2db-2f2d1a250754,Agent configuration added
+47d1f256-d3fe-4072-b1c7-57acbd21d666,Agent configuration agent load threshold changed
+5f77f43f-56e2-4b58-8efa-43f990fe4657,Agent configuration assignment changed
+65a13985-2f0e-4630-82e3-8a93a5aaee13,Agent configuration connection days changed
+5c669265-eb7d-4169-8339-d4e03c722faf,Agent configuration connection from time changed
+a23866b1-0e9a-464b-b570-07cc64b0515c,Agent configuration connection to time changed
+0f835ea2-bc87-4c78-bb67-4345c28ec2f0,Agent configuration exchange auditing delay changed
+c8b5d53c-3b11-4cb3-aaca-b298409258f0,Agent configuration file system auditing changed
+19bd6f74-380a-407d-b51a-9d42807569a2,Agent configuration file system auditing delay changed
+be896f96-ae46-4858-a9e9-1e41ecdde55b,Agent configuration forwarding interval changed
+be55fa42-b2af-44a0-9979-0f6f42e008aa,Agent configuration max events per connection changed
+14699ae8-f667-4e67-bb25-19ed86361664,Agent configuration polling interval changed
+0a0d1ab3-8de6-48ba-9bd0-f1b54a295907,Agent configuration removed
+399242e8-5ee5-4bfd-b438-64695e5689f2,Agent configuration renamed
+403dc28f-117e-4fdf-b6e4-669243dae0be,Agent configuration retry interval changed
+9121c6d4-64be-43a9-954e-361cb5530f60,Agent configuration service port changed
+c5632ffd-18e1-4467-854d-c4a9bbcec897,Agent configuration SonicWALL AppFlow port changed
+5b2e944d-ac72-4a1a-9682-1e38f93c7436,Agent configuration SonicWALL data cache interval changed
+79495b10-84ed-401f-9802-e914014e8501,Agent configuration SonicWALL processing idle time changed
+92d8fad3-a850-4dfa-af15-01984535b7ca,Agent configuration SonicWALL processing interval changed
+ee664ebe-744c-408a-855e-8e26d3da10b4,Agent configuration SonicWALL purge idle time changed
+e193acad-2521-4082-abe9-c6bdcb0be91f,Agent configuration SonicWALL purge interval changed
+e5306605-2300-4586-b2fd-02295adf8822,Agent configuration vmware polling interval changed
+24e9a3bd-b411-456f-b3a6-fc0c71e60dc1,Agent Heartbeat check disabled
+f533e115-4da6-47db-960d-f1f585fb11a8,Agent Heartbeat check enabled
+55ccbb01-8174-48ea-9c17-5d08c420bcee,Agent Heartbeat check minutes changed
+b518c2c2-14b3-4f57-9d51-862cb1fd4126,Agent removed from EMC auditing template
+905da153-abe7-4ea3-9d7d-e5fad828e0c9,Agent removed from FluidFS auditing template
+a0bf9407-06b8-4151-a0ec-6df222b05ce5,Agent removed from NetApp auditing template
+eaad705b-d303-4946-85e5-27793a8f0355,Agent removed from SharePoint auditing template
+bf37652c-0ef4-4338-b750-dd5b230b1113,Agent removed from VMware auditing template
+fe1bbb5b-e419-46ab-a826-3337095a5692,Agent service has more than 100 events waiting
+5b0941ff-6767-4e9b-b1ed-50dff0e31f38,Agent service has reached a critical load
+af2ece34-5cd2-4d73-93f6-254ab90a2893,Agent service has returned to normal operations
+edd15f80-a02a-4ed1-b153-638d0e54663f,Archive job added
+94b85f26-f9c4-4b62-b9b8-baf807b7be3d,Archive job changed
+13ce914d-8f82-438a-908d-925369158941,Archive job disabled
+5d82f5a9-e619-450d-b0e3-c6544498233d,Archive job enabled
+6b1b2e44-d6f6-45cb-81dc-34cb1d540e10,Archive job removed
+5dcd3533-26df-4946-affb-a2db2d67dd84,Attribute added to Active Directory protection
+e7437065-8c51-45ef-9e5b-c016364e080c,Attribute added to ADAM monitoring
+0640b502-fc51-4d43-a6ee-79f5caf41005,Attribute added to ADAM protection
+d19c108c-9886-43e7-a129-5bf5160bd889,Attribute added to monitoring
+007af548-2d6b-4974-b052-79988c57caa7,Attribute removed from Active Directory protection
+81c75d94-473c-4ef8-8b95-4947292674eb,Attribute removed from ADAM monitoring
+374320ff-e502-41da-aeeb-8822c277121f,Attribute removed from ADAM protection
+1ecfd59e-4bf7-460a-ae33-8e1b2cde55a1,Attribute removed from monitoring
+3c3231b3-858c-4f74-b9d5-3998a330109c,Attribute severity changed
+e814b53b-48ac-4dd4-b649-5b225763980a,Audit event description changed
+6df15ffb-5d47-4866-b297-0a2442255295,Audit event disabled
+5fe30c13-b81f-4a3a-bec8-61b4b2ccf5a5,Audit event enabled
+3b30e32f-d31d-41a7-b6ec-d34cb838c1a8,Audit event results changed
+bac4448b-f441-4813-8db5-a6bef2ac3640,Audit event severity changed
+fcbe1e48-c2a2-4a22-b102-610a9dd68ae0,Auditing disabled for EMC path
+344b7fec-c928-497d-84ca-a72bd1f17314,Auditing disabled for file system path
+b88916e8-bfdc-4c51-ad7b-9029bb250718,Auditing disabled for FluidFS volume
+7d6b8eaf-5ca7-418c-9f14-8a86e3379270,Auditing disabled for NetApp path
+802c7aa3-1b41-4737-82d2-13abe0d3a7b3,Auditing disabled for registry object
+bfac718e-55f5-42ea-a57d-c58602be748b,Auditing disabled for service
+eea67136-cb0a-401f-ae85-121c1ca80705,Auditing disabled for SharePoint path
+de37cac6-e8f2-4f2a-8a64-4258b41ff11a,Auditing disabled for SonicWALL Cloud Storage site
+d9312b27-79ff-4e32-804f-6aa44a8652c9,Auditing disabled for SonicWALL Web Site path
+a51a66a9-92fa-4d5f-b34f-c59f69a05de8,Auditing disabled for SQL instance
+4a3d9ad6-4f5d-4ee8-b355-8324ba3ecef2,Auditing enabled for EMC path
+cb521918-b760-48d0-a215-afafd4a5495e,Auditing enabled for file system path
+cc7df0c6-6e23-43b3-ac95-0895771f1902,Auditing enabled for FluidFS volume
+29e0bd4c-abe2-4848-9943-33d3e41afef9,Auditing enabled for NetApp path
+7abca4ae-8074-46c0-ab7a-f114ced01c34,Auditing enabled for registry object
+7a90770a-2b7c-40bc-88fc-0e0ea2898edf,Auditing enabled for service
+dc58e27c-850c-4a3c-b150-578dd1ef91e8,Auditing enabled for SharePoint path
+4f9e1387-970f-4e44-aedc-ab7613d126ce,Auditing enabled for SonicWALL Cloud Storage site
+ddae48ab-8f2c-44e2-a4df-fc25a0fc7506,Auditing enabled for SonicWALL Web Site path
+6d7bb36d-d225-4e93-871f-5a00ebdd09b5,Auditing enabled for SQL instance
+ef6384f1-0821-4cb0-b408-780c560966db,Authentication options changed
+ce6aac47-7f7c-4280-8b3f-a7d2e015ae12,Authorized account added to SQL Reporting Services template
+fd0b7f65-7428-4638-8739-dd3c8f155862,Authorized account removed from SQL Reporting Services template
+e68ccc12-a7f4-403a-a232-979f76627dc4,Azure Active Directory auditing template added
+e4673714-c829-4a48-b7ad-d82d845d42ef,Azure Active Directory auditing template disabled
+93b05fae-b4c0-4d65-a4b6-8f26f4224e71,Azure Active Directory auditing template enabled
+a56fb902-ffa1-43da-9bfe-ac7de45d538c,Azure Active Directory auditing template modified
+0ec195d5-d6e0-4f17-8dd7-014e113bf677,Azure Active Directory auditing template removed
+1b7ee8b5-bfa3-45ef-b3bc-7f771a53f3d6,Azure Active Directory web application and Change Auditor agent were modified or reset in auditing template
+39d456cd-bade-4b50-a0a3-64e6f6f47e47,Azure Active Directory web application created
+3f944e2a-7313-43ad-9097-e35dbd235802,Azure Active Directory web application modified or reset in auditing template
+b78d450e-cef3-4823-9ca3-1b47fbb31314,CEPP configuration changed
+bc29abbd-0174-4902-8a5a-afd839c325c1,Change Auditor PowerShell Client Logon
+2bbccfd9-d39b-4fda-98e7-61e2a016e3e4,Change Auditor SDK Client Logon
+b5268837-af99-4c64-816f-923aa3cc7859,Change Auditor Unknown Client Logon
+b8594fb1-1e9b-459e-8f4b-0cff6ded3715,Change Auditor Web Client Logon
+231e2791-a72e-438e-bd14-04ce4d0074c7,Change Auditor Windows Client Logon
+bb05fbc3-0c94-4388-8c5b-847a82b1a2bc,Change Auditor Agent restarted
+853820e3-8e50-458b-b5a2-1a6a4ba9d8dc,Change Auditor Agent set uninstalled
+d51f7302-2d63-49e8-b318-2b84b723c63e,Change Auditor Agent started
+9f9bbfe7-bb77-4629-939d-8838859580e3,Change Auditor Agent stopped
+05665ac9-491e-49e6-81eb-a124223e4b9a,Change Auditor Coordinator set uninstalled
+6c4c67fb-1813-4364-b6a8-7e2788cccd42,Email Reply To Changed
+ac98147d-3d93-405b-aee5-dbc462aace74,Email Subject Changed
+c52b29d7-906a-46cd-856a-9facda72cac6,EMC auditing cepp.conf changed
+d9b682d7-5f79-4a69-8c45-db14a87de75d,EMC auditing template added
+637ede43-ef48-4f5d-86a8-76c9b91af90b,EMC auditing template disabled
+c029507a-9a49-4baf-9209-79d4d7071708,EMC auditing template enabled
+5fbe5f1f-bf4a-4ec1-9fc0-f5aae0f6d1ba,EMC auditing template removed
+7ea9dead-08a2-4928-8834-6bcc90658f07,EMC path added to auditing template
+9adf549e-9e2e-42dd-b827-48ff8f902601,EMC path changed in auditing template
+f55cfb0b-3474-467b-89fe-0814ba47e2a1,EMC path removed from auditing template
+a72e7579-e2cc-4822-95fa-2733b3129cdb,Event logging changed
+1ed80320-313f-4652-b20a-0d99a85c7bd7,Exchange container added to protection template
+d3b580d4-1ae3-4cef-a5ee-d3046d1ddaa1,Exchange container removed from protection template
+a6e3c6fa-173a-4610-922b-2268b8727f5a,Exchange mailbox added to monitoring
+57c788d6-f195-4a26-a3d4-3c8f4aa3ca21,Exchange mailbox attribute changed
+6503e13b-f5b1-4aac-b677-c32792be3e38,Exchange mailbox disabled
+451d4862-e5f3-44f1-8475-c96683b63dae,Exchange mailbox enabled
+a73dea10-9fa5-4a9c-b249-885fa055163e,Exchange mailbox removed from monitoring
+3b83e935-c5d0-4e06-b2b6-dc6ab2cc5b30,Exchange protection template added
+8bbec049-f9bd-4f05-b553-95273ed3a800,Exchange protection template disabled
+56f3a40d-51ff-4d87-89e1-ca3a5f2c42f8,Exchange protection template enabled
+a430d21c-069b-40b5-bf9d-acf3a71b71d7,Exchange protection template removed
+3c2be6da-b2ca-43cc-96cd-0811bc5bfbb2,Exchange shared mailbox auto detection disabled
+b91bac74-79f3-4baa-a367-f50f2d310f6c,Exchange shared mailbox auto detection enabled
+50e2f939-4dfa-4b8d-8675-de04a80d409c,Exchange user defined shared mailbox added
+919f26f3-5be0-4e7d-b770-17b41362f2c9,Exchange user defined shared mailbox attribute changed
+f46e124a-2330-4562-8b20-b685b318b2c0,Exchange user defined shared mailbox disabled
+94ac7e53-99c4-47a4-80db-e644fbfad7d8,Exchange user defined shared mailbox enabled
+91e7b9ec-30f5-4587-8dcb-b7597a4bfb0c,Exchange user defined shared mailbox removed
+4275f6d1-f80e-42d9-9dc2-be6f0316318f,Excluded account added to exclusion accounts list
+0bf46cca-a1af-4508-8fba-7616c66c0e00,Excluded account event class added to monitoring
+d8da0ea1-a7d6-46b7-876d-a162b276b423,Excluded account event class removed from monitoring
+c9c45976-55ab-4281-ba3e-632fd215c0af,Excluded account facility added to monitoring
+8119da91-dcac-4ea2-ad0b-89693ad0535c,Excluded account facility removed from monitoring
+5ec45be6-71a0-40b3-ad27-d900fbc45167,Excluded account removed from exclusion accounts list
+0063c247-6f8d-4d0e-8b24-2727e5e36397,Excluded account template added
+abcfedd5-4e39-4c01-b1b6-dbed617e8f43,Excluded account template added to agent configuration
+b5270233-a921-413a-830e-7d4a55ce5bd2,Excluded account template removed
+43432796-bcf2-4046-8623-6a7ab900573b,Excluded account template removed from agent configuration
+b508b64e-71ca-4e43-adb4-1ed17057622a,File protection template added to agent configuration
+f1bfb409-533c-4469-8245-54607286f659,File system auditing template added
+9fed355f-088b-44e6-8d4b-aec0d66c25cc,File system auditing template added to agent configuration
+d6490f63-6fca-4bd1-84d3-40ebd231c521,File system auditing template disabled
+ec5d243b-016c-4935-ae66-17da59f867e7,File system auditing template enabled
+0fbb38a4-43a5-44ad-b082-833eb421a332,File system auditing template removed
+b6404829-80a8-47e8-91c2-991fc5a13880,File system auditing template removed from agent configuration
+ed3fefa0-6ec8-4038-88c7-3d4fe6c8cd3b,File system path added to auditing template
+c88e3223-f4db-4b86-acdd-0c571c8de3ba,File system path added to protection template
+38ce2891-2682-43fd-918f-d4f60914e612,File system path changed in auditing template
+6bd96016-1572-4666-ab47-4d74d7e7ee70,File system path changed in protection template
+83d656fc-ee99-491e-bd5b-db4d1aa9d06a,File system path removed from auditing template
+425a3590-7fda-4109-9566-244b26a30065,File system path removed from protection template
+af14beec-8b14-444f-9bd5-d58bfd44d02d,File system protection template added
+34f6c237-b94f-420f-8ce6-d4ee89fd3df0,File system protection template disabled
+5c8a08dc-f6e1-4600-b69d-7a6afe3083a8,File system protection template enabled
+b877ae03-38e5-4264-ac53-f9b02f8e3e62,File system protection template removed
+134b006f-c54a-4b13-a4af-b3a8508f65ca,File system protection template removed from agent configuration
+b766cd03-0869-48f8-825c-511b9ffe7c58,FluidFS auditing template added
+5c99f84d-88db-481a-82d7-9ae90d08fa7b,FluidFS auditing template disabled
+811f8409-fedc-4e5c-8cd4-6a844e592d04,FluidFS auditing template enabled
+33b58858-b725-4c25-ba30-81b3fa62e574,FluidFS auditing template removed
+1d2387ed-d866-4f8a-b897-c5087cc29cfd,FluidFS volume added to auditing template
+24bb4fd6-5f25-4dd7-9f3a-b193e2605248,FluidFS volume changed in auditing template
+f1cb62c9-7bc7-4d46-8e48-c170de85a50f,FluidFS volume removed from auditing template
+cd2d6b11-2476-48da-afe1-6fa8a95be9e3,Group added for group membership expansion
+729a491d-778c-4299-8137-ad857e8b86bc,"Group added to ""Member Of Group"" monitoring"
+af65c4a0-94c7-4a0f-a2c1-16f16fd20fb9,Group membership expansion changed
+8a82d792-47af-4abe-b987-d086802d6d75,Group Policy added to protection template
+85089aed-b177-4f7c-9f85-234133aaa370,Group Policy changed in protection template
+b1b65559-9bb3-438c-a0e6-93edf130ed59,Group Policy protection template added
+281ec92b-4f20-4de5-83f2-692b675c0989,Group Policy protection template disabled
+9797ff5f-8f44-4493-b501-792d49615e01,Group Policy protection template enabled
+f163093c-08e2-4705-9fe3-aa20e10789ae,Group Policy protection template removed
+741d24bc-dfe6-4db0-afb6-391a31287cb0,Group Policy removed from protection template
+b42e90e8-ff10-4182-8c7e-f0868d0d94d9,"Group removed from ""Member Of Group"" monitoring"
+8f3ec8d8-7c83-4016-b0ce-e42778944ff1,Group removed from group membership expansion
+f614a85e-3f96-48bd-9266-ec17892a16b6,Host added to VMware auditing template
+bbc3c89f-496f-43c2-9b0b-fd2be1f3d3d3,Host removed from VMware auditing template
+4e02ac36-8bb6-4719-823a-d0c4337c117c,Monitoring point added
+0108a237-9819-4539-ae15-40ee4aeec3f0,Monitoring point removed
+1ca09c41-b8f1-4447-a65a-dc8d38da87fa,Monitoring scope disabled
+6fed9ba6-509d-481b-aece-027b56cdd1b2,Monitoring scope enabled
+5c9777fd-1235-4ac0-904b-b4294e6ff264,NetApp auditing template added
+4bc64e80-1345-4543-b5d6-24c6968b8411,NetApp auditing template disabled
+da6d9359-825f-4952-90a4-4138716ee25f,NetApp auditing template enabled
+f0b100bf-e30a-4b31-824e-9de970d1cee8,NetApp auditing template removed
+c7e11202-c125-4d63-b35a-43194c88b824,NetApp path added to auditing template
+d53693a1-fe46-42bc-845a-07ac06790044,NetApp path changed in auditing template
+2b884b83-ecae-40ca-8586-66fd14d46bf3,NetApp path removed from auditing template
+8671e3ff-636f-4bc9-a5fc-9066641cf79a,Object added to Active Directory protection template
+1baedf57-045a-49c6-a6d4-443ff095a072,Object added to ADAM protection template
+36afcfcf-6bc8-41d8-8dfc-77c0b394eb9b,Object changed in Active Directory protection template
+74e2ad47-1507-42df-8a45-faef1baa93a9,Object changed in ADAM protection template
+9bb4c117-fd16-4252-9649-3d77ebf83160,Object removed from Active Directory protection template
+2869829a-f049-417d-9f49-ac76abf8ca2f,Object removed from ADAM protection template
+f37a9388-d76b-430d-b456-b811c0a79e0c,Office 365 auditing template added
+2f5aca93-6756-4220-8f5d-928f816639fd,Office 365 auditing template agent changed
+2cc1767c-d4a7-4bba-9fe1-4a824020fba0,Office 365 auditing template disabled
+c603c639-9526-48d2-ba84-3aaeb42a8bb3,Office 365 auditing template enabled
+909668ef-ab6e-46f3-9184-128fba2aceba,Office 365 auditing template removed
+b418f90b-aef2-4e1a-85f3-e73bc48a97b6,Office 365 auditing web application changed
+a52f19e2-42a1-4240-8ee0-13404965fb15,Office 365 auditing web application key changed
+4dbb89f5-d3b8-4149-a853-e701d6cc1bb3,"Office 365 Exchange Online ""All administrative events"" auditing setting disabled"
+97f17ceb-4f65-4810-bf0c-9fe443b1f409,"Office 365 Exchange Online ""All administrative events"" auditing setting enabled"
+10126a5b-dd16-4998-a512-3674f94cc05a,"Office 365 Exchange Online ""All mailboxes for non-owner events"" auditing setting disabled"
+81bbb286-eb8b-4289-be2e-2bf49d7399a7,"Office 365 Exchange Online ""All mailboxes for non-owner events"" auditing setting enabled"
+b9329805-e017-46cd-a8bb-2463a0afd3d9,Office 365 Exchange Online auditing configuration account changed
+cd645d47-dd73-4052-8bf7-e98d249d2bce,Office 365 Exchange Online auditing configuration account password changed
+d3f0ad09-7bd6-4767-b607-efe52232422f,Office 365 Exchange Online auditing disabled
+93c41c19-e270-4e5e-9bb2-daba5f4cf5d4,Office 365 Exchange Online auditing enabled
+b023d615-4efb-4e79-86c5-a0042564ed05,Office 365 Exchange Online mailbox added to auditing template
+3c274407-e720-48f7-8053-afd55cd52d8c,Office 365 Exchange Online mailbox auditing configuration changed by an external application
+2b18a104-da2c-4255-9cf3-c32a993372af,Office 365 Exchange Online mailbox auditing configuration failure
+b9cd9b64-0515-4e01-a4f5-07f4844a6d34,Office 365 Exchange Online mailbox auditing type changed
+7c6debf6-f74d-479d-a533-d31a3bfdba9c,Office 365 Exchange Online mailbox removed from auditing template
+ba9b97f4-f81d-48eb-8305-48f6a85278e8,Office 365 OneDrive for Business auditing disabled
+eb397ca7-1228-42cb-99a0-200ace704ca0,Office 365 OneDrive for Business auditing enabled
+e0da6ca9-94c5-4b51-833d-80b50f19c1c6,Office 365 SharePoint Online auditing disabled
+993f0e1b-95d3-4d54-8d97-7933241a44e6,Office 365 SharePoint Online auditing enabled
+29bddf33-3deb-43d8-95d0-af9b3f535e01,Override account added to Active Directory protection template
+6eaec009-93aa-4bdc-94eb-4e1552ec6d5e,Override account added to ADAM protection template
+c0a6f31d-daed-4298-abca-eb33bc076d4a,Override account added to Exchange protection template
+afe50aa4-5b7f-4433-b3e0-b72ef1b5c007,Override account added to file system protection template
+98dfacc6-e7db-4434-8f96-c32cb2df31e7,Override account added to Group Policy protection template
+8709d0ec-b88a-4e01-8381-51c30cc7c140,Override account removed from Active Directory protection template
+00acd6ff-c33e-488f-ac14-8c5c1a90d6b2,Override account removed from ADAM protection template
+8e7ae067-46da-4f6b-b48b-b44a5c7abecf,Override account removed from Exchange protection template
+76018b92-c2be-4c18-9b2b-721274c314b5,Override account removed from file system protection template
+b1396859-19d3-44cc-84c0-cd0a4555bc52,Override account removed from Group Policy protection template
+c7036bb5-952c-48db-8342-211683fd68b6,Override accounts Active Directory protection template Allow
+8b9ccd5d-5ea0-449b-917d-34c6e3627327,Override accounts Active Directory protection template Deny
+59091622-9f55-447a-8c37-81b33586a15c,Override accounts ADAM protection template Allow
+6018a9ea-6e96-4846-92c3-82dd37280fc9,Override accounts ADAM protection template Deny
+734f2a7e-4f7a-486a-b5ac-6b5a8cc66186,Override accounts Exchange protection template Allow
+7f1661d9-d8d1-4e2a-b3d8-52ec1f019ca8,Override accounts Exchange protection template Deny
+640f4ce9-1528-432e-bd03-5ab2fdc3b3db,Override accounts file system protection template Allow
+e55f7361-5062-4b4b-a22a-80a0441dc2ab,Override accounts file system protection template Deny
+7c59d593-766f-452f-b799-f55d7a92244b,Override accounts Group Policy protection template Allow
+af440182-7665-4962-8515-eeef57736466,Override accounts Group Policy protection template Deny
+a96664c4-6d38-4524-94fb-4a6d7f64039e,Private report disabled
+8a045df5-ddd2-4371-a78a-02c7cb389cdd,Private user alert disabled
+7804714a-c0f3-4da8-8448-32f854fa33cd,Process added to file system auditing
+be2637e4-6d8c-4b9d-9747-f5c4b032aec6,Process removed from file system auditing
+91a93030-c9fa-4dc0-9026-22f066f5790c,Protection disabled for Active Directory object
+5660cdcb-4aad-4582-a52f-4371abdb9e5b,Protection disabled for ADAM object
+e3db6b04-b50f-4f2c-b8f7-4500e7d4e693,Protection disabled for file system path
+5816aa5e-8b08-4425-a593-bfe0f89b6a7c,Protection enabled for Active Directory object
+de190467-5603-4ce6-a564-7de14610b03d,Protection enabled for ADAM object
+9b1764a7-0bbd-49de-9377-9469b17456ea,Protection enabled for file system path
+dd02d9b8-f2a4-477e-b67c-fc3b21a4e17a,Protection for Exchange container disabled
+809d8407-05bc-4b00-a5f9-aac6174d170a,Protection for Exchange container enabled
+8e4eb732-b573-45ec-a877-9531d215b272,Protection for Group Policy disabled
+b2aaa8d5-bf9f-4bd6-b7fb-e0a9899cd9c2,Protection for Group Policy enabled
+c43543d2-9729-431b-9e60-c0b3288d2c90,Public report disabled
+aa9a46a2-1a18-4465-8761-fa5b5f4808d1,Public report enabled
+a4bed94d-be88-4514-8416-fdf1ec16bf4b,Public user alert modified
+4ad44e35-7eb2-42b2-bf96-df21c8e04e2b,Public user alert disabled
+a770053e-7638-468b-a995-1e4fa3e6d6d5,Public user alert enabled
+3c713625-501a-4f5b-8c5e-47d780ce4ae3,Public user search created
+73e2a40f-da73-4599-8a5d-1e92a9c81794,Public user search deleted
+ef847d26-53bd-4f5f-8922-b927e941fbef,Public user search modified
+a4f15273-4318-49db-b7bd-d9dbc2074539,Purge and archive job added
+683aa67c-33ff-41d0-97db-3c7bd365e2b6,Purge and archive job changed
+ec1982fb-c735-4ca7-a33f-d1b08022069c,Purge and archive job disabled
+ec113eee-5a8b-4187-9772-a77afdc5a2a0,Purge and archive job enabled
+034b2da2-cf6f-488f-b2b2-65bcbca4926a,Purge and archive job removed
+45896148-0fe1-4122-998c-8baab7284bb4,Purge job added
+91b45538-fff2-421d-b6be-7d62393eb65d,Purge job changed
+bae8c6dd-3181-4ce4-acd1-653d086e377f,Purge job disabled
+476da270-8dd9-43a6-add7-df17c7c77864,Purge job enabled
+1e28c864-a784-45c6-841a-663c00202545,Purge job removed
+9e2c0815-763d-4971-91c3-e82ea3abe4ce,Refresh frequency for group membership changed
+5738b3b0-1041-4e23-afe2-a2a803c1522e,Refresh frequency for the list of expanded groups changed
+74286cf5-d079-4876-9ff6-bf22a46571f1,Registry auditing template added
+27f33112-7e46-42bd-9fbc-dffffafe8873,Registry auditing template added to agent configuration
+c9ecfc56-3978-43b6-bf85-8e530693d3ff,Registry auditing template disabled
+367b8cb7-b6a1-42ae-b4dc-8fdc0dd7c96d,Registry auditing template enabled
+e162fa3a-28ed-48ea-8ca8-5329716ba44e,Registry auditing template removed
+51f7da9e-d029-45c2-bb2f-31490d5e5177,Registry auditing template removed from agent configuration
+9ec4c158-f0b2-41a0-9b65-1d24440dbd3c,Registry object added to auditing template
+11322703-abbe-4b95-be5e-dda245829e84,Registry object changed in auditing template
+85e5c715-5f1d-4f18-a570-56e55b983f1d,Registry object removed from auditing template
+ee2e2673-9f04-4276-b317-bd8265cc116d,Report layout added
+83e1f753-8aa7-4b5d-b7ab-ed8474e8d83e,Report layout changed
+7d234fef-f1d9-4f8a-80c3-db378c2695d9,Report layout removed
+652c59b9-3b94-40d6-b9d3-1ce59aca5e4b,SDK Agent added
+d08bb9ee-bfed-4f2a-a17b-ad8633c1bd29,SDK Event Class added
+eb7ca437-0c98-4bd5-a9b5-ab1ace68bca9,SDK Event Class modified
+379e3b34-a154-4d34-bd29-7ea1d5955c6c,SDK Event Class removed
+30fac59a-65d1-416d-8406-0c25020080e6,SDK Facility added
+1b9ccb69-fec0-45cc-979a-397709b4204a,SDK Facility modified
+2ac9a3ac-936a-4006-9117-7342fa3937e3,SDK Facility removed
+2924b44d-bef5-4bf6-a6d2-1b58e225a145,SDK Machine added
+6843989a-4eed-4329-86cc-e7a9b9766c81,Service added to auditing template
+f15938c5-94d8-4125-9441-f615e1ff69fb,Service auditing template added
+83be8d98-e591-4704-ae42-e387a6eee759,Service auditing template added to agent configuration
+5ec97717-9e68-4dce-9ade-279d2cf770d9,Service auditing template changed
+557eff67-2999-49d8-ae38-f9ac26ba3fd2,Service auditing template disabled
+5b1bdf20-917a-49f9-8f55-c3174d2b3be7,Service auditing template enabled
+540d9c42-f785-4da1-b067-71478ec4d65a,Service auditing template removed
+6cb7f914-2162-4e23-88ad-b90691ee5d94,Service auditing template removed from agent configuration
+fe0b8f2d-e554-4d6a-a6be-584970deeeae,Service removed from auditing template
+584e5ee1-f592-46bc-9922-ed47a5c72d4c,SharePoint auditing template added
+606d0108-fe1c-424d-b1fc-50568cc924a5,SharePoint auditing template disabled
+b1e72fcf-8846-4b98-a3ee-08927753e5ae,SharePoint auditing template enabled
+5510f683-af06-4373-b3ba-1bf85fdd0120,SharePoint auditing template removed
+2a6de5b5-6d4b-4bd7-a619-29f11bf8e30f,SharePoint event added
+486c991e-7382-49ab-8f34-6d53f576cb7a,SharePoint event removed
+3bb7bf32-b119-4f33-85c9-72a217dfe154,SharePoint facility added
+5235cb8a-47db-4642-a791-34a59d017ef3,SharePoint facility removed
+e61bac78-4798-4b32-a702-32a55e885d69,SharePoint path added to auditing template
+3f60869e-0894-4fe6-b854-c94fcefaeab2,SharePoint path changed in auditing template
+4329b084-47ab-4097-8667-213749d47b0d,SharePoint path removed from auditing template
+79776771-1098-4d20-8f2f-1add8744f599,Skype for Business auditing template added
+367a8a98-fd1e-48a9-aaa2-f8546bd16a7e,Skype for Business auditing template disabled
+0eace7a8-a26f-4c90-8bc4-b29437a95532,Skype for Business auditing template enabled
+9d94a71c-dffd-47c5-a71a-dc8fd7e9f37b,Skype for Business auditing template modified
+ddb23a9b-5022-4f9a-ad9f-6782ae0e86d6,Skype for Business auditing template removed
+723efb6d-dbea-4ec6-9d09-1fab7239a040,SMTP alerting disabled
+1fa1d062-2453-4826-9fb8-daa2229145b9,SMTP alerting email format changed
+7e4c4296-522b-4945-9be5-a6993e851b69,SMTP alerting enabled
+d39dc9de-ac66-45cd-b8c7-d18f1ad505aa,SMTP alerting from address changed
+ebec5f57-e96f-4c2f-832c-60bd57c7961e,SMTP alerting server authentication disabled
+1e055d0b-fd64-450f-a087-42715c796ddc,SMTP alerting server authentication enabled
+608c5251-8a5d-49a0-b1bf-8210edf3081f,SMTP alerting server changed
+7c5f2572-d3fa-4be7-9079-b333be31b7f5,SMTP alerting server password changed
+27a514e1-b754-4cda-b805-2f604c04ddec,SMTP alerting server username changed
+29dfa33c-2b28-4ae8-a357-8cbb1c50c76a,SMTP Lookup Exchange Account changed
+ff466ac9-43e8-452a-9fa1-bf2072a2bdfa,SMTP Lookup Exchange Authorization disabled
+b122dcdc-84e2-47ba-a960-ee322292fe4f,SMTP Lookup Exchange Authorization enabled
+c6825dc8-c7c9-4436-af45-e00bf4efb157,SMTP Lookup Exchange Email changed
+e3e54cb0-378c-407b-b3d7-9dec93ae3848,SMTP Lookup Exchange Host changed
+4651f74a-3218-4424-bdb8-5fa23d0ed5e8,SMTP Lookup Exchange Password changed
+14905e34-8b10-453b-ab47-a4c8b5bbf95c,SMTP Lookup Exchange Version changed
+62c52b0f-6513-4421-8538-9eb8836571cb,SMTP Ssl disabled
+9a678209-2a1b-42ae-b65f-cfc8f4dda658,SMTP Ssl enabled
+6df17446-ff6e-42e4-a4db-3a064086f88e,SonicWALL Cloud Storage auditing template added
+acfb9a06-42b7-4650-9cd1-75e3a77d57d5,SonicWALL Cloud Storage auditing template added to agent configuration
+a25a6760-cf13-49e6-a3dc-4c3d65d21cac,SonicWALL Cloud Storage auditing template disabled
+74fa2938-3a1f-49e4-8ac7-ef79d7f8f53e,SonicWALL Cloud Storage auditing template enabled
+8ed55ba1-b364-41ee-8fe2-a7828ff756f9,SonicWALL Cloud Storage auditing template removed
+80d3212c-2a33-4c59-9984-b8568b579fcb,SonicWALL Cloud Storage auditing template removed from agent configuration
+11c5a264-a82b-45f5-9dd2-4f420cade608,SonicWALL Cloud Storage event added
+b5393ce1-bba0-4210-8672-c685b630ce7e,SonicWALL Cloud Storage event removed
+7a60c176-4b48-4be3-896d-263d6afb2660,SonicWALL Cloud Storage facility added
+18725f35-52be-4ae9-84d0-462157db374e,SonicWALL Cloud Storage facility removed
+5384687b-d7ba-4613-81b1-f6a9ff749419,SonicWALL Cloud Storage site added to auditing template
+bf17b1b5-a341-4826-8c29-29ed996fe0b2,SonicWALL Cloud Storage site changed in auditing template
+18ca35cf-7918-4852-b5e6-6e5316363a5a,SonicWALL Cloud Storage site removed from auditing template
+75d45737-c624-4343-b839-f6dfcfe8d874,SonicWALL Web Site auditing template added
+040acd1b-5596-4655-9975-712181ead7c3,SonicWALL Web Site auditing template added to agent configuration
+4f3d774c-bc55-4503-8b48-58df997473a8,SonicWALL Web Site auditing template disabled
+f00194fd-ae48-4e20-862b-8b11d417ed81,SonicWALL Web Site auditing template enabled
+916ef427-9496-4ec2-80c2-ec8e305805c0,SonicWALL Web Site auditing template removed
+0d26ea97-f873-4a12-91cd-b3b358ea4224,SonicWALL Web Site auditing template removed from agent configuration
+89bbff95-1e5f-4db7-a341-d6159646f64a,SonicWALL Web Site event added
+0df437ca-f59b-4aa8-bf78-6b9017171baf,SonicWALL Web Site event removed
+bb7ccd87-67f5-4e0e-808d-bc9c1ea81cb8,SonicWALL Web Site facility added
+bacbeeae-34fb-4f83-b6e1-c3395a4c33ee,SonicWALL Web Site facility removed
+207143d9-61f4-4861-af1c-e6760ee45538,SonicWALL Web Site path added to auditing template
+e3507fc1-83d0-492d-9b0c-32333b79d783,SonicWALL Web Site path changed in auditing template
+27b3d345-2650-4221-b8ed-fa8ccd7ae0a7,SonicWALL Web Site path removed from auditing template
+d551a363-8887-46a5-badb-56052ad8da59,SQL auditing template added
+507fd1bd-7788-4dc2-8cc6-778666617d3f,SQL auditing template added to agent configuration
+52a9ea60-ffac-454b-b514-cfc17c0a48a4,SQL auditing template disabled
+35a3095d-5452-4e5a-b205-0332d7cc916c,SQL auditing template enabled
+2cee33df-3d97-4eb1-a6a8-76091b5538e3,SQL auditing template removed
+17fd532c-4818-46a7-919d-ef311346c9fc,SQL auditing template removed from agent configuration
+789a828b-1af6-45b9-9642-55da6e535076,SQL data level auditing template added
+295ae3ae-d1ba-431b-84cb-f7d02973e7b7,SQL data level auditing template deleted
+c9390cfa-fba1-4565-aca5-ce2ca99b0688,SQL data level auditing template disabled
+1609f259-40cc-425a-8f72-c0600983bed4,SQL data level auditing template enabled
+63a0e1fd-5323-4538-b90c-1c4c311f01ad,SQL data level auditing template modified
+567adbcf-1047-4623-b3d0-0febacb066fa,SQL event added
+9e6998a3-7894-487d-93c5-1dfa98e00594,SQL event removed
+4ca7f8ce-411a-49dc-ada3-695d0d42be7e,SQL facility added
+404a3282-b155-48a2-8708-5bb0e30f8ad0,SQL facility removed
+acea852c-0929-4b2e-a035-b670dd3f27b7,SQL filter added
+bebdaa0f-5b9f-460a-b69b-f3d89ee5a2d6,SQL filter removed
+c9f7407b-6b03-4e4f-994f-a630f7ee0f3e,SQL instance added
+bf075456-330d-41a7-8c6a-10581c2e16c8,SQL instance removed
+052a7411-c497-4e53-aba0-ce976231d42c,SQL Reporting Services template added
+6c7af669-6fc5-4f46-8f71-224f9c23b2b7,SQL Reporting Services template disabled
+3c4a979b-f1a8-4d89-9d43-8b2662c904ff,SQL Reporting Services template enabled
+634c45cb-81b2-4575-b368-1341fc0840b0,SQL Reporting Services template removed
+cad23e35-8dd6-44b4-84d8-1d3b620d82d2,The number of groups to expand per cycle changed
+cd07b2f4-2706-460b-b0fc-c459f3dee673,URL added to SQL Reporting Services template
+23d3afc5-9f19-4b2f-8a82-199a36ea2c61,URL attribute changed in SQL Reporting Services template
+a207605b-c8d3-46b3-b40b-4673ed76f330,VMware auditing template added
+7ba7dec5-2e0f-41c3-87b6-0ac1583cd655,VMware auditing template disabled
+6f065bf1-6abd-40b2-a58a-98bc61de0663,VMware auditing template enabled
+9f70d831-0cc5-4dbb-8e2b-35cedc2f7d92,VMware auditing template removed
+5efa9a0e-540e-41e8-bf0a-715522b5c690,Role enabled
+dec622b7-b27e-4354-93dd-a3ab62541e63,Accept Messages Except From list changed for user
+e7eb1bf6-61c0-419e-b296-73bac3a0fe26,Accept Messages Only From list changed for user
+96991c78-b0d6-41bc-8fed-a000878393b2,Alias Changed for User
+eadad1a7-e76a-4d2a-bf09-bb6064445fb5,Authenticated Users delivery restriction changed for user
+24565d34-c2f8-48b0-aedd-a3e4705adc06,Automatic E-mail Address Updating Option changed
+cd900742-049a-4ff7-aac6-83b91592c132,Calendar Attendant processing
+25da80cf-9bf7-4fdf-985e-adba4fbab24d,Custom Attribute 1 changed
+e24edc1e-d4d3-4547-a954-15c556ab6ece,Custom Attribute 10 changed
+6dbd4fb7-b81c-4252-a89c-74b17a98b8ea,Custom Attribute 11 changed
+850093fb-d3e4-43bf-9612-401248f1fe37,Custom Attribute 12 changed
+c9ebea4b-0961-4007-9228-40792f4c2d13,Custom Attribute 13 changed
+57a1cc2c-0fc6-4fff-bb72-aaa2c873c380,Custom Attribute 14 changed
+42b5d4c0-16cf-410d-afbc-90554b5d151e,Custom Attribute 15 changed
+bf59d6be-3f35-46ef-9e8b-2f11114562ee,Custom Attribute 2 changed
+11ec8bde-85f7-4894-9987-502395472c2b,Custom Attribute 3 changed
+02339d78-6c8d-4e47-91e6-952ef6d4a9e8,Custom Attribute 4 changed
+7a835b11-c597-43f2-8791-ae4d4b09201d,Custom Attribute 5 changed
+48883c0a-bb2f-4079-9237-39d0a0eb6516,Custom Attribute 6 changed
+b4dd7d3d-12b8-4d50-bca8-2219d693ce3b,Custom Attribute 7 changed
+19c08c2d-b16f-4886-b80c-01d6ffd526ef,Custom Attribute 8 changed
+23fb20e2-7a8c-4116-aec9-7aba317c642e,Custom Attribute 9 changed
+ec2bf9c5-8786-4925-bd50-fea7beee9ba4,Deleted Item Retain Until Backup Storage Option Changed
+a22f5073-9723-4ff5-a39f-99303e0edf98,Deleted Item Retention Period Changed
+b9ced460-ff36-4d57-95ac-fde70d456119,Deleted Item Retention Use Defaults Storage Option Changed
+0bf352ec-eb91-4007-9b80-48952c0057ab,Deliver to Both Forwarding Address and Mailbox Delivery Option Changed
+62b7f058-d48b-4e15-8e9f-4a82897ab670,Email addresses changed for user
+95bc9c78-bc69-4c6f-a999-3d9909c0cdf3,Entry Added To Send On Behalf Of Delivery Option
+913e5861-a3b6-4a14-be6d-ccac8c36fea4,Entry Removed From Send On Behalf Of Delivery Option
+3d7f146a-6cad-4c49-97eb-3c340a146954,Exchange ActiveSync Option Changed
+3c8f0e0d-68c2-4d1c-8c84-df98229d236c,Exchange Simple Display Name (Alias) changed
+febfa00e-abbc-4518-a0e3-2b53a8ad9142,Forwarding Address Delivery Option Changed
+5c8b7e64-c935-429d-bfa1-186322d04831,Hide From Exchange Address Lists option changed
+6665fbc4-c5a4-419b-bb7b-f717a2b848bf,Mail disabled for user
+9d0f6875-0986-4b87-a9a9-9b355af3350f,Mail enabled for user
+61453060-0fd4-4f56-b898-22e37980f04a,Mailbox - Accept Messages Only From list changed
+a267029c-6c4a-47c7-a5e9-dcc05a17bc46,Mailbox - Added
+61bada44-cdc2-400d-baaa-68ef5bcb0f2d,Mailbox - Alias
+3d327ecf-ea3b-46ec-92fe-42cb1653065b,Mailbox - Anti-Spam Bypass
+2a4b90d8-8aff-46a7-900e-c1fa17d4e168,Mailbox - Apply Mandatory Properties
+9f1d3b45-0fcb-4eef-b66a-60aca633dd77,Mailbox - Arbitration Mailbox
+365db384-3e3b-4afc-9997-47120282a1de,Mailbox - Archive Database
+262af179-a2fd-48d3-a114-e7763b4f0443,Mailbox - Archive Domain
+1784427d-a22b-483a-9db0-269b6d5c493d,Mailbox - Archive Name
+b5a1bcf8-7c2d-4782-9700-98fb19650aaa,Mailbox - Archive Quota
+cc0917eb-b1f4-4e3a-8aab-ba3e52cc0ad6,Mailbox - Archive Warning Quota
+12cf9aad-4ed2-4a79-99af-2e58da0e1772,Mailbox - Audit Admin
+3a21826c-1936-482a-8cdb-741d9cbaa5ec,Mailbox - Audit Delegate
+e2abc607-6176-4a57-8448-94841958d559,Mailbox - Audit Enabled
+a7fcc455-ffd0-4556-b206-2139e01b5aff,Mailbox - Audit Log Age Limit
+fd326469-e156-4848-a4f8-15f9536735a1,Mailbox - Audit Owner
+7c7be559-9ed2-483f-a85b-beb3028fb8fc,Mailbox - Bypass Moderation from Senders or Members
+9f2e1db3-7264-4679-b9f2-2b6778a1f495,Mailbox - Calendar Logging Quota
+b465fef4-b87d-454d-bbc6-616a03b1112f,Mailbox - Calendar Repair Disabled
+c27fc93a-56a1-4eb5-afe4-bb7b59020127,Mailbox - Calendar Version Store Disabled
+9376f4d7-ca17-46e0-b337-cc8fa37ba97e,Mailbox - Client Extensions
+916d384c-71ab-40da-9606-91037ff1dcc6,Mailbox - Create DTMF Map
+25c158b3-5a80-4f13-9f98-1d1a3d236a27,Mailbox - Custom Attribute 1 changed
+b1471414-d149-43c1-84a4-8439ddfab97d,Mailbox - Custom Attribute 10 changed
+d1fb97bb-fc57-40d2-86c6-d4b70b11b3c8,Mailbox - Custom Attribute 11 changed
+ab8a0edd-147d-4946-8577-cbf75098bbc8,Mailbox - Custom Attribute 12 changed
+77358373-4d10-44f8-a009-6d1f2578de96,Mailbox - Custom Attribute 13 changed
+b8b30834-7188-4b2b-b1ef-474815e4bede,Mailbox - Custom Attribute 14 changed
+76aab844-f756-46ef-a1f8-944c934547c2,Mailbox - Custom Attribute 15 changed
+f622b282-df02-4a33-b3d5-2bd0fbe0c767,Mailbox - Custom Attribute 2 changed
+aa283684-5e81-475b-a3ac-b8ce9ebf0a40,Mailbox - Custom Attribute 3 changed
+2231be0e-9b12-4dd3-b120-0331613ee1cf,Mailbox - Custom Attribute 4 changed
+ffa1e30e-d8ca-478d-a1ff-7de6a3c5b868,Mailbox - Custom Attribute 5 changed
+7b956270-fe3f-4c5c-8f0f-e9a29314a099,Mailbox - Custom Attribute 6 changed
+901b9175-32b6-430b-83a6-34e38459890e,Mailbox - Custom Attribute 7 changed
+4bb23c44-5609-4231-a2f1-fd05be3e016f,Mailbox - Custom Attribute 8 changed
+1e0b4729-b163-487a-9302-475b921ec7d7,Mailbox - Custom Attribute 9 changed
+7e0d12a4-05c7-40ce-9226-6d88ed8537b1,Mailbox - Database
+76bafb8a-f942-4b35-a6cb-0aff19cdde90,Mailbox - Default Public Folder Mailbox
+59f824fa-5e14-480b-96b8-e689f681688f,Mailbox - Deliver to Mailbox and Forward
+8fe7d364-2a0d-41c8-83bb-d776c629b709,Mailbox - Disable Room Mailbox Account
+944411ba-0007-4022-ad07-fdb28a466dd9,Mailbox - Disabled
+770fea60-0732-44ad-bb8f-67b24fdd4130,Mailbox - Display Name
+bb7ada4a-63c0-4c62-9d65-0d908de52e4e,Mailbox - Downgrade High Priority Messages Enabled
+0db26939-b389-48c2-87c1-a1539ae33ed9,Mailbox - Email Address Policy Enabled changed
+9bc76952-c919-417e-b5bd-04bf4011aada,Mailbox - E-Mail Addresses
+c0119d88-a8cc-4175-965f-0a63539d9809,Mailbox - Enable Room Mailbox Account
+91c1073a-4616-4958-8efe-cd1505f2896c,Mailbox - Enabled
+56cdf6c0-c6c0-4f13-b679-6eeef78e7c75,Mailbox - End Date For Retention Hold
+db93b5d8-391f-48ff-a7c5-dc8acb922d68,Mailbox - Extension Custom Attribute 1
+1be17451-57c4-4f0b-82f1-bdf2a801c6d7,Mailbox - Extension Custom Attribute 2
+9b7ce6f2-338b-42e2-a50e-ff30b07aaae6,Mailbox - Extension Custom Attribute 3
+f5c4de64-b615-4fd2-b55c-2fbf943ce67b,Mailbox - Extension Custom Attribute 4
+b28cfa92-da15-47c8-8503-99e3dfe4720a,Mailbox - Extension Custom Attribute 5
+4e37d85b-a4b5-4756-a540-95ee07b18588,Mailbox - External Out-of-Office Options
+b6e434f7-2f00-46ed-8161-26ecdce20038,Mailbox - Federated Identity
+20679fbc-652d-430f-9718-cd93bf412327,Mailbox - Forwarding Address
+927edd04-c3e1-46ad-9cd3-9abc7b25536c,Mailbox - Forwarding SMTP Address
+67dc1846-0efc-42db-a518-f1941d1b56ff,Mailbox - GMGen (Group Metrics Generation)
+3ff52a4f-0f32-4460-bc3a-1c5d2a874b32,Mailbox - Grant Send on Behalf to
+9d261aea-fabd-4d00-9c00-1ca36367fd94,Mailbox - Hidden From Address Lists Enabled
+0275d018-392b-42d5-83fc-60a3e6f0f3c9,Mailbox - Immutable ID
+a96d5d07-ef20-407e-b39f-0bddc999a532,Mailbox - Is Excluded from Serving Hierarchy
+3186d825-90c5-4900-a19c-c0cf6f6e2f08,Mailbox - Issue Warning Quota
+e0682f52-6d31-4b51-999c-9ef32d880804,Mailbox - Languages
+faf46027-57ec-44d4-881c-7ed88b5a9192,Mailbox - Linked Credential
+f8d3c1dc-ed25-4e47-b21a-e4d17b74a7d2,Mailbox - Linked Domain Controller
+e9f53f65-fbcd-47fc-ae44-0125cc59bb70,Mailbox - Linked Master Account
+cabd1541-1287-424a-933e-300727d62a41,Mailbox - Litigation Hold Date
+306eb08b-c973-4f4b-8a2b-350bfe7d49e5,Mailbox - Litigation Hold Duration
+982fc750-2b7f-4a89-aa50-681243cb4ea9,Mailbox - Litigation Hold Enabled
+13749a98-1227-4d07-8737-ad0163bfd6e0,Mailbox - Litigation Hold Owner
+696dc55b-84f2-4f39-83c4-8df87b3293f9,Mailbox - Mail Tip
+a047b1d4-aaa1-4d13-a702-2c4d50ac5cdc,Mailbox - Mail Tip Translations
+794d0b9a-5e97-4fc1-bd6e-b7a981f3e694,Mailbox - Mailbox Messages per Folder Count Receive Quota
+00c35c3f-9f98-4302-bf4b-8102cda2de31,Mailbox - Mailbox Messages per Folder Count Warning Quota
+a16d7634-1e0b-4bd7-a215-f60ee30511a0,Mailbox - Managed Folder Mailbox Policy
+2aa187b2-6754-46b8-a7ed-d512d77194b1,Mailbox - Managed Folder Mailbox Policy Allowed
+afd59045-fdf6-43e0-bd2b-2b2ac95e918b,Mailbox - Management
+8450533c-b883-42aa-a41f-a527c220aa97,Mailbox - Max Blocked Senders
+cdc406fb-1a1d-41f1-84f6-a3eb74e595da,Mailbox - Max Receive Size
+7c0b7166-3f1b-494e-8781-906669b10967,Mailbox - Max Safe Senders
+fc137dff-52f5-4b8d-858c-0446a1acd1f7,Mailbox - Max Send Size
+1a0bad18-5a01-48ee-a822-f81d8b0eced0,Mailbox - Message Tracking
+b46c0f6d-57e0-493d-ba32-16ce1484bf4a,Mailbox - Message Tracking Read Status Enabled
+3456a8a3-8e3f-4c8d-be9d-13b83ea703da,Mailbox - Microsft Online Services ID
+0f474efd-e846-41e9-9378-45de7097e275,Mailbox - Moderated By
+2c19920c-6a9d-4aa5-8a51-695ec4ed18a7,Mailbox - Moderation Enabled
+2ea12a10-3dee-416c-8be9-e7ef0867d142,Mailbox - Move Request Created
+a6e188b2-b3a1-4f9c-a522-03448db81279,Mailbox - Move Request Property Changed
+741ec528-a25f-4f92-8874-9d5b79731dc3,Mailbox - Move Request Removed
+c62db8de-b970-4409-bb9b-cb09f59fc12a,Mailbox - Move Request Resumed
+fd8b3ab0-4500-41c5-9fb1-c3403177b003,Mailbox - Move Request Suspended
+437020b9-4fa7-4f53-b61c-f28c7dc94e77,Mailbox - Name
+07afcd12-08ac-44c2-9ba2-c506a4f76006,Mailbox - New Password
+e057b502-2bf6-4114-8e89-bb52cd3c5266,Mailbox - OABGen
+79010c40-2df8-43bf-913c-4f52f808e07d,Mailbox - Office
+fff53f90-c817-4518-ad0d-f3b5cb26a30f,Mailbox - Offline Address Book
+89132486-a438-4c3d-b53b-cd78a3b9d282,Mailbox - Old Password
+5dbe67e0-031d-4ed3-90a2-7044ad848b1a,Mailbox - Owner Changed
+953eec9f-656a-4fa3-ba8c-f0e4a3436c3d,Mailbox - Password
+6f98cd4f-0181-4743-bba8-d167ba0c8a64,Mailbox - Permissions Changed
+792b5740-479b-4586-9b66-fc6be5f330ce,Mailbox - Prohibit Send Quota
+646f5800-850c-45e2-9b1c-851ab9a7da9e,Mailbox - Prohibit Send Receive Quota
+2911a4c3-fe32-4bff-9cac-95abfbb8e798,Mailbox - Public Folder
+14ccd14b-569b-4382-a765-665546a1065a,Mailbox - Query Base DN
+18f3f3f0-9cc9-48cc-840f-e2525bf0e2e2,Mailbox - Query Base DN Restriction Enabled
+e8fc5917-c8fb-4270-aca5-08319430295c,Mailbox - Recipient Limits
+3853f6fc-2a81-4ba4-867d-2149e98adfc4,Mailbox - Recoverable Items Quota
+91d4e93f-1111-4d2e-acff-a6a39eecf5d5,Mailbox - Recoverable Items Warning Quota
+2e166edf-54d4-4fc5-a4ac-76f6a90b1202,Mailbox - Reject Messages From
+7bc66833-c51b-409d-8a5c-e590b33b578e,Mailbox - Remote Account Policy
+32e673c9-c72b-498e-85be-35e3bba27944,Mailbox - Remote Recipient Type
+fe960f69-5c99-4a19-b96a-a66f3d819b4b,Mailbox - Remove Managed Folder and Policy
+45b55465-291c-4f9b-8b2c-a485ebebdfbf,Mailbox - Remove Picture
+1eefe706-7fde-4acc-a76c-a457665caa4c,Mailbox - Remove Spoken Name
+27953fbb-ee42-4e53-b4a4-ffb1f1d6659b,Mailbox - Removed
+ffc1deb6-1f8e-4710-82a6-56fd6d14481f,Mailbox - Require Sender Authentication Enabled
+1b28b0d8-ef28-4067-94ab-e16f0c222a1d,Mailbox - Reset Password on Next Logon
+77dda064-03d9-47c0-9ffe-2335562f40d8,Mailbox - Retain Deleted Items For
+a7f6f937-0fa8-4ca9-8bd1-bbc448a325d6,Mailbox - Retain Deleted Items Until Backup
+79fc4131-4c0a-4c4c-bcfd-da11c9e3caea,Mailbox - Retention Comment
+eb37d97e-41f5-42cc-87f7-10f383818660,Mailbox - Retention Hold Enabled
+1a7bb5b0-1b4c-4af2-9959-a71547ad9416,Mailbox - Retention Policy
+18b28bcd-4f5d-4c3c-a100-699fe3488e17,Mailbox - Retention URL
+259122a0-885a-467d-98e4-8521966f21b7,Mailbox - Role Assignment Policy
+e47763c8-0abc-4f5e-a6f4-09ee669d5cf0,Mailbox - Room Mailbox Password
+a58c1c45-1816-46a4-9eb8-faaae080ff21,Mailbox - Rules Quota
+068d050b-ff07-402f-9151-b9bd1f0cfdd6,Mailbox - SAM Account Name
+c48a8a3a-c63c-44cd-9f5b-9408d8721a40,Mailbox - SCL Delete Enabled
+4e870afd-4ac1-47dd-af5f-aa6fe05dfca5,Mailbox - SCL Delete Threshold
+55b9597a-e48c-4e22-aef7-76aaf4d68c3c,Mailbox - SCL Junk Enabled
+b49d79a9-c80f-4bf6-85c0-5f0ad5d14bcd,Mailbox - SCL Junk Threshold
+83966621-e5a4-4b21-b9de-5b3123b23165,Mailbox - SCL Quarantine Enabled
+50165149-4d03-4420-adda-1e52d798c8e9,Mailbox - SCL Quarantine Threshold
+0c751d9d-54a9-4583-af17-2e369b497afa,Mailbox - SCL Reject Enabled
+b03abc98-b77d-44fe-8c9d-2929cc905731,Mailbox - SCL Reject Threshold
+c3a73dc3-32ef-492a-b8a2-fda4743d5ee1,Mailbox - Secondary Address
+bd15db7c-a0ee-40bd-81db-f5e29956e081,Mailbox - Secondary Dial Plan
+2af6d740-8909-49e5-b47b-694fb09a68d9,Mailbox - Send Moderation Notifications
+1a95b8e0-8e01-4c1a-a633-29f07f1bf57e,Mailbox - Sharing Policy
+2e1eab55-95ad-426d-bbe5-8db2a540eba4,Mailbox - Simple Display Name
+a89b6052-1aaf-4d2e-acca-db6afa743992,Mailbox - Single Item Recovery Enabled
+28270bb6-336f-462f-bccf-1d1fd76c5ff1,Mailbox - Start Date for Retention Hold
+d8123476-d8b5-4760-ba9f-da6a07da5c50,Mailbox - Throttling Policy
+a960d31a-6962-4937-9808-b7376a7a19ad,Mailbox - Type
+5c9e4fa0-7ef5-44ac-b1ad-01c37c782bfe,Mailbox - UM Data Storage
+103f2536-9300-41c2-bfe7-56b347dad60d,Mailbox - UM DTMF Map
+f1afc73f-76ec-4be2-91da-aa9a55ee73b5,Mailbox - UM Grammar
+dfeecf4a-01ea-413d-817e-2d9a051a4586,Mailbox - Use Database Quota Defaults
+ef2996c9-07fc-4459-8b1a-33501058402c,Mailbox - Use Database Retention Defaults
+2f11abf0-b156-4e33-a10e-19c94fcc87be,Mailbox - User Certificate
+c6d39ca4-7da8-4cf9-95c8-569448c8fc6b,Mailbox - User Principal Name
+a059b79d-f10d-4863-b47e-acbf2114b1e3,Mailbox - User S/MIME Certificate
+6c4a5ea0-47ca-4e1f-b464-335796f5ad1d,Mailbox - Windows Email Address
+9dc1229f-247b-438e-99e8-4e144255c012,Mailbox - Windows Live ID
+22574b4f-243c-4015-8c66-d7709d88dff4,Mailbox disabled for user
+018b74cb-929c-45fd-bef2-589a02f7750e,Mailbox enabled for user
+c4ac5e6f-e3cf-4b0a-913f-e3c65d63150b,Mailbox location changed for user
+259044e8-625a-4a99-b92e-957042a7b1c6,Mailbox mobile settings changed
+45a22985-5cb1-4bd9-80ca-db07e44cb4a1,Mailbox Rights Changed for user
+61e23ab9-fb2d-43a8-a5b4-f5bd3f7cdf59,Mailbox Send As Rights Changed for user
+0663be7d-4977-4d1e-bb73-6ac590490acc,Mailbox Storage Send Limit changed for user
+8bdd6bce-dd2d-48af-b207-f8355454deb0,Mailbox Storage Send/Receive Limit changed for user
+8ce72781-2fa6-4ed9-9564-e16a76a33e60,Mailbox Storage Warning Limit changed for user
+1fd7342b-1462-4709-96c5-ca9e13dbc294,Mark new meeting requests as Tentative
+a97918be-71af-4b99-b68b-747406febbe9,Mobile Device - ActiveSync debug logging
+2a525f6e-48e9-40c5-931e-1cb88800b2e8,Mobile Device - ActiveSync device policy
+04a10741-47d4-49f0-a826-08518896b913,Mobile Device - ActiveSync enabled
+6c914d78-bd06-4f51-9f17-a124b52b55c4,Mobile Device - Allowed devices
+1d290fe3-6aca-4bfa-8af1-7c211c721981,Mobile Device - Blocked devices
+4ddb14aa-e0c6-4c07-9e93-6b41574c3e88,Mobile Device - Partnership removed
+19b553e4-82e1-437a-b21e-15aed72b0d30,Mobile Device - Remote wipe canceled
+4abf0827-d315-4877-ac55-b981915606f3,Mobile Device - Remote wipe initiated
+bdc6dfc9-0912-4b39-b9c5-5a2d721e8b4b,Process meeting requests and responses originating outside the Exchange organization
+7ecc4ea6-cd0f-47e0-a035-28903ad7b41b,Protocol Settings changed
+48d19899-0552-4ed0-b601-ae2e8d7c1670,Recipient Limit Delivery Option Changed
+78c00dd9-9c30-43f4-9814-87261b1c3500,Remove meeting forward notifications to the Deleted Items Folder
+1d381fa4-b86a-424b-92a9-f50f7d321ee0,Remove old meeting requests and responses
+6e4bf270-e1eb-4247-b33d-cb56cc59fbc0,Resource - Capacity
+9c3707d9-051f-4b71-ae51-476a972e6970,Resource - Custom properties
+a9c61e4e-d189-4e33-a865-021418d8618e,Resource - Property schema
+9a6ed7f4-5231-445f-8384-e46fca028a6f,Resource Information - Add organizer's name to subject
+1d08c72e-d8bf-4fa7-93d3-e3362bfbe986,Resource Information - Delete attachments
+02d91209-7fda-41ce-8442-d5638086b790,Resource Information - Delete comments
+a99aaac9-f4c9-450c-9d3f-ceb5aea8a3de,Resource Information - Delete non-calendar items
+9edff08a-7778-4eaa-aaa6-540c47ca7613,Resource Information - Delete subject
+66a7ccc6-a50e-4bda-9b00-9771aa4983bb,Resource Information - Mark pending requests tentative
+acc8c057-4438-4803-8857-2cabd7354a19,Resource Information - Remove private flag on an accepted meeting
+8ad507a3-d57c-45f3-bdf5-cc3b7ceb0b18,Resource Information - Response message add additional text
+4f08c7fd-7da1-4761-9a2d-d01c1d08b3e3,Resource Information - Response message additional text
+85429343-c1e0-43fd-8ee9-7cb3fb23dfda,Resource Information - Send organizer info
+e4afa6d6-6ec7-4bc2-8c5c-db7149c94eca,Resource In-Policy Requests - Automatic approval
+9aa1a2b4-a1c1-4b14-a8ac-31d564c24bd0,Resource In-Policy Requests - Automatic approval users
+f3549216-f6a8-4c8c-a32d-5ccf640d5679,Resource In-Policy Requests - Delegate approval
+aa0cf357-eab7-4378-9964-3f737c5fb215,Resource In-Policy Requests - Delegate approval users
+0d06a31f-e55c-4e53-9f87-9451d45dae0f,Resource Out-of-Policy Requests - Allowed to submit
+63d8cf99-3d1e-4283-995b-4006d8e350a7,Resource Out-of-Policy Requests - Allowed to submit users
+fd10a051-4c63-4c9e-b4b1-14d44393da4f,Resource Policy - Allow calendar conflicts
+93c7cd14-d30c-492d-92fd-e213be479440,Resource Policy - Allow repeating meetings
+9a09988c-133f-41d1-a328-876b28c25215,Resource Policy - Booking window days
+59cdd7d7-38b0-49bf-b19c-12151f74d5a9,Resource Policy - Conflict percentage allowed
+80b76cce-5f3d-4454-963c-5497d8a29d3e,Resource Policy - Delegates
+77445df4-9074-4ad4-8092-715c9dded60b,Resource Policy - Forward meeting requests to delegates
+5ba983e4-cb5f-4b8a-a94e-cc61484ff6e5,Resource Policy - Maximum conflict instances
+3e5e49b1-7e82-4afb-9fe3-dc3c1cd49877,Resource Policy - Maximum duration minutes
+72fb0012-0202-48e1-89b9-8408cc8f3aab,Resource Policy - Reject repeating meetings ending beyond booking window
+145b1005-0866-43d4-8f61-7cfd8e0f88e3,Resource Policy - Schedule only during working hours
+078fa83e-c74b-43d4-aed3-497f7e53646b,UM Mailbox - Allow Edit of Call Answering Rules
+0f461646-af42-4b31-a535-53437753defa,UM Mailbox - Allow Missing Caller ID Diverted Calls to Leave Message
+79e6ddb6-079e-4349-aeed-ab107ab52404,UM Mailbox - Allow non-user UM calls
+7606133c-b96a-49df-9a52-0f011e38dad1,UM Mailbox - Allow Received Faxes
+93177f52-3d32-4cca-98d7-69de2018fd8c,UM Mailbox - Automatic Speech Recognition Enabled/Disabled
+767da4f0-c8b0-4f2c-afbe-9843706b30bf,UM Mailbox - Call Answering Audio Codec
+390a697b-acf7-4679-bbc2-1d7a1a25416e,UM Mailbox - Disabled
+2b91f08d-a75b-495a-9d74-efaf081f320b,UM Mailbox - Enabled
+29fe1e73-b254-4525-a455-b093f2207ee5,UM Mailbox - Extension
+efa097ca-984c-46e9-825e-a3da2b86b224,UM Mailbox - Mailbox Policy
+eebab283-38b6-4835-b46b-e8b6cb4cce7c,UM Mailbox - Missed Call Notification Enabled/Disabled
+22e353d2-a737-4689-bf91-0e4221a7f7c7,UM Mailbox - Operator Number
+1871271b-79f5-4ac9-9421-91b6cc81b6ae,UM Mailbox - PIN Reset
+26b4cded-c79e-4b10-8718-7e9b454fe347,UM Mailbox - Play Voice Mail On Phone Enabled/Disabled
+b79c91f6-406d-4cad-beb7-9a227f53dfd2,UM Mailbox - Renamed
+4a52671c-6828-44af-b2e5-0fcd90bcfa36,UM Mailbox - SMS Notification Option
+cdcfbf84-13e0-41b8-b032-30fad66f782a,UM Mailbox - Subscriber Access Enabled/Disabled
+6b1b23ed-da19-414c-ac2b-575b3fbdbdfe,UM Mailbox - TUI Access to Calendar Enabled/Disabled
+40233bf0-682c-44d7-b550-6c1fa80c6a44,UM Mailbox - TUI Access to E-Mail Enabled/Disabled
+d8eee856-4e47-4a56-97e6-96bc51b9a250,UM Mailbox - Voice Mail Access Without PIN Enabled/Disabled
+75757b12-e895-4416-a024-5ecbab9f4a01,Unified Messaging has been disabled for user mailbox
+fe65019b-84bf-4560-9bd5-94786bc230d6,Unified Messaging has been enabled for user mailbox
+c901a14f-9680-4b56-b9de-04e2e6420c17,Unified Messaging Pin for user mailbox has changed
+8b9cb17c-c591-4ae9-bb63-168bdb22283c,Use Mailbox Database Defaults changed for user
+90ca066e-bb32-4dfb-b9d7-2bb9c9e15e0a,User delivery restrictions receiving size changed
+84c85b2b-aa7c-40da-ac7c-0cff21e4b9c4,User delivery restrictions sending size changed
+9fdcc1d7-feea-4455-a6f1-5f661d6ae980,OU group policy order changed

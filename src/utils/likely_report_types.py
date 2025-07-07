@@ -56,7 +56,7 @@ class ReportTypeHints(BaseModel):
     )
 
 
-def get_prompt_about_likely_report_types(quest_report_str) -> str:
+def get_prompt_about_likely_report_types(quest_report_str, extracted_data) -> str:
     """
     Returns the system message prompt for determining likely report types.
     """
@@ -87,13 +87,15 @@ I can produce 3 kinds of reports: LDAP, DNS and NonDNS. Here is some information
 {describe_report_properties(report_type="both", filters_or_displays="both")}
 
 For each of these 3 kinds (LDAP, DNS, NonDNS), I'd like you look at the following XML report template- and tell me how likely it is to be of that kind.
-For example:
-If it might be LDAP, definitely not DNS and very likely NonDNS, then return: {result_example}.
+For example, if it might be LDAP, definitely not DNS and very likely NonDNS, then return: {result_example}.
 
 Here's the report template:
 <The XML file starts here>
 {quest_report_str}
 <The XML file ends here>
+
+Here's some extracted information about the report:
+{extracted_data}
 
 Here's your working process:
 1. Read the report template.
@@ -210,12 +212,18 @@ def confirm_with_user(parsed_completion: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def get_likely_report_types(
-    quest_report_str: str,
+    quest_report_str: str, extracted_data: str
 ) -> Dict[Literal["LDAP", "DNS", "NonDNS"], Literal["yes", "no", "maybe"]]:
+    """
+    Analyzes the quest report string and determines the likely report types.
+    Args:
+        quest_report_str (str): The string representation of the quest report.
+        extracted_data (str): Additional data extracted from the report as free text.
+    """
     # Analyze the quest_report_str and determine the likely report types
     # For now, we'll return a dummy implementation
-    system_message = "You are a helpful assistant that analyzes a Reports and determines what kinds of report they could be."
-    prompt = get_prompt_about_likely_report_types(quest_report_str)
+    system_message = "You are a helpful assistant that analyzes reports and determines what kinds of report they could be. You pay attention to functionality, fields names etc."
+    prompt = get_prompt_about_likely_report_types(quest_report_str, extracted_data)
     parsed_completion = complete_likelihoods(system_message, prompt, answer_format=ReportTypeHints)
     the_user_confirmed_likelihood = confirm_with_user(parsed_completion)
     return the_user_confirmed_likelihood
