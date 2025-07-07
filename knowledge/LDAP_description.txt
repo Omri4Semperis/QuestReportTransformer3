@@ -1,0 +1,12 @@
+# LDAP:
+An LDAP report is about Active Directory state, such as user accounts, groups, and organizational units.
+It can only be about the current state of Active Directory, not historical changes.
+It is typically used to query information that can be retrieved using LDAP queries.
+For example, it can be used to find all users in a specific group or to retrieve the attributes of a specific user.
+
+LDAP queries can be short or long. Here are a few examples of LDAP queries:
+Find all objects with objectClass = user: (&(objectClass=user))
+Find user objects whose login name is jdoe: (&(objectClass=user)(sAMAccountName=jdoe))
+Return all group objects: (objectClass=group)
+Return users where the disabled flag is NOT set: (&(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+Return users who belong to the Admins group: (&(objectClass=user)(memberOf=CN=Admins,CN=Users,DC=example,DC=com))

@@ -1,5 +1,4 @@
 # Display fields available for both DNS and NonDNS reports
-
 ## Category 1: Object & Identity
 1. ClassName: Object class (e.g., user, group, computer).
 2. DisplayName: User-friendly display name.
@@ -8,14 +7,12 @@
 5. SamAccountName: Pre-Windows 2000 logon name.
 6. UPN: User Principal Name (user@domain).
 7. Version: Version of the record.
-
 ## Category 2: Report & Collection Metadata
 8. CollectionTime: When the data was collected.
 9. ForestGenerationId: ID representing the forest replication generation.
 10. Row Number: Row number in the report.
 11. UserMatchCount: How many users matched this record.
 12. ValidUntil: When this data expires.
-
 ## Category 3: Change Operation Context
 13. DirSyncOperationType: Type of directory sync operation (add, modify, delete).
 14. ModificationType: Type of change (add, modify, delete).
@@ -23,7 +20,6 @@
 16. OriginatingTime: Time the change originated.
 17. OriginatingUsers: User(s) who triggered the change.
 18. OriginatingUserWorkstations: Workstations where change originated.
-
 ## Category 4: Row Flags & Indicators
 19. IsActionable: Whether this row requires action.
 20. IsFirst: Whether this is the first change in a sequence.
@@ -32,13 +28,11 @@
 23. IsVirtual: Whether this is a virtual object.
 
 # Display fields available only for DNS reports
-
 ## Category 1: Object & Identity
 1. AttributeName: Name of the changed attribute.
 2. LastKnownParent: DN of the last known parent container.
 3. LVRRef: Low version reference (version tracking).
 4. SID: Security Identifier.
-
 ## Category 5: Previous Value Metadata
 5. From_IsStringValueXmlString: Whether the previous value was an XML string.
 6. From_Meta_CreationTime: When this attribute value was created.
@@ -54,11 +48,9 @@
 16. From_Meta_Version: Version of the attribute value.
 17. From_ResolveFlags: Flags describing resolution state.
 18. From_Syntax: Data type of previous value.
-
 ## Category 6: Previous Value Content
 19. From_BinaryBase64Value: Previous binary value, Base64 encoded.
 20. From_StringValue: Previous value as string.
-
 ## Category 8: New Value Metadata
 21. To_IsStringValueXmlString: Whether new value is XML string.
 22. To_Meta_CreationTime: When this value was created.
@@ -74,22 +66,18 @@
 32. To_Meta_Version: Version of the attribute.
 33. To_ResolveFlags: Flags describing resolution state.
 34. To_Syntax: Data type of new value.
-
 ## Category 9: New Value Content
 35. To_BinaryBase64Value: New binary value, Base64 encoded.
 36. To_StringValue: New value as string.
 
 # Display fields available only for NonDNS reports
-
 ## Category 5: Previous Value Metadata
 1. From_BinaryCheckSum: Checksum of previous binary data.
 2. From_CheckSum: General checksum of previous value.
 3. From_Flags: Flags on the previous record.
 4. From_HasData: Whether previous record had data.
-
 ## Category 6: Previous Value Content
 5. From_RawBytesBase64: Previous raw bytes Base64 encoded.
-
 ## Category 7: Previous DNS Record Details
 6. From_Name: Previous DNS record name.
 7. From_Record_Type: DNS record type before change.
@@ -118,16 +106,13 @@
 30. From_TypeWks_IPAddress: WKS IP address.
 31. From_TypeWks_Protocol: WKS protocol.
 32. From_ZoneName: Previous DNS zone name.
-
 ## Category 8: New Value Metadata
 33. To_BinaryCheckSum: Checksum of new binary data.
 34. To_CheckSum: General checksum of new value.
 35. To_Flags: Flags on new record.
 36. To_HasData: Whether new record has data.
-
 ## Category 9: New Value Content
 37. To_RawBytesBase64: New raw bytes Base64 encoded.
-
 ## Category 10: New DNS Record Details
 38. To_Name: New DNS record name.
 39. To_RecordType: DNS record type after change.

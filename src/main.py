@@ -6,7 +6,7 @@ from files_management.files_handler import (
     save_schema_as_jsons,
 )
 from utils.likely_report_types import get_likely_report_types
-from utils.report_template_generation import generate_reports_from_likely_report_types
+from utils.report_template_envocation import generate_reports_from_likely_report_types
 
 
 def main():

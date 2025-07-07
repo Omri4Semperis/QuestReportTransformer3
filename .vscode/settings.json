@@ -1,4 +1,4 @@
-{"[python]": {
-  "editor.defaultFormatter": "ms-python.black-formatter",
-  "editor.formatOnSave": true
-}}
+"[python]": {
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": null
+}

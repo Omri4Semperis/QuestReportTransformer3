@@ -19,14 +19,12 @@ class CategoryIDException(Exception):
 
 def category_id_from_name(
     name: Literal["General", "Operational", "Best Practices", "Service Accounts", "Regulatory Compliance", "Security"]
-    ) -> Literal[
-            "9f506583-d530-4c66-a9a7-322429d828ef",
+    ) -> Literal["9f506583-d530-4c66-a9a7-322429d828ef",
             "b6b8b0f5-2072-48ba-958e-4999353277fd",
             "76512d4d-43ea-4b29-92cc-5914e67cf13a",
             "b6a65ae0-78df-4ee0-a91e-e30a8da1da20",
             "55d2774f-3def-41c6-a93f-f07c6d2f29e5",
-            "8b8a7eed-c190-42f4-88aa-fc47f85532e6"
-        ]:
+            "8b8a7eed-c190-42f4-88aa-fc47f85532e6"]:
     """
     Returns the category ID based on the given category name.
     Valid names are: "General", "Operational", "Best Practices", "Service Accounts", "Regulatory Compliance", "Security".
@@ -38,14 +36,12 @@ def category_id_from_name(
     Raises:
         CategoryIDException: If the name is not valid.
     """
-    categories = {
-        "General": "9f506583-d530-4c66-a9a7-322429d828ef",
+    categories = {"General": "9f506583-d530-4c66-a9a7-322429d828ef",
         "Operational": "b6b8b0f5-2072-48ba-958e-4999353277fd",
         "Best Practices": "76512d4d-43ea-4b29-92cc-5914e67cf13a",
         "Service Accounts": "b6a65ae0-78df-4ee0-a91e-e30a8da1da20",
         "Regulatory Compliance": "55d2774f-3def-41c6-a93f-f07c6d2f29e5",
-        "Security": "8b8a7eed-c190-42f4-88aa-fc47f85532e6",
-    }
+        "Security": "8b8a7eed-c190-42f4-88aa-fc47f85532e6"}
     
     if name not in categories:
         raise CategoryIDException(f"Invalid category name: {name}. Valid names are: {', '.join(categories.keys())}")
