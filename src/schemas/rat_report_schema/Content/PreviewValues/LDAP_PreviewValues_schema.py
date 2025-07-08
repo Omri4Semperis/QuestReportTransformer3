@@ -10,4 +10,4 @@ class LDAPPreviewValuesSchema(BaseModel):
     # TODO Note: This value will have to be post-processed to be a single item in a list, i.e. [True] or [False]
     IsGC: bool = Field(description="True if this report searches global catalog, False otherwise")
     # TODO Note: This value will have to be post-processed to be a list of strings of the form "<field>;<value>", e.g. ["objectClass;sitesContainer", "objectCategory;blah"] or ["objectClass;user", "whenCreated;Abs:2024-01-01T00:00:00.0000000", "whenCreated;Rel:1W"]
-    TreeValues: Dict[str, str] = Field(description="A dictionary from the LDAP field to the value it is compared against. e.g. \{'objectClass': 'sitesContainer', 'objectCategory': 'blah'\}")
+    TreeValues: Dict[str, str] = Field(description="A dictionary from the LDAP field to the value it is compared against. e.g. {'objectClass': 'sitesContainer', 'objectCategory': 'blah'}")

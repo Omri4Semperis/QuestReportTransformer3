@@ -1,6 +1,6 @@
 from typing import Any, Dict, Literal
 
-from files_management.files_handler import (
+from src.files_management.files_handler import (
     get_artifacts_dir,
     read_xml_as_string,
     save_schema_as_jsons,

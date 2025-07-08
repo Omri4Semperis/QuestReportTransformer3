@@ -6,7 +6,7 @@ from tkinter import filedialog
 from typing import List, Optional, Set
 import pandas as pd
 
-from utils.azure_client_utils import ask
+from src.utils.azure_client_utils import ask
 
 
 def get_artifacts_dir(exists_ok: bool = True) -> str:
@@ -99,10 +99,13 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     # Open a file dialog box to get the XML file path
     root = tk.Tk()
     root.withdraw()  # Hide the root window
-    file_path = filedialog.askopenfilename(
-        title="Select an XML file",
-        filetypes=[("XML files", "*.xml"), ("All files", "*.*")],
-    )
+    file_path='C:/Users/OmriNardiNiri/OneDrive - Semperis/Documents/QRT/RatReportSchema/reports_by_match/1_exact/membership changes glbl p azr noncorp wrk modauth exc/Membership Changes - GLBL-P-AZR-NONCORP-WRK-MODAUTH-EXC.xml'
+    # file_path = filedialog.askopenfilename(
+    #     title="Select an XML file",
+    #     filetypes=[("XML files", "*.xml"), ("All files", "*.*")],
+    # )
+    
+    print(f'{file_path=}')
 
     if not file_path:
         raise FileNotFoundError("No file was selected.")
