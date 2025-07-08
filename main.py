@@ -5,8 +5,8 @@ from files_management.files_handler import (
     read_xml_as_string,
     save_schema_as_jsons,
 )
-from utils.likely_report_types import get_likely_report_types
-from utils.report_template_envocation import generate_reports_from_likely_report_types
+from src.utils.likely_report_types import get_likely_report_types
+from src.utils.report_template_envocation import generate_reports_from_likely_report_types
 
 def main():
     artifacts_dir = get_artifacts_dir()

@@ -48,7 +48,7 @@ def category_id_from_name(
     
     return categories[name]
 
-class MetaSchema(BaseModel):
+class MetaDataSchema(BaseModel):
     """Schema for the metadata fields of RAT reports."""
     
     Name           : str = Field(description="Report name")

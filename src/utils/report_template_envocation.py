@@ -4,9 +4,9 @@ from typing import Any, Dict, Literal, List
 
 from pydantic import BaseModel, Field
 
-from reports_generators.LDAP import get_ldap_content
-from utils.azure_client_utils import get_client_and_deployment_name
-from utils.utils import describe_LDAP, describe_report_properties
+from src.reports_generators.LDAP import get_ldap_content, get_ldap_meta
+from src.utils.azure_client_utils import get_client_and_deployment_name
+from src.utils.utils import describe_LDAP, describe_report_properties
 
 
 class LDAPQueryAnsweringFormat(BaseModel):

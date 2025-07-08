@@ -2,8 +2,8 @@ import json
 from typing import Dict, Literal, List, Any
 from pydantic import BaseModel, Field
 
-from utils.azure_client_utils import get_client_and_deployment_name
-from utils.utils import describe_LDAP, describe_report_properties
+from src.utils.azure_client_utils import get_client_and_deployment_name
+from src.utils.utils import describe_LDAP, describe_report_properties
 
 
 class LDAPLikelihoodSchema(BaseModel):
