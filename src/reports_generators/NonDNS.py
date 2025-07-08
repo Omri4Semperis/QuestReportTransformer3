@@ -1,3 +1,4 @@
+from post_processing.metadata import post_process_metadata
 from src.utils.azure_client_utils import ask_with_schema
 from src.schemas.rat_report_schema.Content.NonDNS_Content_schema import NonDNSContentSchema
 from src.schemas.rat_report_schema.MetaData.Meta_schema import MetaDataSchema
@@ -60,4 +61,5 @@ def get_nondns_meta(
 
 def nondns_post_process(report):
     # TODO Implement any post-processing steps for the NonDNS report here
+    report["MetaData"] = post_process_metadata(report["MetaData"])
     return report

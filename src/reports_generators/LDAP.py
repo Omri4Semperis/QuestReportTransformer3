@@ -1,3 +1,4 @@
+from post_processing.metadata import post_process_metadata
 from src.utils.azure_client_utils import ask_with_schema
 from src.schemas.rat_report_schema.Content.LDAP_Content_schema import LDAPContentSchema
 from src.schemas.rat_report_schema.MetaData.Meta_schema import MetaDataSchema
@@ -68,4 +69,5 @@ def get_ldap_meta(
 
 def ldap_post_process(report):
     # TODO Implement any post-processing steps for the LDAP report here
+    report["MetaData"] = post_process_metadata(report["MetaData"])
     return report
