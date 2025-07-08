@@ -1,7 +1,7 @@
 from typing import List, Set, Union
 from pydantic import BaseModel, Field
 
-from schemas.rat_report_schema.Content.ResultColumns.NonDNS_ResultColumn_schema import NonDNSResultColumnSchema
+from src.schemas.rat_report_schema.Content.ResultColumns.NonDNS_ResultColumn_schema import NonDNSResultColumnSchema
 from src.schemas.rat_report_schema.Content.Filters.NonDNS_Filter_schema import NonDNSFilterSchema
 from src.schemas.rat_report_schema.Content.PreviewValues.Mutual_PreviewValues_schema import (
     MutualPreviewValue_DateRange,
@@ -23,7 +23,7 @@ from src.schemas.rat_report_schema.Content.PreviewValues.NonDNS_PreviewValues_sc
     
 
 class NonDNSContentSchema(BaseModel):
-    FilterString : str                            = None
+    FilterString : str                            = Field(default=None, description="The field MUST be included, value is a native None")
     ResultColumns: List[NonDNSResultColumnSchema] = Field(default=None, description="How to present the results in this NonDNS report")
     Filter       : NonDNSFilterSchema             = Field(description="The filtering settings used in this NonDNS report")
     # TODO post processing- assert a 1:1 match between the filters fields used, also appear in PreviewValues

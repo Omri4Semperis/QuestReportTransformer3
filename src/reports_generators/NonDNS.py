@@ -1,12 +1,11 @@
 from src.utils.azure_client_utils import ask_with_schema
-from src.schemas.rat_report_schema.Content.LDAP_Content_schema import LDAPContentSchema
+from src.schemas.rat_report_schema.Content.NonDNS_Content_schema import NonDNSContentSchema
 from src.schemas.rat_report_schema.MetaData.Meta_schema import MetaDataSchema
 
-def get_ldap_content(
+def get_nondns_content(
     quest_report_str:str, # This is the XML report string
     report_description,  # This is the free text extracted from the report
-    ldap_query, # This is the LDAP query generated from the report
-    description_of_an_ldap_report, # This is a description of the desired report, including filters and display fields
+    description_of_an_nondns_report, # This is a description of the desired report, including filters and display fields
     temperature: float, # Temperature for the model response
     ):
 
@@ -19,27 +18,23 @@ def get_ldap_content(
     Report description:
     <report description>{report_description}</report description>
     
-    LDAP query that is likely to be used in the report:
-    <ldap query>{ldap_query}</ldap query>
-    
     Here's some general information about the report I want to generate:
-    {description_of_an_ldap_report}
+    {description_of_an_nondns_report}
     """
     
     result = ask_with_schema(
         system_prompt="You are a helpful assistant, an expert of reports generation. Reply briefly according to the schema.",
         prompt=prompt,
-        schema=LDAPContentSchema,
+        schema=NonDNSContentSchema,
         temperature=temperature)
     
     return result
 
-def get_ldap_meta(
+def get_nondns_meta(
     quest_report_str: str, # This is the XML report string
     report_description: str, # This is the free text extracted from the report
-    ldap_query: str, # This is the LDAP query generated from the report
     temperature: float, # Temperature for the model response
-    the_content_field_of_the_ldap_report  # The content which was generated for this report
+    the_content_field_of_the_nondns_report  # The content which was generated for this report
 ):
     prompt = f"""
     I took an original xml report and turned it into my own json format. You will help me generate the metadata for this report.
@@ -49,12 +44,9 @@ def get_ldap_meta(
     
     Original report description:
     <report description>{report_description}</report description>
-    
-    LDAP query that is likely to be used in the report:
-    <ldap query>{ldap_query}</ldap query>
-    
+        
     Here is the content of the report I generated:
-    <report content>{the_content_field_of_the_ldap_report}</report content>
+    <report content>{the_content_field_of_the_nondns_report}</report content>
     
     Follow the schema and generate the metadata for the report.
     """
@@ -66,6 +58,6 @@ def get_ldap_meta(
 
     return meta
 
-def ldap_post_process(report):
-    # TODO Implement any post-processing steps for the LDAP report here
+def nondns_post_process(report):
+    # TODO Implement any post-processing steps for the NonDNS report here
     return report

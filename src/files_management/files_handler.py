@@ -1,5 +1,6 @@
 import datetime
 from fileinput import filename
+import json
 import os
 import tkinter as tk
 from tkinter import filedialog
@@ -83,7 +84,7 @@ def extract_data_about_report(content_with_event_names_instead_of_ids: str, even
     """
     
     extracted_data_as_str = ask(
-        system_prompt="You are a helpful assistant. Extract the date from the XML content.",
+        system_prompt="You are a helpful assistant, expert at report understanding and data & insights extraction.",
         prompt=prompt)
     
     return extracted_data_as_str
@@ -137,5 +138,22 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     return content_with_event_names_instead_of_ids, extracted_data
 
 
-def save_schema_as_jsons(generated_report: dict, user_choice: dict) -> None:
-    pass
+def save_schema_as_json(report_to_save: dict, report_name: str, directory: str) -> None:
+    """
+    Saves the report schema as a JSON file.
+    Args:
+        report_to_save (dict): The report schema to save.
+        report_name (str): The name of the report.
+        directory (str): The directory to save the JSON file in.
+    """
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Check if needs to add .json extension
+    if not report_name.endswith(".json"):
+        report_name += ".json"
+    
+    file_path = os.path.join(directory, report_name)
+    with open(file_path, "w", encoding="utf-8") as file:
+        json.dump(report_to_save, file, indent=2)
+    print(f"Saved {report_name} to {directory}")

@@ -1,7 +1,7 @@
 from typing import List, Set, Union
 from pydantic import BaseModel, Field
 
-from schemas.rat_report_schema.Content.ResultColumns.DNS_ResultColumn_schema import DNSResultColumnSchema
+from src.schemas.rat_report_schema.Content.ResultColumns.DNS_ResultColumn_schema import DNSResultColumnSchema
 from src.schemas.rat_report_schema.Content.Filters.DNS_Filter_schema import DNSFilterSchema
 from src.schemas.rat_report_schema.Content.PreviewValues.Mutual_PreviewValues_schema import (
     MutualPreviewValue_DateRange,
@@ -18,7 +18,7 @@ from src.schemas.rat_report_schema.Content.PreviewValues.DNS_PreviewValues_schem
 )
 
 class DNSContentSchema(BaseModel):
-    FilterString : str                         = None
+    FilterString : str                         = Field(default=None, description="The field MUST be included, value is a native None")
     ResultColumns: List[DNSResultColumnSchema] = Field(default=None, description="How to present the results in this DNS report")
     Filter       : DNSFilterSchema             = Field(description="The filtering settings used in this DNS report")
     # TODO post processing- assert a 1:1 match between the filters fields used, also appear in PreviewValues

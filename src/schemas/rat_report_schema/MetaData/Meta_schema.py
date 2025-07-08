@@ -49,8 +49,6 @@ def category_id_from_name(
     return categories[name]
 
 class MetaDataSchema(BaseModel):
-    """Schema for the metadata fields of RAT reports."""
-    
     Name           : str = Field(description="Report name")
     Description    : str = Field(description="Descrition of the report")
     UniqueId       : str = Field(description="A randomized unique uuid4")
@@ -61,10 +59,10 @@ class MetaDataSchema(BaseModel):
     Company        : Literal["Semperis", "LDC"] = Field(description="Company name, Usually Semperis")
     CategoryId     : Literal["General", "Operational", "Best Practices", "Service Accounts", "Regulatory Compliance", "Security"] = Field(description="Report category")
     ReportType     : Literal["ADTemplate", "DBTemplate"] = Field(description="'ADTemplate' for LDAP reports and 'DBTemplate' for DB reports")
-    Status         : str = 'internal'
-    LicenseLevel   : str = 'None'
-    IndicatorTypes : str = None
-    Targets        : str = None
-    Version        : int = 0
-    Weight         : int = 1
-    IsSecurity     : bool = False
+    Status         : str = Field(default='internal', description="This field is mandatory and should be set to 'internal'.")
+    LicenseLevel   : str = Field(default='None', description="This field is mandatory and should be set to 'None'.")
+    IndicatorTypes : str = Field(default=None, description="MUST be included, value is a native None")
+    Targets        : str = Field(default=None, description="MUST be included, value is a native None")
+    Version        : int = Field(default=0, description="This field is mandatory and should be set to 0.")
+    Weight         : int = Field(default=1, description="This field is mandatory and should be set to 1.")
+    IsSecurity     : bool = Field(default=False, description="This field is mandatory and should be set to False.")

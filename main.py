@@ -1,9 +1,9 @@
 from typing import Any, Dict, Literal
-
+import json
 from src.files_management.files_handler import (
     get_artifacts_dir,
     read_xml_as_string,
-    save_schema_as_jsons,
+    save_schema_as_json,
 )
 from src.utils.likely_report_types import get_likely_report_types
 from src.utils.report_template_envocation import generate_reports_from_likely_report_types
@@ -33,16 +33,26 @@ def main():
         quest_report_str=quest_report_str,
         extracted_data=extracted_data
     )
-
+    
+    for report_type, reports in generated_report.items():
+        print(f"{report_type}: {len(reports)} reports generated")
+        for i, report_dict in enumerate(reports):
+            name = f"{report_type}_{i + 1}"
+            save_schema_as_json(
+                report_to_save=report_dict,
+                report_name=name,
+                directory=artifacts_dir
+            )
+    
     user_choice: Dict[str] = {
         "LDAP": [],
         "DNS": [2],
         "NonDNS": [1, 2, 3],
     }
 
-    user_choice = ask_user_for_choices(generated_report=generated_report)
+    # user_choice = ask_user_for_choices(generated_report=generated_report)
 
-    save_schema_as_jsons(generated_report, user_choice)
+    # save_schema_as_jsons(generated_report, user_choice)
 
 
 if __name__ == "__main__":

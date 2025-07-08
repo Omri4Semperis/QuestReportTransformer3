@@ -110,24 +110,24 @@ Here's your working process:
 def complete_likelihoods(
     system_message, prompt, answer_format
 ):
-    mocked_response = {
-        "LDAP": {
-            "conclusion": "maybe",
-            "reasoning": "There are mostly requests about current situation",
-        },
-        "DNS": {
-            "conclusion": "no",
-            "reasoning": "There are no DNS-related queries",
-        },
-        "NonDNS": {
-            "conclusion": "yes",
-            "reasoning": "There are several non-DNS related requests",
-        },
-    }
-    print(
-        "===============\nWARNING: Using mocked response for testing purposes.\n==============="
-    )
-    return mocked_response
+    # mocked_response = {
+    #     "LDAP": {
+    #         "conclusion": "maybe",
+    #         "reasoning": "There are mostly requests about current situation",
+    #     },
+    #     "DNS": {
+    #         "conclusion": "no",
+    #         "reasoning": "There are no DNS-related queries",
+    #     },
+    #     "NonDNS": {
+    #         "conclusion": "yes",
+    #         "reasoning": "There are several non-DNS related requests",
+    #     },
+    # }
+    # print(
+    #     "===============\nWARNING: Using mocked response for testing purposes.\n==============="
+    # )
+    # return mocked_response
 
     client, deployment_name = get_client_and_deployment_name()
 

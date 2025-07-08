@@ -28,6 +28,8 @@ def ask(system_prompt: Optional[str], prompt: str, temperature: float = 0.25) ->
     
     client, deployment_name = get_client_and_deployment_name()
     
+    print(f"\n\n=====\n\nASKING {deployment_name} (t={temperature}):\n{system_prompt[:100]}...\n\n{prompt[:100]}...\n---------\n")
+    
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": prompt}
@@ -38,13 +40,18 @@ def ask(system_prompt: Optional[str], prompt: str, temperature: float = 0.25) ->
         messages=messages,
         temperature=temperature,
     )
-
-    return response.choices[0].message.content
+    result = response.choices[0].message.content
+    
+    print(f"Response from {deployment_name}:\n{result[:100]}...\n---------\n")
+    
+    return result
 
 def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperature: float = 0.25):
     system_prompt = system_prompt or "You are a helpful assistant. Reply briefly according to the schema."
     
     client, deployment_name = get_client_and_deployment_name()
+    
+    print(f"\n\n=====\n\nASKING {deployment_name} (t={temperature}) with schema {schema.__name__}:\n{system_prompt[:100]}...\n\n{prompt[:100]}...\n---------\n")
     
     messages = [
         {"role": "system", "content": system_prompt},
@@ -77,4 +84,6 @@ def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperatu
     # Parse and pretty-print the JSON
     parsed_json = json.loads(json_arguments)
 
+    print(f"Response from {deployment_name} with schema {schema.__name__}:\n{str(json.dumps(parsed_json, indent=2)[:100])}...\n---------\n")
+    
     return parsed_json
