@@ -125,10 +125,9 @@ def generate_dns_report(
                                      desired_report_description,
                                      temperature)
     metadata = get_dns_meta(quest_report_str,
-                                  report_description,
-                                  desired_report_description,
-                                  temperature,
-                                  report_content)
+                            report_description,
+                            temperature,
+                            report_content)
     result = {"Content": report_content,
               "MetaData": metadata,
               "SecurityReportSettings": None,
