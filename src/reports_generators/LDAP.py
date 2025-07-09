@@ -69,5 +69,6 @@ def get_ldap_meta(
 
 def ldap_post_process(report):
     # TODO Implement any post-processing steps for the LDAP report here
-    report["MetaData"] = post_process_metadata(report["MetaData"])
+    report["MetaData"] = post_process_metadata(meta_data_original=report["MetaData"],
+                                                report_type="ADTemplate")
     return report

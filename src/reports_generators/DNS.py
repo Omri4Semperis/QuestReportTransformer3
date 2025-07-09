@@ -61,5 +61,6 @@ def get_dns_meta(
 
 def dns_post_process(report):
     # TODO Implement any post-processing steps for the DNS report here
-    report["MetaData"] = post_process_metadata(report["MetaData"])
+    report["MetaData"] = post_process_metadata(meta_data_original=report["MetaData"],
+                                                report_type="DBTemplate")
     return report
