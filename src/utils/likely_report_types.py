@@ -164,32 +164,23 @@ def complete_likelihoods(
 
 def ask_user_for_type_confirmation(assumed_type: str, likelihood: str, reasoning: str):
     likelihood_phrasing = {
-        "yes": "IS LIKELY",
-        "no": "IS PROBABLY NOT",
-        "maybe": "MAY BE",
-    }.get(likelihood, "unknown")
-    statement = f"\n\nI think this report {likelihood_phrasing} of type '{assumed_type}', because {reasoning}."
-    print(statement)
-    user_input = input(
-        "\nDo you agree? Enter 0 (no), 1 (maybe), or 2 (yes). Empty response=agree with my decision:\n"
-    )
+        "yes": "is probably (=2)",
+        "no": "is probably NOT (=0)",
+        "maybe": "might be (=1)",
+    }[likelihood]
+    
+    print(f"""Since {reasoning},
+This report {likelihood_phrasing} of type: {assumed_type.upper()}.
+Do you agree with this conclusion? Enter 0=no, 1=maybe, or 2=yes, empty response=agree with whatever I decided.""")
+    
+    user_input = input()
 
-    the_user_thinks = {
-        "0": "no",
-        "1": "maybe",
-        "2": "yes",
-        "": likelihood,  # Empty response means agreement with the decision
-    }
+    the_user_thinks = {"0": "no", "1": "maybe", "2": "yes", "": likelihood}
 
     if user_input not in the_user_thinks:
         print("Invalid input. Assuming agreement with the decision.")
-        return the_user_thinks[user_input]
-    if likelihood == the_user_thinks[user_input]:
-        print("User agrees with the decision.")
-    else:
-        print("User disagrees with the decision.")
-
-    print(f"User thinks: {the_user_thinks[user_input]}")
+        return likelihood
+    
     return the_user_thinks[user_input]
 
 

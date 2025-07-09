@@ -134,11 +134,12 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     content_with_event_names_instead_of_ids, events_found = replace_event_ids_with_names(content)
     
     extracted_data = extract_data_about_report(content_with_event_names_instead_of_ids, events_found)
-    
-    return content_with_event_names_instead_of_ids, extracted_data
+    filename = os.path.basename(read_path)
+
+    return filename, content_with_event_names_instead_of_ids, extracted_data
 
 
-def save_schema_as_json(report_to_save: dict, report_name: str, directory: str) -> None:
+def save_schema_as_json(report_to_save: dict, report_name: str, subdir_name: str, directory: str) -> None:
     """
     Saves the report schema as a JSON file.
     Args:
@@ -146,6 +147,7 @@ def save_schema_as_json(report_to_save: dict, report_name: str, directory: str) 
         report_name (str): The name of the report.
         directory (str): The directory to save the JSON file in.
     """
+    directory = os.path.join(directory, subdir_name)
     if not os.path.exists(directory):
         os.makedirs(directory)
 

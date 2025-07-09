@@ -28,7 +28,12 @@ def ask(system_prompt: Optional[str], prompt: str, temperature: float = 0.25) ->
     
     client, deployment_name = get_client_and_deployment_name()
     
-    print(f"\n\n=====\n\nASKING {deployment_name} (t={temperature}):\n{system_prompt[:100]}...\n\n{prompt[:100]}...\n---------\n")
+    print(f"LLM interaction: {deployment_name} (t={temperature})")
+    print('=' * 20)
+    print(f"System: \t{system_prompt}")
+    print(f"Prompt: \t{prompt.replace('\n', '')[:200]}...")
+    print('-' * 20)
+    print("Waiting...", end='\r')
     
     messages = [
         {"role": "system", "content": system_prompt},
@@ -42,8 +47,9 @@ def ask(system_prompt: Optional[str], prompt: str, temperature: float = 0.25) ->
     )
     result = response.choices[0].message.content
     
-    print(f"Response from {deployment_name}:\n{result[:100]}...\n---------\n")
-    
+    print(f"Reply:  \t{result.replace('\n', '')[:200]}...")
+    print('=' * 20)
+        
     return result
 
 def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperature: float = 0.25):
@@ -51,7 +57,13 @@ def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperatu
     
     client, deployment_name = get_client_and_deployment_name()
     
-    print(f"\n\n=====\n\nASKING {deployment_name} (t={temperature}) with schema {schema.__name__}:\n{system_prompt[:100]}...\n\n{prompt[:100]}...\n---------\n")
+    print('\n' + '=' * 20)
+    print(f"LLM interaction: {deployment_name} (t={temperature})")
+    print("[Schema:  \t", schema.__name__ + ']')
+    print(f"System: \t{system_prompt}")
+    print(f"Prompt: \t{prompt.replace('\n', '')[:200]}...")
+    print('-' * 20)
+    print("Waiting...", end='\r')
     
     messages = [
         {"role": "system", "content": system_prompt},
@@ -84,6 +96,8 @@ def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperatu
     # Parse and pretty-print the JSON
     parsed_json = json.loads(json_arguments)
 
-    print(f"Response from {deployment_name} with schema {schema.__name__}:\n{str(json.dumps(parsed_json, indent=2)[:100])}...\n---------\n")
+    reply_as_plain_text = str(json.dumps(parsed_json, indent=2))
+    print(f"Reply:  \t{reply_as_plain_text.replace('\n', '').replace('\t', '')[:200]}...")
+    print('=' * 20)
     
     return parsed_json

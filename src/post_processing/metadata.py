@@ -30,15 +30,15 @@ def set_report_type(metadata: Dict[str, Optional[Union[str, float, int]]], repor
     return metadata
 
 def post_process_metadata(
-    original_meta_data: Dict[str, Optional[Union[str, float, int]]],
+    meta_data_original: Dict[str, Optional[Union[str, float, int]]],
     report_type: str
 ) -> Dict[str, Optional[Union[str, float, int]]]:
     """
     Post-process the metadata by adding or modifying fields as necessary.
     """
     # Example modification: Set a default value for a field if not provided
-    meta_data = original_meta_data.copy()
-    meta_data = fix_category_id(original_meta_data)
+    meta_data = meta_data_original.copy()
+    meta_data = fix_category_id(meta_data_original)
     meta_data = set_unique_ids(meta_data)
     meta_data = set_times(meta_data)
     meta_data = set_report_type(meta_data, report_type)

@@ -1,4 +1,4 @@
-from typing import Literal
+from typing import Literal, Optional
 from pydantic import BaseModel, Field
 
 timestamp_format = "YYYY-MM-DDTHH:MM:SS.sssZ"
@@ -49,25 +49,27 @@ def category_id_from_name(
     return categories[name]
 
 class MetaDataSchema(BaseModel):
-    CategoryId    : Literal["General", "Operational", "Best Practices", "Service Accounts", "Regulatory Compliance", "Security"] = Field(description="Report category")
-    ReportType    : Literal["ADTemplate", "DBTemplate"] = Field(description="'ADTemplate' for LDAP reports and 'DBTemplate' for DB reports")
-    LicenseLevel  : Literal['None'] = Field(default='None', description="You MUST include this field and set it to string 'None'.")
-    IndicatorTypes: str = Field(default=None, description="MUST be included, value is a native None")
-    Targets       : str = Field(default=None, description="MUST be included, value is a native None")
+    CategoryId    : Literal["General", "Operational", "Best Practices", "Service Accounts", "Regulatory Compliance", "Security"] = Field(..., description="Report category")
+    ReportType    : Literal["ADTemplate", "DBTemplate"] = Field(..., description="'ADTemplate' for LDAP reports and 'DBTemplate' for DB reports")
+    # TODO find out the logic behind LicenseLevel and confirm its correctness in post-processing
+    LicenseLevel  : Literal['None'] = Field(..., default='None', description="You MUST include this field and set it to string 'None'.")
+    IndicatorTypes: Optional[str] = Field(..., description="MUST be privided, value is a always a native None")
+    Targets       : Optional[str] = Field(..., description="MUST be privided, value is a always a native None")
     # TODO post-process to make sure this is a valid UUID4
-    UniqueId      : str = Field(description="Always wirte: 'This will be done in post-processing step'. ")
-    Name          : str = Field(description="Report name. Give this report a meaningful name, concisely describing its purpose.")
+    UniqueId      : str = Field(..., description="Always wirte: 'This will be done in post-processing step'. ")
+    Name          : str = Field(..., description="Report name. Give this report a meaningful name, concisely describing its purpose.")
     # TODO find out the logic behind MinVerDsp and confirm its correctness in post-processing
-    MinVerDsp     : float = Field(description="One of the following: 3.0, 3.8, 4.0, 4.1, 5.0")    
-    Version       : int = Field(default=0, description="This field is mandatory and should be set to 0, unless explicitly asked for something else by the user.")
+    MinVerDsp     : float = Field(..., description="One of the following: 3.0, 3.8, 4.0, 4.1, 5.0")    
+    Version       : int = Field(..., default=0, description="This field is mandatory and should be set to 0, unless explicitly asked for something else by the user.")
     # TODO find out logic behind the Company field and confirm its correctness in post-processing
-    Company       : Literal["Semperis", "LDC"] = Field(description="Company name, usually Semperis")
-    Description   : str = Field(description="Descrition of the reports purpose, actions it performs, and any other relevant information- all in a structured way. E.g. 'Purpose: ...\nLogic: In order to <>, we can filter by <>...\nFilters: ...\nDisplays used: ...\nNotes: ...'")
+    Company       : Literal["Semperis", "LDC"] = Field(..., description="Company name, usually Semperis")
+    Description   : str = Field(..., description="Descrition of the reports purpose, actions it performs, and any other relevant information- all in a structured way. E.g. 'Purpose: ...\nLogic: In order to <>, we can filter by <>...\nFilters: ...\nDisplays used: ...\nNotes: ...'")
     # TODO find out logic behind the IsSecurity field and confirm its correctness in post-processing
-    IsSecurity    : bool = Field(default=False, description="This field is mandatory and should be set to False.")
+    IsSecurity    : bool = Field(..., default=False, description="This field is mandatory and should be set to False.")
     # TODO find out logic behind the Status field and confirm its correctness in post-processing
-    Status        : str = Field(default='internal', description="This field is mandatory and should be set to 'internal'.")
-    CreatedAt     : str = Field(description=f"A timestamp of format {timestamp_format}")
-    ImportedAt    : str = Field(description=f"A timestamp of format {timestamp_format}")
-    ModifiedAt    : str = Field(description=f"A timestamp of format {timestamp_format}")
-    Weight        : int = Field(default=1, description="This field is mandatory and should be set to 1.")
+    Status        : str = Field(..., default='internal', description="This field is mandatory and should be set to 'internal'.")
+    CreatedAt     : str = Field(..., description=f"A timestamp of format {timestamp_format}")
+    ImportedAt    : str = Field(..., description=f"A timestamp of format {timestamp_format}")
+    ModifiedAt    : str = Field(..., description=f"A timestamp of format {timestamp_format}")
+    # TODO find out logic behind the Weight field and confirm its correctness in post-processing
+    Weight        : int = Field(..., default=1, description="This field is mandatory and should be set to 1.")

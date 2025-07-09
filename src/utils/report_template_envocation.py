@@ -1,6 +1,6 @@
 import json
 import re
-from typing import Any, Dict, Literal, List
+from typing import Any, Dict, Literal
 
 from pydantic import BaseModel, Field
 
@@ -13,8 +13,8 @@ from src.utils.utils import describe_LDAP, describe_report_properties
 
 class LDAPQueryAnsweringFormat(BaseModel):
     confidence: Literal["yes", "maybe", "no"] = Field(description="The confidence level that this report can be mimicked by an LDAP query.")
-    reasoning:  str                           = Field(description="The reasoning behind the conclusion, explaining why it is likely an LDAP report.")
-    ldap_query: str                           = Field(description="An LDAP query that mimics the report in the best way possible.")
+    reasoning:  str = Field(description="The reasoning behind the conclusion, explaining why it is likely an LDAP report.")
+    ldap_query: str = Field(description="An LDAP query that mimics the report in the best way possible.")
 
 
 def generate_structured_xml_description_request_prompt(xml_report_str) -> str:
@@ -77,47 +77,12 @@ def generate_ldap_query(
     xml_report_str: str, # This is the XML report string
     original_quest_report_description: str # This is a structured description of the original XML report, including filters and display fields
     ) -> str:
-    """
-    Generates an LDAP query based on the quest report string and report type.
-    This is a placeholder function and should be implemented with actual logic.
-    """
-    """# Get the structured reply using the tool
-    completion = client.chat.completions.create(
-        model=deployment_name,
-        messages=[
-            {"role": "system", "content": "You're a helpful assistant that generates LDAP queries."},
-            {"role": "user", "content": generate_ldap_request_prompt(xml_report_str, original_quest_report_description)},
-        ],
-        tools=[
-            {
-                "type": "function",
-                "function": {
-                    "name": "get_answering_schema",
-                    "description": "Get the schema for the desired response based on user input.",
-                    "parameters": LDAPQueryAnsweringFormat.model_json_schema(),
-                },
-            }
-        ],
-        tool_choice={
-            "type": "function",
-            "function": {"name": "get_answering_schema"},
-        },
-    )
-
-    tool_call = completion.choices[0].message.tool_calls[0]
-    json_arguments = tool_call.function.arguments
-
-    # Parse and pretty-print the JSON
-    parsed_json = json.loads(json_arguments)"""
-    parsed_json = ask_with_schema(
-        system_prompt="You're a helpful assistant that generates LDAP queries.",
-        prompt=generate_ldap_request_prompt(xml_report_str, original_quest_report_description),
-        schema=LDAPQueryAnsweringFormat)
-    confidence = parsed_json["confidence"]
-    reasoning = parsed_json["reasoning"]
+    system_prompt = "You're a helpful assistant that generates LDAP queries."
+    prompt = generate_ldap_request_prompt(xml_report_str, original_quest_report_description)
+    parsed_json = ask_with_schema(system_prompt=system_prompt, prompt=prompt, schema=LDAPQueryAnsweringFormat)
     
-    # print(f"Confidence: {confidence}"
-    #       f"\nReasoning: {reasoning}")
+    # print(f"Confidence: {parsed_json['confidence']}"
+    #       f"\nReasoning: {parsed_json['reasoning']}")
     
     ldap_query = parsed_json["ldap_query"]
     return ldap_query
@@ -137,17 +102,15 @@ def generate_ldap_report(
                                       ldap_query=ldap_query,
                                       description_of_an_ldap_report=desired_report_description,
                                       temperature=temperature)
-    meta = get_ldap_meta(quest_report_str=quest_report_str,
+    metadata = get_ldap_meta(quest_report_str=quest_report_str,
                                    report_description=report_description,
                                    ldap_query=ldap_query,
                                    temperature=temperature,
                                    the_content_field_of_the_ldap_report=report_content)
-    result = {
-        "Content": report_content,
-        "MetaData": meta,
-        "SecurityReportSettings": None,
-        "CustomLogic": None
-    }
+    result = {"Content": report_content,
+              "MetaData": metadata,
+              "SecurityReportSettings": None,
+              "CustomLogic": None}
     return result
 
 
@@ -157,14 +120,19 @@ def generate_dns_report(
     desired_report_description: str, # This is a description of the desired report, including filters and display fields
     temperature: float,
 ) -> str:
-    report_content = get_dns_content(quest_report_str, report_description, desired_report_description, temperature)
-    meta           = get_dns_meta(quest_report_str, report_description, desired_report_description, temperature, report_content)
-    result = {
-        "Content": report_content,
-        "MetaData": meta,
-        "SecurityReportSettings": None,
-        "CustomLogic": None
-    }
+    report_content = get_dns_content(quest_report_str,
+                                     report_description,
+                                     desired_report_description,
+                                     temperature)
+    metadata = get_dns_meta(quest_report_str,
+                                  report_description,
+                                  desired_report_description,
+                                  temperature,
+                                  report_content)
+    result = {"Content": report_content,
+              "MetaData": metadata,
+              "SecurityReportSettings": None,
+              "CustomLogic": None}
     return result
 
 
@@ -174,14 +142,18 @@ def generate_nondns_report(
     desired_report_description: str, # This is a description of the desired report, including filters and display fields
     temperature: float,
 ) -> str:
-    report_content = get_nondns_content(quest_report_str, report_description, desired_report_description, temperature)
-    meta           = get_nondns_meta(quest_report_str, report_description, temperature, report_content)
-    result = {
-        "Content": report_content,
-        "Meta": meta,
-        "SecurityReportSettings": None,
-        "CustomLogic": None
-    }
+    report_content = get_nondns_content(quest_report_str,
+                                        report_description,
+                                        desired_report_description,
+                                        temperature)
+    metadata = get_nondns_meta(quest_report_str,
+                                     report_description,
+                                     temperature,
+                                     report_content)
+    result = {"Content": report_content,
+              "MetaData": metadata,
+              "SecurityReportSettings": None,
+              "CustomLogic": None}
     return result
 
 
