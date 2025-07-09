@@ -49,7 +49,7 @@ def main():
         
         likely_report_types: Dict[
             Literal["LDAP", "DNS", "NonDNS"], Literal["yes", "no", "maybe"]
-        ] = get_likely_report_types(xmls)
+        ] = get_likely_report_types(quest_report_str=quest_report_str, extracted_data=extracted_data)
 
         generated_report: Dict[str, Dict[int, Any]] = generate_reports_from_likely_report_types(
             report_type_to_likelihood=likely_report_types,

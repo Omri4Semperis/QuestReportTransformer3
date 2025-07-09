@@ -43,4 +43,4 @@ def post_process_metadata(
     meta_data = set_times(meta_data)
     meta_data = set_report_type(meta_data, report_type)
     
-    return original_meta_data
+    return meta_data

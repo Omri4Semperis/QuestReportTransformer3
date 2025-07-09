@@ -63,7 +63,7 @@ def extract_data_about_report(content_with_event_names_instead_of_ids: str, even
         content_with_event_names_instead_of_ids (str): The XML content with event names instead of IDs.
         events_found (Set[str]): A set of event names found in the content.
     """
-    prompt = f"""Here's an XML report teplate content:
+    prompt = f"""Here's an XML report template content:
     <xml report template>
     {content_with_event_names_instead_of_ids}
     </xml report template>
@@ -90,7 +90,6 @@ def extract_data_about_report(content_with_event_names_instead_of_ids: str, even
     return extracted_data_as_str
     
 
-
 def read_xml_as_string(copy_to: Optional[str]) -> str:
     """
     Copies an XML file from a user-selected location and reads its content.
@@ -100,11 +99,11 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     # Open a file dialog box to get the XML file path
     root = tk.Tk()
     root.withdraw()  # Hide the root window
-    file_path='C:/Users/OmriNardiNiri/OneDrive - Semperis/Documents/QRT/RatReportSchema/reports_by_match/1_exact/membership changes glbl p azr noncorp wrk modauth exc/Membership Changes - GLBL-P-AZR-NONCORP-WRK-MODAUTH-EXC.xml'
-    # file_path = filedialog.askopenfilename(
-    #     title="Select an XML file",
-    #     filetypes=[("XML files", "*.xml"), ("All files", "*.*")],
-    # )
+
+    file_path = filedialog.askopenfilename(
+        title="Select an XML file",
+        filetypes=[("XML files", "*.xml"), ("All files", "*.*")],
+    )
     
     print(f'{file_path=}')
 

@@ -2,7 +2,7 @@ import json
 from typing import Dict, Literal, List, Any
 from pydantic import BaseModel, Field
 
-from src.utils.azure_client_utils import get_client_and_deployment_name
+from src.utils.azure_client_utils import ask_with_schema, get_client_and_deployment_name
 from src.utils.utils import describe_LDAP, describe_report_properties
 
 
@@ -129,37 +129,41 @@ def complete_likelihoods(
     # )
     # return mocked_response
 
-    client, deployment_name = get_client_and_deployment_name()
-
-    # Get the structured reply using the tool
-    completion = client.chat.completions.create(
-        model=deployment_name,
-        messages=[
-            {"role": "system", "content": system_message},
-            {"role": "user", "content": prompt},
-        ],
-        tools=[
-            {
-                "type": "function",
-                "function": {
-                    "name": "get_answering_schema",
-                    "description": "Get the schema for the desired response based on user input.",
-                    "parameters": answer_format.model_json_schema(),
-                },
-            }
-        ],
-        tool_choice={
-            "type": "function",
-            "function": {"name": "get_answering_schema"},
-        },
-    )
-
-    tool_call = completion.choices[0].message.tool_calls[0]
-    json_arguments = tool_call.function.arguments
-
-    # Parse and pretty-print the JSON
-    parsed_json = json.loads(json_arguments)
+    parsed_json = ask_with_schema(system_prompt=system_message,
+                                  prompt=prompt,
+                                  schema=answer_format)
     return parsed_json
+    # client, deployment_name = get_client_and_deployment_name()
+
+    # # Get the structured reply using the tool
+    # completion = client.chat.completions.create(
+    #     model=deployment_name,
+    #     messages=[
+    #         {"role": "system", "content": system_message},
+    #         {"role": "user", "content": prompt},
+    #     ],
+    #     tools=[
+    #         {
+    #             "type": "function",
+    #             "function": {
+    #                 "name": "get_answering_schema",
+    #                 "description": "Get the schema for the desired response based on user input.",
+    #                 "parameters": answer_format.model_json_schema(),
+    #             },
+    #         }
+    #     ],
+    #     tool_choice={
+    #         "type": "function",
+    #         "function": {"name": "get_answering_schema"},
+    #     },
+    # )
+
+    # tool_call = completion.choices[0].message.tool_calls[0]
+    # json_arguments = tool_call.function.arguments
+
+    # # Parse and pretty-print the JSON
+    # parsed_json = json.loads(json_arguments)
+    # return parsed_json
 
 
 def ask_user_for_type_confirmation(assumed_type: str, likelihood: str, reasoning: str):

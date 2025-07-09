@@ -23,17 +23,35 @@ def get_client_and_deployment_name():
 
     return client, deployment_name
 
+def trim_to_len(s: str, length: int = 120) -> str:
+    """
+    Trims the string to a specified length, adding an ellipsis if it exceeds that length.
+    """
+    s = s.strip().replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    if len(s) > length:
+        return s[:length] + "..."
+    return s
+
+def announce_llm_interaction(deployment_name: str, system_prompt: str, prompt: str, temperature: float = 0.25, schema: Optional[str] = None) -> None:
+    print('\n' + '=' * 20)
+    print(f"Calling {deployment_name} (t={temperature})")
+    if schema:
+        print(f"[Schema:  \t{schema.__name__}]")
+    print(f"System: \t{trim_to_len(system_prompt)}")
+    print(f"Prompt: \t{trim_to_len(prompt)}")
+    print('-' * 20)
+    print("Waiting...", end='\r')
+
+def announce_reply(reply_as_plain_text: str) -> None:
+    print(f"Reply:  \t{trim_to_len(reply_as_plain_text)}")
+    print('=' * 20)
+
 def ask(system_prompt: Optional[str], prompt: str, temperature: float = 0.25) -> str:
     system_prompt = system_prompt or "You are a helpful assistant. Reply briefly."
     
     client, deployment_name = get_client_and_deployment_name()
     
-    print(f"LLM interaction: {deployment_name} (t={temperature})")
-    print('=' * 20)
-    print(f"System: \t{system_prompt}")
-    print(f"Prompt: \t{prompt.replace('\n', '')[:200]}...")
-    print('-' * 20)
-    print("Waiting...", end='\r')
+    announce_llm_interaction(deployment_name, system_prompt, prompt, temperature)
     
     messages = [
         {"role": "system", "content": system_prompt},
@@ -46,10 +64,9 @@ def ask(system_prompt: Optional[str], prompt: str, temperature: float = 0.25) ->
         temperature=temperature,
     )
     result = response.choices[0].message.content
-    
-    print(f"Reply:  \t{result.replace('\n', '')[:200]}...")
-    print('=' * 20)
-        
+
+    announce_reply(result)
+
     return result
 
 def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperature: float = 0.25):
@@ -57,13 +74,7 @@ def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperatu
     
     client, deployment_name = get_client_and_deployment_name()
     
-    print('\n' + '=' * 20)
-    print(f"LLM interaction: {deployment_name} (t={temperature})")
-    print("[Schema:  \t", schema.__name__ + ']')
-    print(f"System: \t{system_prompt}")
-    print(f"Prompt: \t{prompt.replace('\n', '')[:200]}...")
-    print('-' * 20)
-    print("Waiting...", end='\r')
+    announce_llm_interaction(deployment_name, system_prompt, prompt, temperature, schema)
     
     messages = [
         {"role": "system", "content": system_prompt},
@@ -97,7 +108,6 @@ def ask_with_schema(system_prompt: Optional[str], prompt: str, schema, temperatu
     parsed_json = json.loads(json_arguments)
 
     reply_as_plain_text = str(json.dumps(parsed_json, indent=2))
-    print(f"Reply:  \t{reply_as_plain_text.replace('\n', '').replace('\t', '')[:200]}...")
-    print('=' * 20)
+    announce_reply(reply_as_plain_text)
     
     return parsed_json
