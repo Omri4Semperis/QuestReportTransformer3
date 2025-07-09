@@ -1,13 +1,24 @@
 import datetime
-from fileinput import filename
 import json
 import os
 import tkinter as tk
 from tkinter import filedialog
-from typing import List, Optional, Set
+from typing import Optional, Set, Tuple
 import pandas as pd
+from dataclasses import dataclass
 
 from src.utils.azure_client_utils import ask
+
+
+@dataclass
+class ProcessedXMLFile:
+    """Data class to hold information about a processed XML file."""
+    filename: str
+    original_content: str
+    content_with_event_names: str
+    events_found: Set[str]
+    extracted_data: str
+    subdir_name: str = ""
 
 
 def get_artifacts_dir(exists_ok: bool = True) -> str:
@@ -38,8 +49,8 @@ def get_artifacts_dir(exists_ok: bool = True) -> str:
     return dir_path
 
 
-def replace_event_ids_with_names(xml_content: str) -> str:
-    #open event_ods_names_mapping.csv file
+def replace_event_ids_with_names(xml_content: str) -> Tuple[str, Set[str]]:
+    """Replace event IDs with names in XML content."""
     res = xml_content
     df = pd.read_csv("knowledge/events_ids_names_mapping.csv")
     mapping = pd.Series(
@@ -90,13 +101,12 @@ def extract_data_about_report(content_with_event_names_instead_of_ids: str, even
     return extracted_data_as_str
     
 
-def read_xml_as_string(copy_to: Optional[str]) -> str:
+def select_xml_file() -> Optional[str]:
     """
-    Copies an XML file from a user-selected location and reads its content.
+    Opens a file dialog to select an XML file.
     Returns:
-        str: The content of the XML file as a string.
+        Optional[str]: The selected file path, or None if no file was selected.
     """
-    # Open a file dialog box to get the XML file path
     root = tk.Tk()
     root.withdraw()  # Hide the root window
 
@@ -106,10 +116,18 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     )
     
     print(f'{file_path=}')
+    return file_path if file_path else None
 
-    if not file_path:
-        raise FileNotFoundError("No file was selected.")
 
+def copy_and_read_xml_file(file_path: str, copy_to: Optional[str] = None) -> Tuple[str, str]:
+    """
+    Copies an XML file to a destination and reads its content.
+    Args:
+        file_path (str): Path to the XML file to read
+        copy_to (Optional[str]): Directory to copy the file to
+    Returns:
+        Tuple[str, str]: (filename, content)
+    """
     if copy_to:
         # Copy the file to the specified directory
         filename = os.path.basename(file_path)
@@ -129,13 +147,46 @@ def read_xml_as_string(copy_to: Optional[str]) -> str:
     # Read the content
     with open(read_path, "r", encoding="utf-16") as file:
         content = file.read()
-
-    content_with_event_names_instead_of_ids, events_found = replace_event_ids_with_names(content)
     
-    extracted_data = extract_data_about_report(content_with_event_names_instead_of_ids, events_found)
     filename = os.path.basename(read_path)
+    return filename, content
 
-    return filename, content_with_event_names_instead_of_ids, extracted_data
+
+def process_xml_file(file_path: str, copy_to: Optional[str] = None) -> ProcessedXMLFile:
+    """
+    Processes a single XML file: copies, reads, replaces event IDs, and extracts data.
+    Args:
+        file_path (str): Path to the XML file to process
+        copy_to (Optional[str]): Directory to copy the file to
+    Returns:
+        ProcessedXMLFile: Processed file data
+    """
+    filename, original_content = copy_and_read_xml_file(file_path, copy_to)
+    content_with_event_names, events_found = replace_event_ids_with_names(original_content)
+    extracted_data = extract_data_about_report(content_with_event_names, events_found)
+    
+    return ProcessedXMLFile(
+        filename=filename,
+        original_content=original_content,
+        content_with_event_names=content_with_event_names,
+        events_found=events_found,
+        extracted_data=extracted_data
+    )
+
+
+def read_xml_as_string(copy_to: Optional[str]) -> Tuple[str, str, str]:
+    """
+    Copies an XML file from a user-selected location and reads its content.
+    Returns:
+        Tuple[str, str, str]: (filename, content_with_event_names, extracted_data)
+    """
+    file_path = select_xml_file()
+    
+    if not file_path:
+        raise FileNotFoundError("No file was selected.")
+
+    processed_file = process_xml_file(file_path, copy_to)
+    return processed_file.filename, processed_file.content_with_event_names, processed_file.extracted_data
 
 
 def save_schema_as_json(report_to_save: dict, report_name: str, subdir_name: str, directory: str) -> None:
@@ -158,3 +209,5 @@ def save_schema_as_json(report_to_save: dict, report_name: str, subdir_name: str
     with open(file_path, "w", encoding="utf-8") as file:
         json.dump(report_to_save, file, indent=2)
     print(f"Saved {report_name} to {directory}")
+
+# fin.

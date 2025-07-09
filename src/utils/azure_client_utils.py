@@ -27,7 +27,13 @@ def trim_to_len(s: str, length: int = 120) -> str:
     """
     Trims the string to a specified length, adding an ellipsis if it exceeds that length.
     """
+    for i in range(20, 1, -1):
+        s = s.replace(" " * i, " ")
+        s = s.replace("\t" * i, " ")
+        s = s.replace("\n" * i, " ")
+    s = s.replace('\u200b', '')  # Remove zero-width spaces
     s = s.strip().replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    
     if len(s) > length:
         return s[:length] + "..."
     return s
