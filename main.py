@@ -65,17 +65,6 @@ def main():
                                     report_name=name,
                                     subdir_name=xml_data['subdir_name'],
                                     directory=artifacts_dir)
-        
-        # user_choice: Dict[str] = {
-        #     "LDAP": [],
-        #     "DNS": [2],
-        #     "NonDNS": [1, 2, 3],
-        # }
-
-        # user_choice = ask_user_for_choices(generated_report=generated_report)
-
-        # save_schema_as_jsons(generated_report, user_choice)
-
 
 if __name__ == "__main__":
     main()
