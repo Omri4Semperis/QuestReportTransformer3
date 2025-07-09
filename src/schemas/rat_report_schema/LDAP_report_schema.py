@@ -6,7 +6,7 @@ from src.schemas.rat_report_schema.Content.LDAP_Content_schema import LDAPConten
 
 # TODO post processing- assert a 1:1 match between the filters fields used, also appear in PreviewValues
 class LDAPRATReportSchema(BaseModel):
-    Meta                  : MetaDataSchema        = Field(description="Metadata for the report")
+    Meta                  : MetaDataSchema    = Field(description="Metadata for the report")
     Content               : LDAPContentSchema = Field(description="The content of the report: Filters, display fields, etc.")
     SecurityReportSettings: str               = None
     CustomLogic           : str               = None

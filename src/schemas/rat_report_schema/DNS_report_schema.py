@@ -6,7 +6,7 @@ from src.schemas.rat_report_schema.Content.DNS_Content_schema import DNSContentS
 
 # TODO post processing- assert a 1:1 match between the filters fields used, also appear in PreviewValues
 class DNSRATReportSchema(BaseModel):
-    Meta                  : MetaDataSchema       = Field(description="Metadata for the report")
+    Meta                  : MetaDataSchema   = Field(description="Metadata for the report")
     Content               : DNSContentSchema = Field(description="The content of the report: Filters, display fields, etc.")
     SecurityReportSettings: str              = None
     CustomLogic           : str              = None

@@ -53,23 +53,26 @@ class MetaDataSchema(BaseModel):
     ReportType    : Literal["ADTemplate", "DBTemplate"] = Field(..., description="'ADTemplate' for LDAP reports and 'DBTemplate' for DB reports")
     # TODO find out the logic behind LicenseLevel and confirm its correctness in post-processing
     LicenseLevel  : Literal['None'] = Field(..., description="You MUST include this field and set it to string 'None'.")
+    # Always None
     IndicatorTypes: Optional[str] = Field(..., description="MUST be privided, value is a always a native None")
     Targets       : Optional[str] = Field(..., description="MUST be privided, value is a always a native None")
+    # TODO: insert this field ReportLicenseModule, always "All"
     # TODO post-process to make sure this is a valid UUID4
     UniqueId      : str = Field(..., description="Always wirte: 'This will be done in post-processing step'. ")
     Name          : str = Field(..., description="Report name. Give this report a meaningful name, concisely describing its purpose.")
-    # TODO find out the logic behind MinVerDsp and confirm its correctness in post-processing
-    MinVerDsp     : float = Field(..., description="One of the following: 3.0, 3.8, 4.0, 4.1, 5.0")    
+    # TODO find out the logic behind MinVerDsp and confirm its correctness in post-processing.
+    # According to the DSP it was created with
+    MinVerDsp     : float = Field(..., description="One of the following: 3.0, 3.8, 4.0, 4.2, 4.1, 5.0")
     Version: int = Field(0, description="Defaults to 0 unless specified by the user.")
-    # TODO find out logic behind the Company field and confirm its correctness in post-processing
+    # TODO ALWAYS Semperis, but consider asking user specifically
     Company       : Literal["Semperis", "LDC"] = Field(..., description="Company name, usually Semperis")
     Description   : str = Field(..., description="Descrition of the reports purpose, actions it performs, and any other relevant information- all in a structured way. E.g. 'Purpose: ...\nLogic: In order to <>, we can filter by <>...\nFilters: ...\nDisplays used: ...\nNotes: ...'")
-    # TODO find out logic behind the IsSecurity field and confirm its correctness in post-processing
+    # TODO Always false
     IsSecurity    : Literal[False]
-    # TODO find out logic behind the Status field and confirm its correctness in post-processing
+    # TODO Always Internal
     Status        : str = Field(..., description="This field MUST be set to 'internal'.")
     CreatedAt     : str = Field(..., description=f"A timestamp of format {timestamp_format}")
     ImportedAt    : str = Field(..., description=f"A timestamp of format {timestamp_format}")
     ModifiedAt    : str = Field(..., description=f"A timestamp of format {timestamp_format}")
-    # TODO find out logic behind the Weight field and confirm its correctness in post-processing
+    # TODO Always 1 but irrelevant
     Weight        : int = Field(..., description="This field MUST be set to 1.")
